@@ -1,0 +1,121 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{8}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2016)\citenamefont {Abbott}
+  \emph {et~al.}}]{GW1509}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
+  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {LIGO Scientific
+  Collaboration and Virgo Collaboration}),\ }\href {\doibase
+  10.1103/PhysRevLett.116.061102} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {116}},\ \bibinfo {pages}
+  {061102} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Christodoulou}(1991)}]{Christodoulou_effect}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Christodoulou}},\ }\href {\doibase 10.1103/PhysRevLett.67.1486} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
+  {volume} {67}},\ \bibinfo {pages} {1486} (\bibinfo {year}
+  {1991})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Thorne}(1992)}]{GW_memory}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~S.}\ \bibnamefont
+  {Thorne}},\ }\href {\doibase 10.1103/PhysRevD.45.520} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {45}},\
+  \bibinfo {pages} {520} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Israel}(1966)}]{Isr66}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Israel}},\ }\href {\doibase 10.1007/BF02730328} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nuovo Cim.}\ }\textbf {\bibinfo {volume} {B44S10}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {1966})}\BibitemShut {NoStop}%
+%%CITATION = NUCIA,B44S10,1;%%
+\bibitem [{\citenamefont {Moore}\ \emph {et~al.}(2015)\citenamefont {Moore},
+  \citenamefont {Cole},\ and\ \citenamefont {Berry}}]{GWcurves}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~J.}\ \bibnamefont
+  {Moore}}, \bibinfo {author} {\bibfnamefont {R.~H.}\ \bibnamefont {Cole}}, \
+  and\ \bibinfo {author} {\bibfnamefont {C.~P.~L.}\ \bibnamefont {Berry}},\
+  }\href {\doibase 10.1088/0264-9381/32/1/015014} {\bibfield  {journal}
+  {\bibinfo  {journal} {Class. Quant. Grav.}\ }\textbf {\bibinfo {volume}
+  {32}},\ \bibinfo {pages} {015014} (\bibinfo {year} {2015})},\ \Eprint
+  {http://arxiv.org/abs/1408.0740} {arXiv:1408.0740 [gr-qc]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1408.0740;%%
+\bibitem [{\citenamefont {Narayan}(1992)}]{PulsarScint}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Narayan}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Philosophical Transactions: Physical Sciences and Engineering}\ }\textbf
+  {\bibinfo {volume} {341}},\ \bibinfo {pages} {151} (\bibinfo {year}
+  {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Olum}\ \emph {et~al.}(2013)\citenamefont {Olum},
+  \citenamefont {Pierce},\ and\ \citenamefont {Siemens}}]{Olum:2013gza}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~D.}\ \bibnamefont
+  {Olum}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Pierce}}, \ and\
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Siemens}},\ }\href
+  {\doibase 10.1103/PhysRevD.88.043005} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D88}},\ \bibinfo {pages}
+  {043005} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1305.3881}
+  {arXiv:1305.3881 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1305.3881;%%
+\bibitem [{\citenamefont {{Lorimer}}(2013)}]{MSPpopulation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
+  {{Lorimer}}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {Neutron
+  Stars and Pulsars: Challenges and Opportunities after 80 years}},\ }\href
+  {\doibase 10.1017/S1743921312023769} {\ \bibinfo {series} {IAU Symposium},\
+  \textbf {\bibinfo {volume} {291}},\ \bibinfo {pages} {237} (\bibinfo {year}
+  {2013})},\ \Eprint {http://arxiv.org/abs/1210.2746} {arXiv:1210.2746}
+  \BibitemShut {NoStop}%
+\end{thebibliography}%
