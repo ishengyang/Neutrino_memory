@@ -29,29 +29,36 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-We show that when a spherically symmetric shell of energy passes through, two radially separated geodesics pick up a relative velocity proportional to their separation. This leads to a time-dependent distance increase that is measurable by interferometers. We first estimate how close a supernova has to be, such that this effect from its neutrino shell can be detected by future space based interferometers. Finally we show that the largest and most significant effect of shell crossing can be measured as a memory effect in an astrophysical interferometer formed by a gravitational lens in our line of sight to a pulsar with a supernova explosion in its vicinity.
+We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. We study the possibility to measure such effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
 \end{abstract}
 
 \maketitle
 
 \section{Introduction and Summary}
 
-The recent detection of gravitational waves \cite{GW1509} has proved that gravitational waves leave an oscillating pattern in the amplitude of waveforms measured at detectors such as LIGO. It is also known that this is not the only effect that is potentially detectable; all gravitational waves also carry a non-linear memory effect \cite{Christodoulou_effect}. 
+The recent detection of gravitational waves \cite{GW1509} has proved that gravitational waves leave an oscillating pattern in the amplitude of waveforms measured at detectors such as LIGO. It is also known that this is not the only effect that is potentially detectable. Strong gravitational waves imply a large flow of energy. Just like any other flow of energy, it leads to a gravitational memory effect \cite{Christodoulou_effect,GW_memory}. 
 
-\begin{figure}[h!]
+\begin{figure}[b]
 \begin{center}
-\includegraphics[scale = 0.3]{intro.pdf}
-\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer arm. We call the distance from the SN to point $A$, $r_E$ and the arm length of the interferometer is $d$.}
+\includegraphics[scale = 0.27]{intro.pdf}
+\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The velocities (represented by the black arrows) $v_A, v_B, v_C$ they pick up are all different, since they cross the shell at different locations.}
 \label{fig:1}
 \end{center}
 \end{figure}
 
-A non-linear memory effect is an effect that leaves a permanent displacement in the interferometer after the gravitational wave has passed through it. In this paper we present a similar effect that can also be seen in interferometers and it occurs when a shell of neutrinos (it doesn't have to be neutrinos, in general it can be any shell of energy) crosses the interferometer. Moreover we show that the effect is linearly growing with time which may make it detectable with future experiments.
+The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes permanent relative displacements between geodesics. It contains only transverse-traceless components and can leave an imprint in an interferometer. In this paper, we will introduce another memory effect that is different in two ways:
+\begin{itemize}
+\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric. While coupled to matters, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric.
+\item Instead of displacements, it causes permanent changes in relative velocities between geodesics, with magnitudes proportional to their separations.
+\end{itemize}
 
-During a core collapse Supernova (SN) a fraction of a solar mass's worth of energy is released in a shell of neutrinos travelling at approximately the speed of light. We calculate the displacement seen in an interferometer, which for our purposes is just two geodesics separated by a given distance along the radial direction of the SN, when a shell of neutrinos crosses it (schematic of scenario is shown in figure \ref{fig:1}). By assuming that the time it takes for the shell to cross the interferometer is much shorter than any timing measurement we can model the shell as a junction that is a delta function through which we need to connect the geodesics followed by the arms of the interferometer. This is done using the standard technology of the Israel Junction Conditions (IJC) \cite{Isr66}. 
-\\
-\\
-In section \ref{RelV} we derive this change in velocity by explicitly using the IJC for a (1+1) dimension delta function which represents the shell of neutrinos. Since each point $A,B$ and $C$ will have a different velocity the distance between all of them will change and each of these distances is calculated. Since interferometers measure the change in phase of light which is proportional to the proper time traversed by the photons, we calculate the difference in proper time before and after shell crossing in section \ref{Ptime}. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section discusses how an astrophysical interferometer can be formed by a gravitational lens in our line of sight to a pulsar that is in the vicinity of a SN. It is shown that when the SN is the same order of magnitude away in distance from the pulsar and the lens the effect of shell crossing will leave to an order one change in the interference pattern of photons received on earth. 
+In terms of the dynamics, a change in velocity is higher order than a change in distance. This however does not mean that our effect is harder to measure. First of all, without the transverse-traceless constraint, our effect does not require breaking of spherical symmetry. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable. Our effect does not thus can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
+
+We will present a simple and natural occurrence of this effect, which is when a shell of energetic neutrinos are released during a core-collapse supernova explosion (SNe). As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate that by showing the possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delay while being hit by the neutrino shell.
+
+The rest of the paper is organized as the following. In section \ref{RelV} we derive the change in velocities with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section \ref{sec-scint} discusses how an astrophysical interferometer formed by pulsar scintillometry can measure the same effect.
+
+
 \section{Change in relative velocity}
 \label{RelV}
 
@@ -74,267 +81,285 @@ The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1
 \begin{equation}
 	\zeta_\mu^{(f)} = \left( \left( 1 - \frac{2M_f}{r} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).
 \end{equation}
-Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{corrsing}} \right)^\frac{1}{2}$, since this is a higher order correction it is not important here. $\delta M \equiv M_i - M_f$ and $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_E} + \frac{2d^2}{r_E^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}. 
-
-\subsection{Horizontal interferometer}
+Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{corrsing}} \right)^\frac{1}{2}$. Since this is a higher order correction it is not important here. $\delta M \equiv M_i - M_f$ and $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.
+%\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_E} + \frac{2d^2}{r_E^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}. 
 
  The relative velocity between a the ends of a horizontal interferometer, $A$ and $B$, that is in radial alignment with the SN as shown in figure \ref{fig:1} is given by
 \begin{equation}
-	|\Delta L_{AB}| = | (v_A - v_B)t| = d \frac{\delta M}{r_E^2}  t+ \mathcal{O}(r_E^{-3}).
+	\Delta L_{AB} =  (v_A - v_B)t = d \frac{\delta M}{r_E^2}  t+ \mathcal{O}(r_E^{-3})~.
 \end{equation}
-where $v_A$ and $v_B$ are the velocities picked up by points $A$ and $B$ after shell crossing and $t$ is the time passed after shell crossing.
+where $v_A$ and $v_B$ are the velocities picked up by points $A$ and $B$ after shell crossing and $t$ is the time passed after shell crossing. Note that since the point $A$ picks up a larger velocity toward the supernova, $\Delta L_{AB}$ is increasing.
 
-\subsection{Vertical interferometer}
+The total velocities for point $B$ and $C$ has the same magnitudes but are pointing in slightly different directions. It is easy to work out the geometry to see that
+\begin{eqnarray}
+	\Delta L_{BC} &=& -\left( \frac{ \delta M}{r_E} \sin \theta \right) t 
+	\\ \nonumber
+	&=& - \frac{\delta M}{r_E^2} d + \mathcal{O}(r_E^{-3})~.
+\end{eqnarray}
+Here $\theta\approx (d/r_E)$ is the angle between point $B$ and $C$ to the supernova. Since they both fall toward the supernova, they are getting closer to each other thus $\Delta L_{BC}$ is decreasing.
 
-A generic interferometer can be set up in a vertical orientation with respect to the direction of the SN as is shown in figure \ref{fig:2'}. 
-
- \begin{figure}[h!]
-\begin{center}
-\includegraphics[scale = 0.4]{vert.pdf}
-\caption{The geometry of a vertically oriented interferometer.}
-\label{fig:2'}
-\end{center}
-\end{figure}
-
-In this case the velocity picked up by points $B$ and $C$ will haven a component along the dotted line in figure \ref{fig:2'}, $\frac{\delta M}{r_E} \cos \frac{\theta}{2}$, and a component perpendicular to the dotted line, $\frac{\delta M}{r_E} \sin \frac{\theta}{2}$. It is easy to see that the components along the dotted line will be the same for both point $B$ and $C$ and therefore there will be relative velocity in that direction. On the other hand, the components in the opposite directions will have the same magnitude but will be in opposite directions. Therefore the total relative velocity between $B$ and $C$ will be
-\begin{equation}
-	|\Delta L_{BC}| = \left( \frac{2 \delta M}{r_E} \sin \frac{ \theta}{2} \right) t 	
-\end{equation}
-which, in the small angle limit, reduces to $\frac{\delta M}{r_E^2} d$ as can be seen by the geometry in figure \ref{fig:2'}. 
-In summary we expect both the horizontal and vertically oriented interferometers to have the signal of the same form.
+In summary, we have an interferometer whose one arm decreases in length while the other increases, resulting in a detectable change if the interference pattern. 
 \begin{center}
 \begin{tabular}{| c | c |} 
 \hline
-$|\Delta L_{AB}|$ &  $ | \Delta L_{BC} |$  \\   \hline 
-$\frac{\delta M d}{r_E^2} t$ & $ \frac{\delta M d^2}{r_E^3} t$  \\ 
+$\Delta L_{AB}$ &  $  \Delta L_{BC} $  \\   \hline 
+$\frac{\delta M d}{r_E^2} t$ & $ -\frac{\delta M d}{r_E^2} t$  \\ 
 \hline 
 \end{tabular}
 \end{center}
+Note that for the conventional memory effect, the signal is maximized when the interferometer is face-on to the source. In our case, a face-on interferometer would get zero signal, since both arms will be decreasing in length. Our signal is maximized by having an longitudinal arm, in this case $AB$.
 
-\section{Change in proper time}
-\label{Ptime}
-Interferometers like LIGO measure a change in the phase of light. The phase takes the form $\omega \tau$ where $\omega$ is the frequency of the photon and $\tau$ is the proper time traversed by the photon clock. In \cite{Pulsar_acc} we showed that there is no change in frequency in the case when the objects are aligned, so that would be in the case when the interferometer is oriented radially such as $AB$. For simplicity lets just look at the radial case of $AB$. Since there is no change in frequency, the change in phase will be given by the change in proper time (which is also intuitively pleasing as it corresponds to a change in a physical quantity which is the proper length between the two points). 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale = 0.4]{shellcrossing.pdf}
-\caption{This is showing the change in proper time before and after shell crossing for an interferometer in the radial direction of the SN, so that would correspond to the points $A$ and $B$ in figure \ref{fig:1}. The blue lines represent the motion of photons and the orange line is the neutrino shell.}
-\label{fig:2}
-\end{center}
-\end{figure}
-By carefully expanding the equations of motion of a radial photon in a Schwarzschild metric one can find the expressions for proper time before, $\Delta \tau_i$, and after, $\Delta \tau_f$, shell crossing. The full calculation is presented in the appendix, the result we are interested in is the difference in the proper times, $\Delta \tau \equiv \Delta \tau_i - \Delta \tau_f$, and it is given by
-\begin{equation}
-	\Delta \tau=  \frac{2d}{r_E^2} ( \frac{3}{2} (M_i^2 - M_f^2) - \frac{d \delta M}{2} - 3 M_f \delta M - \frac{\delta M^2}{2} \right - t \delta M  ).
-\end{equation}
-This shows that there is no change in proper time to $\mathcal{O}(r_E^{-1})$ which is what is expected and there is a term that grows linearly with time at $\mathcal{O}(r_E^{-2})$ which is in agreement with results presented in section \ref{RelV}.
+%\section{Change in proper time}
+%\label{Ptime}
+%Interferometers like LIGO measure a change in the phase of light. The phase takes the form $\omega \tau$ where $\omega$ is the frequency of the photon and $\tau$ is the proper time traversed by the photon clock. In \cite{Pulsar_acc} we showed that there is no change in frequency in the case when the objects are aligned, so that would be in the case when the interferometer is oriented radially such as $AB$. For simplicity lets just look at the radial case of $AB$. Since there is no change in frequency, the change in phase will be given by the change in proper time (which is also intuitively pleasing as it corresponds to a change in a physical quantity which is the proper length between the two points). 
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale = 0.4]{shellcrossing.pdf}
+%\caption{This is showing the change in proper time before and after shell crossing for an interferometer in the radial direction of the SN, so that would correspond to the points $A$ and $B$ in figure \ref{fig:1}. The blue lines represent the motion of photons and the orange line is the neutrino shell.}
+%\label{fig:2}
+%\end{center}
+%\end{figure}
+%By carefully expanding the equations of motion of a radial photon in a Schwarzschild metric one can find the expressions for proper time before, $\Delta \tau_i$, and after, $\Delta \tau_f$, shell crossing. The full calculation is presented in the appendix, the result we are interested in is the difference in the proper times, $\Delta \tau \equiv \Delta \tau_i - \Delta \tau_f$, and it is given by
+%\begin{equation}
+%	\Delta \tau=  \frac{2d}{r_E^2} ( \frac{3}{2} (M_i^2 - M_f^2) - \frac{d \delta M}{2} - 3 M_f \delta M - \frac{\delta M^2}{2} \right - t \delta M  ).
+%\end{equation}
+%This shows that there is no change in proper time to $\mathcal{O}(r_E^{-1})$ which is what is expected and there is a term that grows linearly with time at $\mathcal{O}(r_E^{-2})$ which is in agreement with results presented in section \ref{RelV}.
 
- \section{Discussion about future observations}
+ \section{Observation with Space-based Interferometers}
 \label{obs}
-Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta M d}{r_E^2} t$ we can estimate the distance a SN would have to be from the interferometer to have an observable change in strain $\frac{\Delta L}{d}$. The major problem for any ground based experiments will be the time the points $A,B,C$ will remain in free fall as they will be held together with experimental apparatus. As examples we use two proposed space based experiments to make estimations. First we look at LISA; at a frequency of $\sim 0.5 \times10^{-2} Hz \sim 10^7 km$ it has a strain, $h = \frac{|L|}{d}$, measurement of $\sim 10^{-21}$. Using the expression for $|L_{AB}|$ we find
+Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta M d}{r_E^2} t$ we can estimate the distance a SN would have to be from the interferometer to have an observable change in strain, which is a unitless number quantifying the amount of space-time distortion.
+\begin{equation}
+h \sim \frac{\Delta L}{d} \sim \frac{\delta M t}{r_E^2}~.
+\label{eq-strain}
+\end{equation} 
+Since our strain grows linearly with time, we do not expect detections from ground based experiments. Since for those setups, the three points $A,B,C$ cannot remain in free fall long enough for the signal to build up. 
+
+If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point the sensitivity curve of a device crosses with a 45-degree line is the best chance our effect can be detected by such device. In all these estimation, we take $\delta M$ as a faction of solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
+
+For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sensitivity in strain $\sim 10^{-21}$. Using Eq.~(\ref{eq-strain}), we can solve for the distance to the supernova $r_E$ for our effect to be detectable.
 \begin{eqnarray}
-	r_E & = & \left( \frac{d \delta M}{|L_{AB}|} t \right)^\frac{1}{2} = \left(  \frac{\delta M}{h} t \right)^\frac{1}{2} \label{Meas}	\\
+	r_E & = &  \left(  \frac{\delta M}{h} t \right)^\frac{1}{2} \label{Meas}	\\
 	& = &  \left( \frac{1 km}{10^{-21}} \times 10^7 km \right)^\frac{1}{2} \approx 10^{14} km = 10 ly.
 \end{eqnarray}
-If we look at the Big Bang Observer (BBO) instead, it has a strain value of $10^{-24}$ at a frequency $\sim 0.5 Hz = 6 \times 10^{6} km$ and this gives a value for $r_E$ of $\sim 100 ly$. Thus the BBO will have a sensitivity that gives a $r_E$ that is 10 times larger than LISA which corresponds to a factor of $10^3$ increase in the volume and therefore significantly improves the chance of observation. Moreover, BBO lies in the sensitivity range that does not have as many background signals as LISA and therefore the signal may be extractable whereas in LISA this would not be possible.
+This is clearly too close. It is unlikely that we will witness a supernova explosion within 10 light years.\footnote{And we should pray not to, since it might kill us.}
 
-Finally, we can estimate what sensitivities would be required to measured effects of SN explosions at a distance comparable to the Galactic diameter of $\sim 10^5 ly$. Re-arranging Eq (\ref{Meas}) we find
+If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. That gives a value for $r_E$ of $\sim 100 ly$. This is a factor of $10^3$ increase in the volume for detectable events, and therefore significantly improves the chance of observation. Moreover, the frequency range $\sim 0.5 Hz$ does not have as many background signals from compact binaries, making BBO a much better device to measure our effect.
+
+In this type of simple estimation, we cannot go lower in the frequency. The exact duration of the neutrino-shell passage is not known, but we do no expect it to be much less than a second. Thus for higher frequencies, the co-dimension-one delta function approximation breaks down, and the effect will be weaker than Eq.~(\ref{eq-strain}).
+
+Finally, we can assume that the next supernova would be at a distance comparable to the Galactic diameter of $\sim 10^5 ly$, and estimate what sensitivity would be required to measure our effect in about $1 Hz$. Again using Eq.~(\ref{eq-strain}), we find
 \begin{equation}
-	\nu h = \frac{\delta M}{r_E^2} t c,
+	h = \frac{ 1~km \times ~ (3\times10^8~m)}{(10^5~ly)^2}\sim 10^{-30}~.
 \end{equation}
-where we have explicitly put in the speed of light $c$ and $\nu$ is the frequency. For $r_E = 10^5 ly \approx 10^{18} km$ and $\delta M = 1 km$ we find $h \nu \approx 10^{-30}$ which is not achievable by interferometers that are currently being planned. Therefore it is likely that we will have to wait for the next generation of interferometers before this effect becomes measurable.
+This is not yet achievable by interferometers that are currently being planned. 
 
-\section{Astrophysical interferometers and pulsar timing}
-
-In this final section we consider an interferometer that is constructed by a gravitational lens and a pulsar in the vicinity of a SN as is shown in figure \ref{fig:4}. We consider the photons coming from the pulsar being lensed by a gravitational lens along our line of sight in such a way that the two photons become parallel to each other. In other words, the role of the gravitational lens is to turn the photons from the pulsar into an effective interferometer of length $\Delta b$. 
+\section{Observation with Pulsar Scintillation}
+\label{sec-scint}
 
 \onecolumngrid
 
-\begin{figure}[h!]
+\begin{figure}[tb]
 \begin{center}
 \includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
-\caption{Geometry of the astrophysical interferometer formed by the gravitational lens in the line of sight between the earth and the pulsar which is in the vicinity of the SN. The two blue lines represent paths taken by two photons sent by the pulsar. Note that the distance between the SN and the lens is much smaller than the distance of either object the pulsar or the earth.}
+\caption{Geometry of the astrophysical interferometer formed by pulsar scintillemotry. Due to scattering or lensing, the image we see is actually an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the supernova, the spacetime distortion of the neutrino shell will change the interference pattern we see.}
 \label{fig:4}
 \end{center}
 \end{figure}
 
 \twocolumngrid
 
-When a SN goes off a neutrino shell is emitted travelling at the speed of light and it crosses photons at different points $b$ and $\Delta b$, thus the effect of shell crossing on the photons will be slightly different. In particular the arrival times of the photons is shifted and this was calculated in \cite{Olum:2013gza}. The set up in figure \ref{fig:4} considers the delay in two photons as supposed to a single photon and we calculate this difference in photon arrival times below,
+We learned from the previous section how difficult it is to measure the spacetime distortion. It is strongly suppressed by a factor of $r_E^{-2}$, which is proportional to the energy density of the shell when it reaches us. If we can have an interferometer much closer to the supernova, the signal will be larger.
+
+In this final section we discuss a possibility to do just that. It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a supernova progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distort when it explodes. 
+
+The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a supernova explosion has been worked out in \cite{Olum:2013gza}. 
 \begin{equation}
-	\frac{d \Delta t}{d b} \Delta b = - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b.	\label{11}
+	\Delta t = 2\delta M \left[ \ln \left(1 + \frac{t^2}{b^2} \right) - \frac{t^2}{b^2 + t^2} \right].
 \end{equation}
-$\Delta t$ is given in Eq (25) in \cite{Olum:2013gza} (we convert $M$ to $\delta M$ to be consistent with the notation in this paper) and $t \sim b$ is the time between the shell crossing the earth and the photons coming from the lens. In the limit that $b\rightarrow \infty$ we expect there to be no effect as the shell would never cross the photons and this is indeed the case. We expect the effect to be largest when $b \sim t$ and in that case Eq (\ref{11}) gives
+Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the supernova. $t$ is the proper time on earth, with $t=0$ the time we directly observe the supernova explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
+
+When the separation between two light rays has a component in the radial direction from the supernova $\Delta b$, there will be a nonzero relative change between their path lengths.
 \begin{equation}
-	\frac{d \Delta t}{db } \Delta b = - \frac{\delta M}{b} \Delta b.
+	(\Delta t|_b - \Delta t|_{b+\Delta b}) \approx 
+	\frac{\partial \Delta t}{\partial b} \Delta b 
+	= - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b~.
+	\label{eq-change}
 \end{equation}
-The size of the gravitational lenses can vary but we estimate it to be of the order of 100 au $\sim 10^{10} km$ which we take to be the value of $\Delta b$ and the impact parameter $b$ is taken to be about $1 ly \sim 10^{13} km$ with $\delta M \sim 1 km$. Putting these numbers in we see $\frac{d \Delta t}{db} \Delta b \sim 1 m$. This is in the radio wave range and therefore will translate to an order one shift in the fringes in an interference pattern of the photons observed on earth.
+We can see that this effect grows from zero and approaches an asymptotic value,\begin{equation}
+	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
+	\longrightarrow \frac{4\delta M \Delta b}{b}~,
+\end{equation}
+at a characteristic time scale given by $b$. 
+
+The light ray separation $\Delta b$ is determined by the size of the scattering screen/lens, which can optimistically go up to the order of 1000 au $\sim 10^{10} km$. The impact parameter $b$ is estimated by taking a sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation}. The minimum value for $b$ estimated by assuming a SN explosion takes place in the centre of the galaxy is $\sim 10 ly = 10^{14} km$. We again use $\delta M \sim 1 km$ and estimate that $(\delta M b / b) \sim 1 m$. This is comparable to the wavelength of high radio waves, which is conveniently a good window to observe pulsar signals. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a supernova explosion, we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
+\ \\
 
 \acknowledgments
 
 This work is supported by the Canadian Government through the Canadian Institute for Advance Research and Industry Canada, and by Province of Ontario through the Ministry of Research and Innovation.
 
-\appendix
+%\appendix
 
-\section{Full calculation change in proper time}
-
-We would expect that the any difference in proper times would appear at $\mathcal{O}(r_E^{-2})$ thus all quantities are expanded to this order in the calculation. 
-
-\subsection{Before Shell Crossing}
-
-We start by defining the metric
-
-\begin{equation}
-ds^2 = -\left(1-\frac{2M_i}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2M_i}{r}}+r^2d\Omega_2^2~.
-\end{equation}
-
-The two end-points of an interferometer arm, $r_1(t), r_2(t)$ are defined as
-
-\begin{eqnarray}
-r_1(t) &=& r_{E}~, \ \ \ r_2(t) = r_{E}+d~.
-\end{eqnarray}
-
-The equation of motion for outgoing photons travelling radially is obtained from the metric by setting $ds=0$,
-
-\begin{eqnarray}
-t-t_0 &=& r-r_0 + 2M_i\ln\frac{r-2M_i}{r_0-2M_i} \\ \nonumber
-&=& d + 2M_i\frac{d}{r_E} -M_i\frac{d}{r_E}
-\left( \frac{d}{r_E}-\frac{4M_i}{r_E} \right)~.
-\label{eq-dt1}
-\end{eqnarray}
-
-In the last step we plug in $r_0=r_E$, $r = r_E+d$. Likewise, an incoming null-ray has an equation of motion
-
-\begin{eqnarray}
-t-t_0 &=& r_0-r + 2M_i\ln\frac{r_0-2M_i}{r-2M_i} \\ \nonumber
-&=& d + 2M_i\frac{d}{r_E} - M_i\frac{d}{r_E}
-\left( \frac{d}{r_E}-\frac{4M_i}{r_E} \right) ~.
-\end{eqnarray}
-
-Here we used $r_0 = r_E+d$, $r = r_E$. Thus the total coordinate time it takes for a light ray to come back at $r_1$ is
-
-\begin{equation}
-\Delta t = 2d + 4M_i\frac{d}{r_E} - 2M_i\frac{d}{r_E}
-\left( \frac{d}{r_E}-\frac{4M_i}{r_E} \right)~.
-\end{equation}
-
-The total proper time traversed by the first end of the interferometer arm in the time it takes the photon to travel the length of the arm and come back is 
-
-\begin{eqnarray}
-\Delta \tau_i &=& \sqrt{1-\frac{2M_i}{r_E}}\Delta t  \\ \nonumber
-&=& 2d \left(1-\frac{M_i}{r_E} - \frac{M_i^2}{2r_E^2}\right) 
-\left[ 1+\frac{2M_i}{r_E} - \frac{M_i}{r_E}\left( \frac{d}{r_E} - \frac{4M_i}{r_E} \right) \right] \\ \nonumber
-&=& 2d
-\left(1 + \frac{M_i}{r_E} + \frac{3}{2}\frac{M_i^2}{r_E^2} - \frac{M_id}{r_E^2}\right)~.
-\end{eqnarray}
-
-\subsection{After Shell Crossing}
-
-The metric after shell crossing comes from the mass $M_f$,
-\begin{equation}
-ds^2 = -\left(1-\frac{2M_f}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2M_f}{r}}+r^2d\Omega_2^2~,
-\end{equation}
-with $(M_i-M_f)=\delta M$ the neutrino shell mass. Assuming that $r_1$ crosses the shell at $t=0$, we have\footnote{In theory there is also the acceleration of the interferometer however that will be a higher order affect thus we ignore it.}
-\begin{eqnarray}
-r_1(t) &=& r_E - \frac{\delta M}{r_E} \left( 1 - \frac{2M_f}{r_E} \right)^\frac{1}{2}t~,
-\end{eqnarray}
-where $\left( 1 - \frac{2M_f}{r_E} \right)^\frac{1}{2}$ is the conversion factor between proper velocity and coordinate velocity, since this will be a higher order effect and will always accompany $\frac{\delta M}{r_E}$ this term will only affect terms of $\mathcal{O}(r_E^{-2})$. On the other hand, $r_2$ crosses the shell later. We can only derive that by first knowing the outgoing null-ray trajectory,
-\begin{eqnarray}
-t-t_0 = r-r_0 + 2M_f\ln\frac{r-2M_f}{r_0-2M_f}~.
-\label{eq-null1out}
-\end{eqnarray}
-Plugging $t_0=0$, $r_0 = r_1(0) = r_E$, $r = r_2 = r_E+d$, we obtain the crossing time,
-\begin{eqnarray}
-\tilde{t} &=& d + 2M_f\ln \frac{r_E+d-2M_f}{r_E-2M_f} \\ \nonumber
-&=& d + 2M_f\frac{d}{r_E} - M_f\frac{d}{r_E}\left( \frac{d}{r_E} - \frac{4M_f}{r_E} \right)~.
-\end{eqnarray}
-Using this we can calculate $r_2(t)$ 
-\begin{eqnarray}
-r_2(t) &=& r_E + d - \frac{\delta M}{r_E+d} \left( 1 - \frac{2M_f}{r_E+d} \right)^\frac{1}{2}(t-\tilde{t}) \\ \nonumber
-&=& r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E^2} ((M_f + d)t + (M_f - d)d)
-\end{eqnarray}
-Now, for a light ray that starts from $r_1$ at a later time $t_0$, we solve where $r_2$ crosses the null ray by substituting $r_0 = r_1(t_0) = r_E - \frac{\delta M}{r_E}t_0~$ and $r &=& r_2(t) = r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E}\frac{d}{r_E}(t-d+2M_f)$ into Eq (\ref{eq-null1out}). A further approximation we may use is $t_0\gg d\approx(t-t_0)$. Thus when a term is already second order, we ignore the difference between $t$ and $t_0$. We can then start to solve the crossing time at $r_2$, while carefully keeping all the expansions up to the second order.
-
-\begin{eqnarray}
-& & \Delta t_{out} \equiv  t - t_0 = d - \frac{\delta M}{r_E}(t - t_0 - d) + \frac{\delta M M_f}{r_E^2} (t - t_0 -d)	\nonumber	\\
-&  & + \frac{\delta M}{r_E}\frac{d}{r_E}(t-d+2M_f) \label{eq-SolveCross} \nonumber	\\
-& & + 2M_f\ln\left(1+\frac{d}{r_E}-\frac{2M_f}{r_E} -\frac{\delta M(t-d)}{r_E^2} \right) 
-\nonumber \\ \nonumber
-& & - 2M_f\ln\left(1-\frac{2M_f}{r_E} -\frac{\delta Mt_0}{r_E^2} \right)
-\\ \nonumber
-&=& d - \frac{\delta M}{r_E}(t - t_0 - d) + \frac{M_f \delta M d}{r_E^2} + \frac{\delta M t_0}{r_E^2}(d-M_f) \\ \nonumber
-& & + 2M_f \left[ \frac{d}{r_E}-\frac{2M_f}{r_E} -\frac{\delta M(t-d)}{r_E^2}  - \frac{1}{2} \left( \frac{d}{r_E}-\frac{2M_f}{r_E} \right)^2 \right] \\ \nonumber
-& & - 2M_f \left( -\frac{2M_f}{r_E} -\frac{\delta Mt_0}{r_E^2} - \frac{2M_f^2}{r_E^2} \right) + \frac{\delta M M_f t}{r_E^2} ~.
-\end{eqnarray}
-This leads to
-\begin{eqnarray}
-& & \Delta t_{out} \left(1 + \frac{\delta M}{r_E} - \frac{\delta M M_f}{r_E^2}\right) = 
-d + 2M_f\frac{d}{r_E}  \nonumber	\\
-& & - M_f\frac{d}{r_E} \left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) 	\nonumber	\\
-& & + \frac{\delta M}{r_E}d + \frac{\delta Md}{r_E^2} (t_0+3M_f)~.
-\end{eqnarray}
-
-Compare this to Eq.~(\ref{eq-dt1}), there are only three differences, and two of them have clear physical meanings. The last term on the right-hand-side is the total extra distance between the two end-points, since their velocities are slightly different. The extra factor on the left-hand-side comes from the fact that both end-points are falling toward the center with roughly identical velocity, so it takes a light ray less time to go from inside to outside. On the other hand, the outside endpoint did not pick up this velocity at $t=0$, but at $t\sim d$. That leads to the second last term which will cancel the previous factor at the leading order. The last two things will of course be reversed in the reflection, while the distance increase stays the same. An incoming null-ray has the trajectory
-
-\begin{eqnarray}
-t_0 - t = r-r_0 + 2M_f\ln\frac{r-2M_f}{r_0-2M_f}~.
-\end{eqnarray}
-
-This allows us to calculate the radial coordinates of the end points of the interferometer arms 
-\begin{eqnarray}
-r_0 &=& r_2(t_0) = r_E +d - \frac{\delta M}{r_E}(t_0-d) \nonumber	\\
-& + & \frac{\delta M}{r_E^2} (d(M_f -d) + t_0(M_f+d)) ~, \nonumber \\
-r &=& r_1(t) = r_E - \frac{\delta M}{r_E}t - \frac{M_f \delta M}{r_E^2} ~.
-\end{eqnarray}
-and the time it takes for an incoming photon to cross the arm, 
-\begin{eqnarray}
-\Delta t_{in} & \equiv & t-t_0 = d + \frac{\delta M}{r_E}(t-t_0+d)	\nonumber	\\
-& +& \frac{\delta M}{r_E^2} \left( - M_f t + t_0 (M_f + d) + d(M_f -d) \right)
-\nonumber  \\
-& & +2M_f\ln\left( 1+\frac{d}{r_E} - \frac{2M_f}{r_E} - \frac{\delta M}{r_E^2}(t_0-d) \right)
-\nonumber \\ \nonumber
-& & -2M_f\ln\left( 1 - \frac{2M_f}{r_E} - \frac{\delta M}{r_E^2}t \right)
-\end{eqnarray}
-Compare this with Eq.~(\ref{eq-SolveCross}), the log terms are identical up to the higher order difference in $t$ and $t_0$ which we can ignore.
-\begin{eqnarray}
-& & \Delta t_{in}\left(1-\frac{\delta M}{r_E} + \frac{M_f \delta M}{r_E^2} \right) =
-d + 2M_f\frac{d}{r_E} 
-\nonumber	\\
-& & - M_f\frac{d}{r_E} \left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) 
-+ \frac{\delta M}{r_E}d \nonumber	\\
-& +&  \frac{\delta Md}{r_E^2} (t_0-d+2M_f)~.
-\end{eqnarray}
-Combining them, the total duration in coordinate time is
-\begin{eqnarray}
-& & \Delta t = \Delta t_{out} + \Delta t_{in} \nonumber \\
-&=& d \left(1 - \frac{\delta M}{r_E} + \frac{\delta M^2}{r_E^2} \right) 	\nonumber	\\
-& \times & \left[ 1 + \frac{2M_f}{r_E} + \frac{\delta M}{r_E} -\frac{M_f}{r_E}\left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) + \frac{\delta M (t_0+2M_f)}{r_E^2} \right] \nonumber  \\
-&+& d \left(1 + \frac{\delta M}{r_E} + \frac{\delta M^2}{r_E^2} \right) \nonumber	\\
-& \times & \left[ 1 + \frac{2M_f}{r_E} + \frac{\delta M}{r_E} -\frac{M_f}{r_E}\left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right)  + \frac{\delta M (t_0-d+2M_f)}{r_E^2} \right]  \nonumber	\\
-&=& 2d [ 1 + \frac{2M_f}{r_E} + \frac{\delta M}{r_E} -\frac{M_f}{r_E}\left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) \nonumber	\\
-&+ & \frac{\delta M (t_0+2M_f-d/2)}{r_E^2} +\frac{\delta M^2}{r_E^2} ]~.
-\end{eqnarray}
-
-Next we convert this coordinate time into proper time, 
-
-\begin{eqnarray}
-\Delta \tau_f &=& \int_{t_0}^{t_0+\Delta t}
- \sqrt{\left(1-\frac{2M_f}{r_1}\right)dt^2 - \left(1-\frac{2M_f}{r_1}\right)^{-1}dr^2} \nonumber	
- \\ 
-&=& \int_{t_0}^{t_0+\Delta t} 
-\sqrt{\left(1 - \frac{2M_f}{r_E - \frac{\delta M}{r_E}t}\right) - \frac{\delta M^2}{r_E^2} }
-~dt  \nonumber	\\
-&=& \left(1 - \frac{M_f}{r_E} - \frac{\delta M^2}{2r_E^2} - \frac{M_f^2}{2 r_E^2} \right)
-\Delta t \nonumber \\
-&=& 2d ( 1 + \frac{M_f}{r_E} + \frac{\delta M}{r_E} - \frac{\delta M M_f}{r_E^2} + \frac{M_fd}{r_E^2}+ \frac{3}{2} \frac{M_f^2}{r_E^2}	\nonumber	\\
-& + & \frac{\delta M (t_0+2M_f-d/2)}{r_E^2} + \frac{\delta M^2}{2r_E^2} ). \label{123}
-\end{eqnarray}
-
-Finally, we arrive at the difference in proper time, $\Delta \tau = \Delta \tau_i - \Delta \tau_f$, 
-
-\begin{equation}
-	\Delta \tau=  \frac{2d}{r_E^2} \left( \frac{3}{2} (M_i^2 - M_f^2) - \frac{d \delta M}{2} - 3 M_f \delta M - \frac{\delta M^2}{2} - t \delta M  \right).
-\end{equation}
+%\section{Full calculation change in proper time}
+%
+%We would expect that the any difference in proper times would appear at $\mathcal{O}(r_E^{-2})$ thus all quantities are expanded to this order in the calculation. 
+%
+%\subsection{Before Shell Crossing}
+%
+%We start by defining the metric
+%
+%\begin{equation}
+%ds^2 = -\left(1-\frac{2M_i}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2M_i}{r}}+r^2d\Omega_2^2~.
+%\end{equation}
+%
+%The two end-points of an interferometer arm, $r_1(t), r_2(t)$ are defined as
+%
+%\begin{eqnarray}
+%r_1(t) &=& r_{E}~, \ \ \ r_2(t) = r_{E}+d~.
+%\end{eqnarray}
+%
+%The equation of motion for outgoing photons travelling radially is obtained from the metric by setting $ds=0$,
+%
+%\begin{eqnarray}
+%t-t_0 &=& r-r_0 + 2M_i\ln\frac{r-2M_i}{r_0-2M_i} \\ \nonumber
+%&=& d + 2M_i\frac{d}{r_E} -M_i\frac{d}{r_E}
+%\left( \frac{d}{r_E}-\frac{4M_i}{r_E} \right)~.
+%\label{eq-dt1}
+%\end{eqnarray}
+%
+%In the last step we plug in $r_0=r_E$, $r = r_E+d$. Likewise, an incoming null-ray has an equation of motion
+%
+%\begin{eqnarray}
+%t-t_0 &=& r_0-r + 2M_i\ln\frac{r_0-2M_i}{r-2M_i} \\ \nonumber
+%&=& d + 2M_i\frac{d}{r_E} - M_i\frac{d}{r_E}
+%\left( \frac{d}{r_E}-\frac{4M_i}{r_E} \right) ~.
+%\end{eqnarray}
+%
+%Here we used $r_0 = r_E+d$, $r = r_E$. Thus the total coordinate time it takes for a light ray to come back at $r_1$ is
+%
+%\begin{equation}
+%\Delta t = 2d + 4M_i\frac{d}{r_E} - 2M_i\frac{d}{r_E}
+%\left( \frac{d}{r_E}-\frac{4M_i}{r_E} \right)~.
+%\end{equation}
+%
+%The total proper time traversed by the first end of the interferometer arm in the time it takes the photon to travel the length of the arm and come back is 
+%
+%\begin{eqnarray}
+%\Delta \tau_i &=& \sqrt{1-\frac{2M_i}{r_E}}\Delta t  \\ \nonumber
+%&=& 2d \left(1-\frac{M_i}{r_E} - \frac{M_i^2}{2r_E^2}\right) 
+%\left[ 1+\frac{2M_i}{r_E} - \frac{M_i}{r_E}\left( \frac{d}{r_E} - \frac{4M_i}{r_E} \right) \right] \\ \nonumber
+%&=& 2d
+%\left(1 + \frac{M_i}{r_E} + \frac{3}{2}\frac{M_i^2}{r_E^2} - \frac{M_id}{r_E^2}\right)~.
+%\end{eqnarray}
+%
+%\subsection{After Shell Crossing}
+%
+%The metric after shell crossing comes from the mass $M_f$,
+%\begin{equation}
+%ds^2 = -\left(1-\frac{2M_f}{r}\right)dt^2 + \frac{dr^2}{1-\frac{2M_f}{r}}+r^2d\Omega_2^2~,
+%\end{equation}
+%with $(M_i-M_f)=\delta M$ the neutrino shell mass. Assuming that $r_1$ crosses the shell at $t=0$, we have\footnote{In theory there is also the acceleration of the interferometer however that will be a higher order affect thus we ignore it.}
+%\begin{eqnarray}
+%r_1(t) &=& r_E - \frac{\delta M}{r_E} \left( 1 - \frac{2M_f}{r_E} \right)^\frac{1}{2}t~,
+%\end{eqnarray}
+%where $\left( 1 - \frac{2M_f}{r_E} \right)^\frac{1}{2}$ is the conversion factor between proper velocity and coordinate velocity, since this will be a higher order effect and will always accompany $\frac{\delta M}{r_E}$ this term will only affect terms of $\mathcal{O}(r_E^{-2})$. On the other hand, $r_2$ crosses the shell later. We can only derive that by first knowing the outgoing null-ray trajectory,
+%\begin{eqnarray}
+%t-t_0 = r-r_0 + 2M_f\ln\frac{r-2M_f}{r_0-2M_f}~.
+%\label{eq-null1out}
+%\end{eqnarray}
+%Plugging $t_0=0$, $r_0 = r_1(0) = r_E$, $r = r_2 = r_E+d$, we obtain the crossing time,
+%\begin{eqnarray}
+%\tilde{t} &=& d + 2M_f\ln \frac{r_E+d-2M_f}{r_E-2M_f} \\ \nonumber
+%&=& d + 2M_f\frac{d}{r_E} - M_f\frac{d}{r_E}\left( \frac{d}{r_E} - \frac{4M_f}{r_E} \right)~.
+%\end{eqnarray}
+%Using this we can calculate $r_2(t)$ 
+%\begin{eqnarray}
+%r_2(t) &=& r_E + d - \frac{\delta M}{r_E+d} \left( 1 - \frac{2M_f}{r_E+d} \right)^\frac{1}{2}(t-\tilde{t}) \\ \nonumber
+%&=& r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E^2} ((M_f + d)t + (M_f - d)d)
+%\end{eqnarray}
+%Now, for a light ray that starts from $r_1$ at a later time $t_0$, we solve where $r_2$ crosses the null ray by substituting $r_0 = r_1(t_0) = r_E - \frac{\delta M}{r_E}t_0~$ and $r &=& r_2(t) = r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E}\frac{d}{r_E}(t-d+2M_f)$ into Eq (\ref{eq-null1out}). A further approximation we may use is $t_0\gg d\approx(t-t_0)$. Thus when a term is already second order, we ignore the difference between $t$ and $t_0$. We can then start to solve the crossing time at $r_2$, while carefully keeping all the expansions up to the second order.
+%
+%\begin{eqnarray}
+%& & \Delta t_{out} \equiv  t - t_0 = d - \frac{\delta M}{r_E}(t - t_0 - d) + \frac{\delta M M_f}{r_E^2} (t - t_0 -d)	\nonumber	\\
+%&  & + \frac{\delta M}{r_E}\frac{d}{r_E}(t-d+2M_f) \label{eq-SolveCross} \nonumber	\\
+%& & + 2M_f\ln\left(1+\frac{d}{r_E}-\frac{2M_f}{r_E} -\frac{\delta M(t-d)}{r_E^2} \right) 
+%\nonumber \\ \nonumber
+%& & - 2M_f\ln\left(1-\frac{2M_f}{r_E} -\frac{\delta Mt_0}{r_E^2} \right)
+%\\ \nonumber
+%&=& d - \frac{\delta M}{r_E}(t - t_0 - d) + \frac{M_f \delta M d}{r_E^2} + \frac{\delta M t_0}{r_E^2}(d-M_f) \\ \nonumber
+%& & + 2M_f \left[ \frac{d}{r_E}-\frac{2M_f}{r_E} -\frac{\delta M(t-d)}{r_E^2}  - \frac{1}{2} \left( \frac{d}{r_E}-\frac{2M_f}{r_E} \right)^2 \right] \\ \nonumber
+%& & - 2M_f \left( -\frac{2M_f}{r_E} -\frac{\delta Mt_0}{r_E^2} - \frac{2M_f^2}{r_E^2} \right) + \frac{\delta M M_f t}{r_E^2} ~.
+%\end{eqnarray}
+%This leads to
+%\begin{eqnarray}
+%& & \Delta t_{out} \left(1 + \frac{\delta M}{r_E} - \frac{\delta M M_f}{r_E^2}\right) = 
+%d + 2M_f\frac{d}{r_E}  \nonumber	\\
+%& & - M_f\frac{d}{r_E} \left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) 	\nonumber	\\
+%& & + \frac{\delta M}{r_E}d + \frac{\delta Md}{r_E^2} (t_0+3M_f)~.
+%\end{eqnarray}
+%
+%Compare this to Eq.~(\ref{eq-dt1}), there are only three differences, and two of them have clear physical meanings. The last term on the right-hand-side is the total extra distance between the two end-points, since their velocities are slightly different. The extra factor on the left-hand-side comes from the fact that both end-points are falling toward the center with roughly identical velocity, so it takes a light ray less time to go from inside to outside. On the other hand, the outside endpoint did not pick up this velocity at $t=0$, but at $t\sim d$. That leads to the second last term which will cancel the previous factor at the leading order. The last two things will of course be reversed in the reflection, while the distance increase stays the same. An incoming null-ray has the trajectory
+%
+%\begin{eqnarray}
+%t_0 - t = r-r_0 + 2M_f\ln\frac{r-2M_f}{r_0-2M_f}~.
+%\end{eqnarray}
+%
+%This allows us to calculate the radial coordinates of the end points of the interferometer arms 
+%\begin{eqnarray}
+%r_0 &=& r_2(t_0) = r_E +d - \frac{\delta M}{r_E}(t_0-d) \nonumber	\\
+%& + & \frac{\delta M}{r_E^2} (d(M_f -d) + t_0(M_f+d)) ~, \nonumber \\
+%r &=& r_1(t) = r_E - \frac{\delta M}{r_E}t - \frac{M_f \delta M}{r_E^2} ~.
+%\end{eqnarray}
+%and the time it takes for an incoming photon to cross the arm, 
+%\begin{eqnarray}
+%\Delta t_{in} & \equiv & t-t_0 = d + \frac{\delta M}{r_E}(t-t_0+d)	\nonumber	\\
+%& +& \frac{\delta M}{r_E^2} \left( - M_f t + t_0 (M_f + d) + d(M_f -d) \right)
+%\nonumber  \\
+%& & +2M_f\ln\left( 1+\frac{d}{r_E} - \frac{2M_f}{r_E} - \frac{\delta M}{r_E^2}(t_0-d) \right)
+%\nonumber \\ \nonumber
+%& & -2M_f\ln\left( 1 - \frac{2M_f}{r_E} - \frac{\delta M}{r_E^2}t \right)
+%\end{eqnarray}
+%Compare this with Eq.~(\ref{eq-SolveCross}), the log terms are identical up to the higher order difference in $t$ and $t_0$ which we can ignore.
+%\begin{eqnarray}
+%& & \Delta t_{in}\left(1-\frac{\delta M}{r_E} + \frac{M_f \delta M}{r_E^2} \right) =
+%d + 2M_f\frac{d}{r_E} 
+%\nonumber	\\
+%& & - M_f\frac{d}{r_E} \left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) 
+%+ \frac{\delta M}{r_E}d \nonumber	\\
+%& +&  \frac{\delta Md}{r_E^2} (t_0-d+2M_f)~.
+%\end{eqnarray}
+%Combining them, the total duration in coordinate time is
+%\begin{eqnarray}
+%& & \Delta t = \Delta t_{out} + \Delta t_{in} \nonumber \\
+%&=& d \left(1 - \frac{\delta M}{r_E} + \frac{\delta M^2}{r_E^2} \right) 	\nonumber	\\
+%& \times & \left[ 1 + \frac{2M_f}{r_E} + \frac{\delta M}{r_E} -\frac{M_f}{r_E}\left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) + \frac{\delta M (t_0+2M_f)}{r_E^2} \right] \nonumber  \\
+%&+& d \left(1 + \frac{\delta M}{r_E} + \frac{\delta M^2}{r_E^2} \right) \nonumber	\\
+%& \times & \left[ 1 + \frac{2M_f}{r_E} + \frac{\delta M}{r_E} -\frac{M_f}{r_E}\left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right)  + \frac{\delta M (t_0-d+2M_f)}{r_E^2} \right]  \nonumber	\\
+%&=& 2d [ 1 + \frac{2M_f}{r_E} + \frac{\delta M}{r_E} -\frac{M_f}{r_E}\left( \frac{d}{r_E}-\frac{4M_f}{r_E} \right) \nonumber	\\
+%&+ & \frac{\delta M (t_0+2M_f-d/2)}{r_E^2} +\frac{\delta M^2}{r_E^2} ]~.
+%\end{eqnarray}
+%
+%Next we convert this coordinate time into proper time, 
+%
+%\begin{eqnarray}
+%\Delta \tau_f &=& \int_{t_0}^{t_0+\Delta t}
+% \sqrt{\left(1-\frac{2M_f}{r_1}\right)dt^2 - \left(1-\frac{2M_f}{r_1}\right)^{-1}dr^2} \nonumber	
+% \\ 
+%&=& \int_{t_0}^{t_0+\Delta t} 
+%\sqrt{\left(1 - \frac{2M_f}{r_E - \frac{\delta M}{r_E}t}\right) - \frac{\delta M^2}{r_E^2} }
+%~dt  \nonumber	\\
+%&=& \left(1 - \frac{M_f}{r_E} - \frac{\delta M^2}{2r_E^2} - \frac{M_f^2}{2 r_E^2} \right)
+%\Delta t \nonumber \\
+%&=& 2d ( 1 + \frac{M_f}{r_E} + \frac{\delta M}{r_E} - \frac{\delta M M_f}{r_E^2} + \frac{M_fd}{r_E^2}+ \frac{3}{2} \frac{M_f^2}{r_E^2}	\nonumber	\\
+%& + & \frac{\delta M (t_0+2M_f-d/2)}{r_E^2} + \frac{\delta M^2}{2r_E^2} ). \label{123}
+%\end{eqnarray}
+%
+%Finally, we arrive at the difference in proper time, $\Delta \tau = \Delta \tau_i - \Delta \tau_f$, 
+%
+%\begin{equation}
+%	\Delta \tau=  \frac{2d}{r_E^2} \left( \frac{3}{2} (M_i^2 - M_f^2) - \frac{d \delta M}{2} - 3 M_f \delta M - \frac{\delta M^2}{2} - t \delta M  \right).
+%\end{equation}
 
 \bibliography{all_active}
-
 
 \end{document}
