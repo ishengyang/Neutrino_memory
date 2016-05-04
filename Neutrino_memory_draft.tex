@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Longitudinal gravitational memory and its potential detection by space based and astrophysical interferometers}
+\title{Longitudinal gravitational memory from supernova neutrino shell \\ and potential detection by interferometers}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -141,30 +141,31 @@ For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sen
 	r_E & = &  \left(  \frac{\delta M}{h} t \right)^\frac{1}{2} \label{Meas}	\\
 	& = &  \left( \frac{1 km}{10^{-21}} \times 10^7 km \right)^\frac{1}{2} \approx 10^{14} km = 10 ly.
 \end{eqnarray}
-This is clearly too close. It is unlikely that we will witness a supernova explosion within 10 light years.\footnote{And we should pray not to, since it might kill us.}
+This is clearly too close. It was estimated that within 30 light-years, a spuernova will go off every hundred million years \cite{EllSch93}\footnote{And if that happens, it might kill us.}. By a na\"ive volume scaling, an explosion within 10 light-years only occurs every billion years.
 
-If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. That gives a value for $r_E$ of $\sim 100 ly$. This is a factor of $10^3$ increase in the volume for detectable events, and therefore significantly improves the chance of observation. Moreover, the frequency range $\sim 0.5 Hz$ does not have as many background signals from compact binaries, making BBO a much better device to measure our effect.
+If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. First of all, this frequency range does not have as many background signals from compact binaries, making it a much better device to measure our effect. The improved sensitivity gives a value for $r_E$ of $\sim 100 ly$. This is a factor of $10^3$ increase in the volume for detectable events, thus improves the expectation to one such in less a million years. That is unfortunately still a long shot.
 
 In this type of simple estimation, we cannot go lower in the frequency. The exact duration of the neutrino-shell passage is not known, but we do no expect it to be much less than a second. Thus for higher frequencies, the co-dimension-one delta function approximation breaks down, and the effect will be weaker than Eq.~(\ref{eq-strain}).
 
-Finally, we can assume that the next supernova would be at a distance comparable to the Galactic diameter of $\sim 10^5 ly$, and estimate what sensitivity would be required to measure our effect in about $1 Hz$. Again using Eq.~(\ref{eq-strain}), we find
+Finally, we expect 2 to 3 supernova per century, and we can assume that the next supernova would be at a distance comparable to the Galactic diameter of $\sim 10^5 ly$. If we are going to measure such effect at $1 Hz$, Again using Eq.~(\ref{eq-strain}), we find
 \begin{equation}
 	h = \frac{ 1~km \times ~ (3\times10^8~m)}{(10^5~ly)^2}\sim 10^{-30}~.
 \end{equation}
-This is not yet achievable by interferometers that are currently being planned. 
+This requires six orders of magniude better than BBO and is not yet achievable by interferometers that are currently being planned. 
 
 \section{Observation with Pulsar Scintillation}
 \label{sec-scint}
 
 \onecolumngrid
 
-\begin{figure}[tb]
+\begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
-\caption{Geometry of the astrophysical interferometer formed by pulsar scintillemotry. Due to scattering or lensing, the image we see is actually an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the supernova, the spacetime distortion of the neutrino shell will change the interference pattern we see.}
+\caption{Geometry of the astrophysical interferometer formed by pulsar scintillemotry. Due to scattering or lensing, the image we see is actually an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the supernova, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
 \label{fig:4}
 \end{center}
 \end{figure}
+
 
 \twocolumngrid
 
@@ -191,7 +192,7 @@ We can see that this effect grows from zero and approaches an asymptotic value,\
 \end{equation}
 at a characteristic time scale given by $b$. 
 
-The light ray separation $\Delta b$ is determined by the size of the scattering screen/lens, which can optimistically go up to the order of 1000 au $\sim 10^{10} km$. The impact parameter $b$ is estimated by taking a sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation}. The minimum value for $b$ estimated by assuming a SN explosion takes place in the centre of the galaxy is $\sim 10 ly = 10^{14} km$. We again use $\delta M \sim 1 km$ and estimate that $(\delta M b / b) \sim 1 m$. This is comparable to the wavelength of high radio waves, which is conveniently a good window to observe pulsar signals. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a supernova explosion, we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
+We estimate $b$ by assuming that the next SNe is somewhere near the galactic center. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10 ly \sim 10^{14}km$. $\delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic center. Scaling the frequency to $1GHz$ which is usually a good window to observe pulsar signals. We found that such scattering screen can produce images separated by $\delta b\sim 1000A.U. \sim 10^{10} km$. We again use $\delta M \sim 1 km$, and combining all these numbers we get $(\delta M b / b) \sim 1 m$. This is comparable to the wavelength at $1GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a supernova explosion, we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
 \ \\
 
 \acknowledgments
