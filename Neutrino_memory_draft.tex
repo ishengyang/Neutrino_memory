@@ -29,7 +29,7 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. Such measurement will allow us to derive the total energy released by the supernova explosion. We study the possibility to measure such effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
+We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. Such measurements will allow us to obtain the total energy released by the supernova explosion in the form of neutrinos. We study the possibility to measure such an effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
 \end{abstract}
 
 \maketitle
@@ -41,24 +41,24 @@ The recent detection of gravitational waves \cite{GW1509} has proved that gravit
 \begin{figure}[b]
 \begin{center}
 \includegraphics[scale = 0.27]{intro.pdf}
-\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The velocities (represented by the black arrows) $v_A, v_B, v_C$ they pick up are all different, since they cross the shell at different locations.}
+\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The velocities (represented by the black arrows) of the three points $A,B$ and $C$ are $v_A, v_B$ and $v_C$ respectively and they are all different since they cross the shell at different locations.}
 \label{fig:1}
 \end{center}
 \end{figure}
 
 The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes permanent relative displacements between geodesics. It contains only transverse-traceless components and can leave an imprint in an interferometer. In this paper, we will introduce another memory effect that is different in two ways:
 \begin{itemize}
-\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric. While coupled to matters, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric.
+\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric (i.e gravitational waves). While coupled to matter, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric.
 \item Instead of displacements, it causes permanent changes in relative velocities between geodesics, with magnitudes proportional to their separations.
 \end{itemize}
 
-In terms of the dynamics, a change in velocity is higher order than a change in distance. This however does not mean that our effect is harder to measure. First of all, without the transverse-traceless constraint, our effect does not require breaking of spherical symmetry. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable. Our effect does not thus can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
+In terms of the dynamics, a change in velocity is higher order than a change in distance. This however does not mean that our effect is harder to measure. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable whereas our effect does not and therefore it can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
 
-We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of its energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate that by showing the possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delay while being hit by the neutrino shell. 
+We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of its energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
-If we can utilize the thousands of SNs forecasted by SKA \cite{MSPpopulation}, one of them might provide us a good estimation of the total energy in the neutrino shell when the next SN explodes. Currently there are no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle to constraint the explosion mechanism. 
+If we can utilize the thousands of pulsars forecasted by SKA \cite{MSPpopulation}, one of them might provide us with a good estimation of the total energy in the neutrino shell when the next SN explodes. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
-The rest of the paper is organized as the following. In section \ref{RelV} we derive the change in velocities with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section \ref{sec-scint} discusses how an astrophysical interferometer formed by pulsar scintillometry can measure the same effect.
+The rest of the paper is organized as follows. In section \ref{RelV} we derive the change in velocities with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section \ref{sec-scint} discusses how an astrophysical interferometer formed by pulsar scintillometry can measure the same effect.
 
 
 \section{Change in relative velocity}
@@ -69,7 +69,7 @@ We assume the geometry of the spacetime is governed by the SN and thus is parame
 \begin{equation}
 	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,
 \end{equation}
-where are working in units with $G = c =1$. After the SN explosion the $i$ index is replaced by $f$. Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows,
+where are working in units with $G = c =1$. After the shell of energy released from the SN has passed the $i$ index is replaced by $f$ to denote the ``final" metric with a greater mass. Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows,
 
 \begin{equation}
 	\Sigma_\mu^{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).
@@ -90,17 +90,17 @@ Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to conver
 \begin{equation}
 	\Delta L_{AB} =  (v_A - v_B)t = d \frac{\delta M}{r_E^2}  t+ \mathcal{O}(r_E^{-3})~.
 \end{equation}
-where $v_A$ and $v_B$ are the velocities picked up by points $A$ and $B$ after shell crossing and $t$ is the time passed after shell crossing. Note that since the point $A$ picks up a larger velocity toward the supernova, $\Delta L_{AB}$ is increasing.
+where $v_A$ and $v_B$ are the velocities picked up by points $A$ and $B$ after shell crossing and $t$ is the time passed after shell crossing. Note that since the point $A$ picks up a larger velocity toward the supernova, $\Delta L_{AB}$ is \emph{increasing}.
 
-The total velocities for point $B$ and $C$ has the same magnitudes but are pointing in slightly different directions. It is easy to work out the geometry to see that
+The total velocities for points $B$ and $C$ have the same magnitudes but are pointing in slightly different directions. It is easy to work out the geometry to see that
 \begin{eqnarray}
 	\Delta L_{BC} &=& -\left( \frac{ \delta M}{r_E} \sin \theta \right) t 
 	\\ \nonumber
 	&=& - \frac{\delta M}{r_E^2} d + \mathcal{O}(r_E^{-3})~.
 \end{eqnarray}
-Here $\theta\approx (d/r_E)$ is the angle between point $B$ and $C$ to the supernova. Since they both fall toward the supernova, they are getting closer to each other thus $\Delta L_{BC}$ is decreasing.
+Here $\theta\approx (d/r_E)$ is the angle between point $B$ and $C$ to the SN. Since they both fall toward the SN, they are getting closer to each other thus $\Delta L_{BC}$ is \emph{decreasing}\footnote{This is important; if the distance $\Delta L_{BC}$ was also increasing, since the magnitude of the increase is the same as $\Delta L_{AB}$, we would not see an effect since the photons in the interferometer arms would still have the same phase when they come back to point $B$.}.
 
-In summary, we have an interferometer whose one arm decreases in length while the other increases, resulting in a detectable change if the interference pattern. 
+In summary, we have an interferometer whose one arm decreases in length while the other increases, resulting in a detectable change in the interference pattern. 
 \begin{center}
 \begin{tabular}{| c | c |} 
 \hline
@@ -109,7 +109,7 @@ $\frac{\delta M d}{r_E^2} t$ & $ -\frac{\delta M d}{r_E^2} t$  \\
 \hline 
 \end{tabular}
 \end{center}
-Note that for the conventional memory effect, the signal is maximized when the interferometer is face-on to the source. In our case, a face-on interferometer would get zero signal, since both arms will be decreasing in length. Our signal is maximized by having an longitudinal arm, in this case $AB$.
+Note that for the conventional memory effect, the signal is maximized when the interferometer is face-on to the source. In our case, a face-on interferometer would get zero signal, since both arms will be decreasing in length. Our signal is maximized by having a longitudinal arm, in this case $AB$.
 
 %\section{Change in proper time}
 %\label{Ptime}
@@ -134,68 +134,69 @@ Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta
 h \sim \frac{\Delta L}{d} \sim \frac{\delta M t}{r_E^2}~.
 \label{eq-strain}
 \end{equation} 
-Since our strain grows linearly with time, we do not expect detections from ground based experiments. Since for those setups, the three points $A,B,C$ cannot remain in free fall long enough for the signal to build up. 
+Since our strain grows linearly with time, we do not expect detections from ground based experiments as for those setups the three points $A,B,C$ cannot remain in free fall for a long enough amount of time such that the signal builds up to an observable value. 
 
-If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point the sensitivity curve of a device crosses with a 45-degree line is the best chance our effect can be detected by such device. In all these estimation, we take $\delta M$ as a faction of solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
+If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point at which the sensitivity curve of a device crosses with a 45-degree line will give the best chance for our effect being detected. In all these estimations, we take $\delta M$ to be a faction of a solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
 
-For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sensitivity in strain $\sim 10^{-21}$. Using Eq.~(\ref{eq-strain}), we can solve for the distance to the supernova $r_E$ for our effect to be detectable.
+For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sensitivity in strain $\sim 10^{-21}$. Using Eq.~(\ref{eq-strain}), we can solve for the distance to the SN, $r_E$, for our effect to be detectable.
 \begin{eqnarray}
 	r_E & = &  \left(  \frac{\delta M}{h} t \right)^\frac{1}{2} \label{Meas}	\\
-	& = &  \left( \frac{1 km}{10^{-21}} \times 10^7 km \right)^\frac{1}{2} \approx 10^{14} km = 10 ly.
+	& = &  \left( \frac{1 \ km}{10^{-21}} \times 10^7 \ km \right)^\frac{1}{2} \approx 10^{14} \ km = 10 \ ly.
 \end{eqnarray}
-This is clearly too close. It was estimated that within 30 light-years, a spuernova will go off every hundred million years \cite{EllSch93}\footnote{And if that happens, it might kill us.}. By a na\"ive volume scaling, an explosion within 10 light-years only occurs every billion years.
+This is clearly too close. It has been estimated that only once in $10^8$ years will a SN go off within a distance of $30 \ ly$ \cite{EllSch93}.\footnote{And if that happens, it might kill us.} By a naive volume scaling, an explosion within 10 $ly$ only occurs once every billion years.
 
-If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. First of all, this frequency range does not have as many background signals from compact binaries, making it a much better device to measure our effect. The improved sensitivity gives a value for $r_E$ of $\sim 100 ly$. This is a factor of $10^3$ increase in the volume for detectable events, thus improves the expectation to one such in less a million years. That is unfortunately still a long shot.
+If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. First of all, this frequency range does not have as many background signals from compact binaries, making it a much better device to measure our effect. The improved sensitivity gives a value for $r_E$ of $\sim 100 \ ly$. This is a factor of $10^3$ increase in the volume for detectable events, thus improves the expectation of one SN that is within $10 \ ly$ to occur in less than a million years . That is unfortunately still a long shot.
 
 In this type of simple estimation, we cannot go lower in the frequency. The exact duration of the neutrino-shell passage is not known, but we do no expect it to be much less than a second. Thus for higher frequencies, the co-dimension-one delta function approximation breaks down, and the effect will be weaker than Eq.~(\ref{eq-strain}).
 
-Finally, we expect 2 to 3 supernova per century, and we can assume that the next supernova would be at a distance comparable to the Galactic diameter of $\sim 10^5 ly$. If we are going to measure such effect at $1 Hz$, Again using Eq.~(\ref{eq-strain}), we find
+Finally, we expect 2 to 3 SN per century in our galaxy and we can assume that the next SN would be at a distance comparable to the galactic diameter of $\sim 10^5 \ ly$. If we are going to measure such effect at $1 \ Hz$, Again using Eq.~(\ref{eq-strain}), we find
 \begin{equation}
 	h = \frac{ 1~km \times ~ (3\times10^8~m)}{(10^5~ly)^2}\sim 10^{-30}~.
 \end{equation}
-This requires six orders of magniude better than BBO and is not yet achievable by interferometers that are currently being planned. 
+This requires a measurement of the strain that is six orders of magnitude better than BBO and is not yet achievable by interferometers that are currently being planned. 
 
 \section{Observation with Pulsar Scintillation}
 \label{sec-scint}
 
-\onecolumngrid
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
-\caption{Geometry of the astrophysical interferometer formed by pulsar scintillemotry. Due to scattering or lensing, the image we see is actually an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the supernova, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
-\label{fig:4}
-\end{center}
-\end{figure}
-
-
 \twocolumngrid
 
-We learned from the previous section how difficult it is to measure the spacetime distortion. It is strongly suppressed by a factor of $r_E^{-2}$, which is proportional to the energy density of the shell when it reaches us. If we can have an interferometer much closer to the supernova, the signal will be larger.
+We learned from the previous section how difficult it is to measure the spacetime distortion. It is strongly suppressed by a factor of $r_E^{-2}$, which is proportional to the energy density of the shell when it reaches us. If we can have an interferometer much closer to the SN, the signal will be larger.
 
-In this final section we discuss a possibility to do just that. It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a supernova progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distort when it explodes. 
+In this final section we discuss a possibility to do just that. It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a SN progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distortion when it explodes. 
 
-The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a supernova explosion has been worked out in \cite{Olum:2013gza}. 
+The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a SN explosion has been worked out in \cite{Olum:2013gza}
 \begin{equation}
 	\Delta t = 2\delta M \left[ \ln \left(1 + \frac{t^2}{b^2} \right) - \frac{t^2}{b^2 + t^2} \right].
 \end{equation}
-Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the supernova. $t$ is the proper time on earth, with $t=0$ the time we directly observe the supernova explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
+Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the SN. $t$ is the proper time on earth, with $t=0$ the time we directly observe the SN explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
 
-When the separation between two light rays has a component in the radial direction from the supernova $\Delta b$, there will be a nonzero relative change between their path lengths.
+When the separation between two light rays has a component in the radial direction from the SN, $\Delta b$, there will be a nonzero relative change between their path lengths.
 \begin{equation}
 	(\Delta t|_b - \Delta t|_{b+\Delta b}) \approx 
 	\frac{\partial \Delta t}{\partial b} \Delta b 
 	= - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b~.
 	\label{eq-change}
 \end{equation}
-We can see that this effect grows from zero and approaches an asymptotic value,\begin{equation}
+We can see that this effect grows from zero and approaches an asymptotic value,
+\begin{equation}
 	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
 	\longrightarrow \frac{4\delta M \Delta b}{b}~,
 \end{equation}
 at a characteristic time scale given by $b$. 
 
-We estimate $b$ by assuming that the next SNe is somewhere near the galactic center. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10 ly \sim 10^{14}km$. $\delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic center. Scaling the frequency to $1GHz$ which is usually a good window to observe pulsar signals. We found that such scattering screen can produce images separated by $\delta b\sim 1000A.U. \sim 10^{10} km$. We again use $\delta M \sim 1 km$, and combining all these numbers we get $(\delta M b / b) \sim 1 m$. This is comparable to the wavelength at $1GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a supernova explosion, we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
-\ \\
+We estimate $b$ by assuming that the next SN is somewhere near the galactic center. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic center. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
+
+\onecolumngrid
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
+\caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
+\label{fig:4}
+\end{center}
+\end{figure}
+
+\twocolumngrid
 
 \acknowledgments
 
