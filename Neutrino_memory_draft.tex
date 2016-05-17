@@ -29,7 +29,7 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. Such measurements will allow us to obtain the total energy released by the supernova explosion in the form of neutrinos. We study the possibility to measure such an effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
+We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. Such a measurement will allow us to obtain the total energy released by a supernova explosion in the form of neutrinos. We study the possibility to measure such an effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
 \end{abstract}
 
 \maketitle
@@ -54,7 +54,7 @@ The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes perm
 
 In terms of the dynamics, a change in velocity is higher order than a change in distance. This however does not mean that our effect is harder to measure. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable whereas our effect does not and therefore it can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
 
-We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of its energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
+We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
 If we can utilize the thousands of pulsars forecasted by SKA \cite{MSPpopulation}, one of them might provide us with a good estimation of the total energy in the neutrino shell when the next SN explodes. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
@@ -69,7 +69,7 @@ We assume the geometry of the spacetime is governed by the SN and thus is parame
 \begin{equation}
 	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,
 \end{equation}
-where are working in units with $G = c =1$. After the shell of energy released from the SN has passed the $i$ index is replaced by $f$ to denote the ``final" metric with a greater mass. Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows,
+where are working in units with $G = c =1$. After the shell of energy released from the SN has passed the $i$ index is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows,
 
 \begin{equation}
 	\Sigma_\mu^{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).
@@ -83,7 +83,7 @@ The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1
 \begin{equation}
 	\zeta_\mu^{(f)} = \left( \left( 1 - \frac{2M_f}{r} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).
 \end{equation}
-Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{corrsing}} \right)^\frac{1}{2}$. Since this is a higher order correction it is not important here. $\delta M \equiv M_i - M_f$ and $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.
+Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{corrsing}} \right)^\frac{1}{2}$. Since this is a higher order correction it is not important here. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.
 %\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_E} + \frac{2d^2}{r_E^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}. 
 
  The relative velocity between a the ends of a horizontal interferometer, $A$ and $B$, that is in radial alignment with the SN as shown in figure \ref{fig:1} is given by
@@ -96,7 +96,7 @@ The total velocities for points $B$ and $C$ have the same magnitudes but are poi
 \begin{eqnarray}
 	\Delta L_{BC} &=& -\left( \frac{ \delta M}{r_E} \sin \theta \right) t 
 	\\ \nonumber
-	&=& - \frac{\delta M}{r_E^2} d + \mathcal{O}(r_E^{-3})~.
+	&=& - d \frac{\delta M}{r_E^2} t + \mathcal{O}(r_E^{-3})~.
 \end{eqnarray}
 Here $\theta\approx (d/r_E)$ is the angle between point $B$ and $C$ to the SN. Since they both fall toward the SN, they are getting closer to each other thus $\Delta L_{BC}$ is \emph{decreasing}\footnote{This is important; if the distance $\Delta L_{BC}$ was also increasing, since the magnitude of the increase is the same as $\Delta L_{AB}$, we would not see an effect since the photons in the interferometer arms would still have the same phase when they come back to point $B$.}.
 
@@ -184,7 +184,7 @@ We can see that this effect grows from zero and approaches an asymptotic value,
 \end{equation}
 at a characteristic time scale given by $b$. 
 
-We estimate $b$ by assuming that the next SN is somewhere near the galactic center. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic center. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
+We estimate $b$ by assuming that the next SN is somewhere near the galactic center. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic center. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
 
 \onecolumngrid
 
