@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Supernova energy measurement with longitudinal gravitational memory effect}
+\title{Supernova energy measurement in gravitational wave detectors}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -29,6 +29,7 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
+
 We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. Such a measurement will allow us to obtain the total energy released by a supernova explosion in the form of neutrinos. We study the possibility to measure such an effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
 \end{abstract}
 
@@ -40,8 +41,8 @@ The recent detection of gravitational waves \cite{GW1509} has proved that gravit
 
 \begin{figure}[b]
 \begin{center}
-\includegraphics[scale = 0.27]{intro.pdf}
-\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The velocities (represented by the black arrows) of the three points $A,B$ and $C$ are $v_A, v_B$ and $v_C$ respectively and they are all different since they cross the shell at different locations.}
+\includegraphics[scale = 0.27]{intro_new.pdf}
+\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
 \label{fig:1}
 \end{center}
 \end{figure}
@@ -56,30 +57,32 @@ In terms of the dynamics, a change in velocity is higher order than a change in 
 
 We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
-If we can utilize the thousands of pulsars forecasted by SKA \cite{MSPpopulation}, one of them might provide us with a good estimation of the total energy in the neutrino shell when the next SN explodes. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
+The SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a SN explosion to provide us with a good estimation of the total energy in the neutrino shell of the explosion. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
 The rest of the paper is organized as follows. In section \ref{RelV} we derive the change in velocities with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section \ref{sec-scint} discusses how an astrophysical interferometer formed by pulsar scintillometry can measure the same effect.
-
 
 \section{Change in relative velocity}
 \label{RelV}
 
-We assume the geometry of the spacetime is governed by the SN and thus is parametrised by the Schwarzschild metric. Before the SN explosion the geometry is
+We assume the geometry of the spacetime is governed by the SN progenitor star. We assume the star is not rotating very rapidly and thus the surrounding spactime is parametrised by the Schwarzschild metric,
 
 \begin{equation}
-	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,
+	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt_i^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,
 \end{equation}
-where are working in units with $G = c =1$. After the shell of energy released from the SN has passed the $i$ index is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows,
 
+where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the $i$ index used above to denote the ``initial" metric is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
 \begin{equation}
-	\Sigma_\mu^{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).
+	\Sigma_\mu^{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).	\label{sigma}
 \end{equation}
-We choose a coordinate chart in which the interferometer is initially at rest and is described by the following geodesic
-
+We choose a coordinate chart in which the interferometer points are initially at rest (denoted by the points $A,B,C$ in figure \ref{fig:1}) and is described by the following geodesic
 \begin{equation}
-	\zeta_\mu^{(i)} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, 0, 0, 0 \right).
+	\zeta_\mu^{(i)} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, 0, 0, 0 \right).	\label{zeta}
 \end{equation}
-The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed we expect $\zeta$ to have a velocity component. This can be found using the IJC, which states $g^{\mu \nu}_{(i)} \Sigma_\mu^{(i)} \zeta^{(i)}_\nu = g^{\mu \nu}_{(f)} \Sigma_\mu^{(f)} \zeta^{(f)}_\nu$. This gives the final vector for the interferometer
+The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points we expect $\zeta$ to have a velocity component. This can be found using the zeroth order IJC, 
+\begin{equation}
+	 g^{\mu \nu}_{(i)} \Sigma_\mu^{(i)} \zeta^{(i)}_\nu = g^{\mu \nu}_{(f)} \Sigma_\mu^{(f)} \zeta^{(f)}_\nu,	\label{0IJC}
+\end{equation}
+which comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer, to leading order,
 \begin{equation}
 	\zeta_\mu^{(f)} = \left( \left( 1 - \frac{2M_f}{r} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).
 \end{equation}
