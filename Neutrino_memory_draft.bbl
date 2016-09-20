@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{11}%
+\begin{thebibliography}{12}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -72,6 +72,15 @@
   {Thorne}},\ }\href {\doibase 10.1103/PhysRevD.45.520} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {45}},\
   \bibinfo {pages} {520} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Lorimer}}(2013)}]{MSPpopulation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
+  {{Lorimer}}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {Neutron
+  Stars and Pulsars: Challenges and Opportunities after 80 years}},\ }\href
+  {\doibase 10.1017/S1743921312023769} {\ \bibinfo {series} {IAU Symposium},\
+  \textbf {\bibinfo {volume} {291}},\ \bibinfo {pages} {237} (\bibinfo {year}
+  {2013})},\ \Eprint {http://arxiv.org/abs/1210.2746} {arXiv:1210.2746}
+  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Malek}\ \emph {et~al.}(2003)\citenamefont {Malek}
   \emph {et~al.}}]{SuperKSN}%
   \BibitemOpen
@@ -88,6 +97,16 @@
   {\bibinfo  {journal} {Nuovo Cim.}\ }\textbf {\bibinfo {volume} {B44S10}},\
   \bibinfo {pages} {1} (\bibinfo {year} {1966})}\BibitemShut {NoStop}%
 %%CITATION = NUCIA,B44S10,1;%%
+\bibitem [{\citenamefont {Kodwani}\ \emph {et~al.}(2016)\citenamefont
+  {Kodwani}, \citenamefont {Pen},\ and\ \citenamefont
+  {Yang}}]{PhysRevD.93.103006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Kodwani}}, \bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont {Pen}}, \
+  and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\ }\href
+  {\doibase 10.1103/PhysRevD.93.103006} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
+  {pages} {103006} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Moore}\ \emph {et~al.}(2015)\citenamefont {Moore},
   \citenamefont {Cole},\ and\ \citenamefont {Berry}}]{GWcurves}%
   \BibitemOpen
@@ -127,15 +146,6 @@
   {043005} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1305.3881}
   {arXiv:1305.3881 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1305.3881;%%
-\bibitem [{\citenamefont {{Lorimer}}(2013)}]{MSPpopulation}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
-  {{Lorimer}}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {Neutron
-  Stars and Pulsars: Challenges and Opportunities after 80 years}},\ }\href
-  {\doibase 10.1017/S1743921312023769} {\ \bibinfo {series} {IAU Symposium},\
-  \textbf {\bibinfo {volume} {291}},\ \bibinfo {pages} {237} (\bibinfo {year}
-  {2013})},\ \Eprint {http://arxiv.org/abs/1210.2746} {arXiv:1210.2746}
-  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bower}\ \emph {et~al.}(2014)\citenamefont {Bower},
   \citenamefont {Deller}, \citenamefont {Demorest}, \citenamefont {Brunthaler},
   \citenamefont {Eatough}, \citenamefont {Falcke}, \citenamefont {Kramer},
