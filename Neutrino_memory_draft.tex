@@ -72,19 +72,19 @@ We assume the geometry of the spacetime is governed by the SN progenitor star. W
 
 where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the $i$ index used above to denote the ``initial" metric is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
 \begin{equation}
-	\Sigma_\mu^{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).	\label{sigma}
+	\Sigma^\mu_{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).	\label{sigma}
 \end{equation}
 We choose a coordinate chart in which the interferometer points are initially at rest (denoted by the points $A,B,C$ in figure \ref{fig:1}) and is described by the following geodesic
 \begin{equation}
-	\zeta_\mu^{(i)} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, 0, 0, 0 \right).	\label{zeta}
+	\zeta^\mu_{(i)} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, 0, 0, 0 \right).	\label{zeta}
 \end{equation}
 The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points we expect $\zeta$ to have a velocity component. This can be found using the zeroth order IJC, 
 \begin{equation}
-	 g^{\mu \nu}_{(i)} \Sigma_\mu^{(i)} \zeta^{(i)}_\nu = g^{\mu \nu}_{(f)} \Sigma_\mu^{(f)} \zeta^{(f)}_\nu,	\label{0IJC}
+	 g_{\mu \nu} \Sigma^\mu_{(i)} \zeta_{(i)}^\nu = \hat{g}_{\mu \nu} \Sigma^\mu_{(f)} \zeta_{(f)}^\nu,	\label{0IJC}
 \end{equation}
-which comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer, to leading order,
+where $\hat{g}_{\mu \nu}$ represents the metric of the ``final" spacetime and $g_{\mu \nu}$ is the metric of the initial spacetime. This expression comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer, to leading order,
 \begin{equation}
-	\zeta_\mu^{(f)} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).
+	\zeta^\mu_{(f)} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).
 \end{equation}
 Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{corrsing}} \right)^\frac{1}{2}$. Since this is a higher order correction it is not important here. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.
 %\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_E} + \frac{2d^2}{r_E^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}. 
