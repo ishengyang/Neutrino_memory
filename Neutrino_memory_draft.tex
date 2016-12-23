@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Supernova energy measurement in gravitational wave detectors}
+\title{Gravitational memory of Neutrinos}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -65,7 +65,6 @@ The rest of the paper is organized as follows. In section \ref{RelV} we derive t
 \section{Change in relative velocity}
 \label{RelV}
 
-
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
@@ -74,11 +73,9 @@ The rest of the paper is organized as follows. In section \ref{RelV} we derive t
 \end{center}
 \end{figure}
 
-
-
 We assume the geometry of the spacetime is governed by the SN progenitor star. We assume the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric,
 \begin{equation}
-	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt_i^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,
+	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt_i^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,	\label{SCH}
 \end{equation}
 where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the $i$ index used above to denote the ``initial" metric is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
 \begin{equation}
@@ -96,62 +93,82 @@ where $\hat{g}_{\mu \nu}$ represents the metric of the ``final" spacetime and $g
 \begin{equation}
 	\zeta^\mu_{f} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).	\label{5}
 \end{equation}
-Note that $\frac{\delta M}{r_{crossing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{crossing}} \right)^\frac{1}{2}$. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.
-\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_E} + \frac{2d^2}{r_E^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}. 
+Note that $\frac{\delta M}{r_{crossing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{crossing}} \right)^\frac{1}{2}$. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_0} + \frac{2d^2}{r_0^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}
 
 \subsection{Distance change}
 
-We can combine the velocity change at each point with the acceleration at each point to calculate how the distance between the points changes. First lets consider the distance between the two points $A$ and $B$. The points are taken to have zero velocity at $t=0$. We can parametrize the trajectory of point $A$ as
+\subsubsection{The relationship between proper time and distance}\label{concept}
 
+The distance change is measured by an interferometer. The interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. To demonstrate this we consider the simple case shown in figure \ref{fig:3}. Two freely falling points $A$ and $B$ are in the gravitational field of an object with mass $M$. The two points have a separation $d$ between them at $T_0$. The distance of the first point from the mass $M$ is $R_0$. The trajectories of the two points (as shown in figure (\ref{fig:3})) are given by
 \begin{equation}
-	r_A(t)  = r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M t}{r_0} \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2}.
+	R_A(t) = R_0 - \frac{1}{2} \frac{M}{R_0^2} t^2,
 \end{equation}
 
-Similarly the trajectory of point $B$ is
+\begin{equation}
+	R_B(t) = R_0 - \frac{1}{2} \frac{M}{(R_0 + d)^2} t^2.
+\end{equation}
+The time at which the photon reaches $R_B$ is $T$. We can calculate $T$ using the metric in Eq (\ref{SCH}) with mass $M$. Setting $ds^2 = 0$ for the photons gives
 
 \begin{equation}
-	r_B(t) = r_0 + d - \frac{1}{2}\frac{M}{(r_0+d)^2}d^2 - \frac{1}{2} \frac{M- \delta M}{(r_0+d)^2} (t -d)^2 -\frac{\delta M}{r_0+d} \left( 1 - \frac{2(M -\delta M)}{r_0+d} \right)^\frac{1}{2}  (t-d) - \frac{M d}{(r_0+d)^2} (t -d).
+	\int^T_{T_0} \ dt = \int^{R_B}_{R_A} \ \left( 1 - \frac{2M}{r} \right)^{-1} dr 
 \end{equation}
+We take $\frac{M}{r_0^2}\ll 1$ and so we can approximate that $r$ doesn't change with time to do the integral,
 
-The first terms in this expression represents the distance at which the shell crosses. The next two terms represent the acceleration felt by point $B$ before and after shell crossing. The final line represents the velocity of $B$ before and after shell crossing. 
+\begin{equation}
+	T = R_B(T_0) - R_A(T_0) + 2M \ln \left( \frac{R_B(T_0) - 2M}{R_A(T_0) - 2M} \right).	\label{11}
+\end{equation}
+Note that there is some ambiguity over what time the $R$'s on the right hand side of Eq (\ref{11}) should be evaluated at. Looking ahead to the problem we will construct in the later section, we assume\footnote{Note that $T - T_0 \sim \mathcal{O}(d)$.} $T - T_0 \ll T_0$ and so to leading order we can evaluate the $R$'s at $T_0$. If we only keep leading order terms in Eq (\ref{11}), we can drop the log term as well.
 
-So we can compute the time, $t_1$, it takes for a photon, released at time $t$ after the shell has crossed, to go from $r_A$ to $r_B$. 
+\begin{equation}
+	T \approx d + \frac{1}{2} \frac{M}{(R_0 + d)^2} T_0^2 - \frac{1}{2} \frac{M}{R_0^2} T_0^2 = d + \mathcal{O}(R_0^{-3}).
+\end{equation}
+The proper time $\tau = \left( 1- \frac{2M}{r} \right)^\frac{1}{2} T$. Thus we see that for a weak gravitational field, $\tau$ is the distance $d$ to leading order. This shows that whenever we measure the proper time interval it takes for photons to travel a distance between two points, we are also measuring the distance between two points.  
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width =\textwidth, height = 12cm]{time_concept.pdf}
+\caption{Space-time diagram showing two points free falling towards a mass $M$. A photon is emitted from the point on the inside at time $T_0$ and is received at the outer point at time $T$. The dark blue lines parametrize the trajectories of the two points and the orange line represents the trajectory of the photon. }
+\label{fig:3}
+\end{center}
+\end{figure}
+
+\subsubsection{Full interferometric calculation}
+
+Now lets move on the more realistic case of the interferometer shown in figure \ref{fig:2}. We parametrize the trajectory of each point in a piecewise form. For point $A$ we have
 
 \begin{eqnarray}
-	t_1 & = & d + \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 + \frac{\delta M}{r_0} \left( 1 - \frac{2(M-\delta M)}{r_0} \right)^\frac{1}{2} t - \frac{1}{2} \frac{M}{(r_0+d)^2} d^2 - \frac{1}{2} \frac{M- \delta M}{(r_0+d)^2} (t+t_1-d)^2 - \frac{\delta M}{r_0 + d} (t+t_1-d)	\nonumber	\\
-	& - & \frac{M d}{r_0^2} (t + t_1 -d)	\nonumber	\\
-	& = & d - \frac{1}{2} \frac{Md^2}{r_0^2} - \frac{M - \delta M}{r_0^2} d t + \mathcal{O}(r_0^{-3})
+	r_A(t)  & = & r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2, \hspace{85mm} (t \leq 0)	\nonumber	\\
+	&  = & r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M t}{r_0} \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2}. \hspace{30mm} (t>0)	\label{rA}
 \end{eqnarray}
-
-where we used $t_1 = d + \mathcal{O}(r_0^{-1})$. Similarly we calculate the time, $t_2$, it takes for a photon to go from $r_B$ to $r_A$. 
+$t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change coming from the shell crossing. The trajectory of point $B$ is given by.
 
 \begin{eqnarray}
-	t_2 &  = & d + \frac{1}{2} \frac{M- \delta M}{r_0^2} (t + t_1 + t_2)^2 + \frac{\delta M}{r_0} \left( 1 - \frac{2(M- \delta M)}{r_0} \right)^\frac{1}{2} (t + t_1 + t_2) -  \frac{1}{2}\frac{M- \delta M}{(r_0 + d)^2} (t + t_1 - d)^2 \nonumber	\\
-	& - & \frac{\delta M}{r_0 + d} \left( 1 - \frac{2(M- \delta M)}{r_0 + d} \right)^\frac{1}{2} (t + t_1 - d) - \frac{Md}{(r_0+d)^2} (t + t_1 -d )	\nonumber	\\
-	& = & d + \frac{2 \delta M d}{r_0} + \frac{2 \delta M^2 d}{r_0^2} + 2 \frac{M- \delta M}{r_0^2} d^2 - 2 \frac{\delta M(M-\delta M) d}{r_0^2} +  \frac{M - \delta M}{r_0^2} dt
+	r_B(t) & = & r_0 + d - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2,  \hspace{104mm}	(t \leq d) \nonumber	\\
+	& = & r_0 +d - \frac{1}{2} \frac{M}{(r_0 + d)^2}d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - d)^2 - \frac{1}{2} \frac{\delta M}{r_0 + d}  \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2} (t-d). \hspace{10mm} (t>d)	\label{rB}
 \end{eqnarray}
+For $t <d$ there is just the acceleration of the point towards mass $M$. After $t>d$ the shell has crossed and now there is a change in distance in the time $d$ (to leading order the shell takes time $d$ to go from $r_0$ to $r_0 + d$) that the point is accelerating towards $M$. This is the second term in the expression. The other two terms correspond to the acceleration and velocity, respectively, of the point towards mass $M-\delta M$. Using these trajectories we can calculate how the distance between points $A$ and $B$ changes as a function of time. 
+
+ A photon is released at time $t$ after the shell has crossed point $A$. Using Eqs (\ref{rA}, \ref{rB}) we can calculate the time, $\bar{\tau}$, it takes for this photon to go to point $B$ and come back to point $A$. The full calculation is presented in the appendix. The leading order result is
  
-Lets convert these coordinate times into proper times, 
-
-\begin{eqnarray}
-	t_1' & = & \left( 1 - \frac{2(M- \delta M)}{r_0} \right) t_1	\nonumber	\\
-	& = & d - \frac{M - \delta M}{r_0} d - \frac{1}{2} \frac{Md^2}{r_0^2} - \frac{M- \delta M}{r_0^2} dt	 + \mathcal{O}(r_0^{-3})
-\end{eqnarray}
-
-and for $t_2'$ we get
-
-\begin{eqnarray}
-	t_2' & = & \left( 1 - \frac{2(M- \delta M)}{r_0 + d} \right) t_2	\nonumber	\\
-	& = & d + \frac{2 \delta M d}{r_0} + \frac{2 \delta M^2 d}{r_0^2} + \frac{2(M- \delta M) d^2}{r_0^2} + \frac{M - \delta M}{r_0^2} dt - \frac{2(M- \delta M) d}{r_0} - \frac{6 \delta M( M - \delta M) d}{r_0^2} + \frac{2 (M - \delta M) d^2}{r_0^2} + \mathcal{O}(r_0^{-3})	\nonumber	\\
-\end{eqnarray}
-
-giving the total travel time
+ \begin{equation}
+	 \bar{\tau} = 2d - \frac{3 (M - \delta M) d}{r_0} + \frac{2 \delta M d}{r_0}.
+\end{equation}
+Note that there is no time dependence in this expression. In fact, the time dependence will come in at $\mathcal{O}(r_0^{-3})$ in this case.\footnote{See appendix where we show that there is no time dependence at second order.} As shown in section \ref{concept} this expression for $\tau$ will the leading order distance between $A$ and $B$. The change in distance after shell crossing is 
 
 \begin{equation}
-	t_1' + t_2' = 2d - \frac{3 (M - \delta M) d}{r_0} + \frac{2 \delta M d}{r_0} - \frac{1}{2} \frac{M d^2}{r_0^2} + \frac{2 \delta M^2 d}{r_0^2} + \frac{4 (M-\delta M) d^2}{r_0^2} - \frac{6 \delta M (M- \delta M) d}{r_0^2}
+	\Delta L_{AB} \equiv \bar{\tau} - 2d = - \frac{3 (M - \delta M) d}{r_0} + \frac{2 \delta M d}{r_0}.
 \end{equation}
+Since this is a permanent change in the distance - it is nothing but a memory effect. Next we show an effect which is much more interesting since it grows with time.
+\\
+\\
+The interferometer arm that goes from $B$ to $C$ will see the distance between these two points change. In fact, this distance is much simpler to calculate. The points $B$ and $C$ will feel the same acceleration to $M$ to leading order and so we can simply look at the change in velocities due to shell crossing. The velocities for points $B$, $v_B$, and $C$, $v_C$, have the same magnitudes to leading order but are pointing in slightly different directions. From the geometry of figure \ref{fig:1} we see that the relative change in velocity between the two points along the vertical direction will be $v_C \sin \theta$ where $\sin \theta \approx d/r_0$. The distance change between the two points, $\Delta L_{BC}$, is therefore given by 
 
-so we see there is no time dependence. 
+\begin{eqnarray}
+	\Delta L_{BC} &=& -\left( \frac{ \delta M}{r_0 + d} \left( 1 - \frac{2M}{r_0+d} \right)^\frac{1}{2}\sin \theta \right) t 
+	\nonumber \\
+	&=& - d \frac{\delta M}{r_0^2} t + \mathcal{O}(r_0^{-3})~.
+\end{eqnarray}
+Since they both fall toward the SN, they are getting closer to each other thus $\Delta L_{BC}$ is \emph{decreasing}. Thus we have found a memory effect that increases with time. This effect is suppressed compared to $\Delta L_{AB}$ by a factor of $r_0^{-1}$ but since it grows with time there will be times for which this effect will be dominant.
 
 %
 %\subsection{The effect of change in velocity on photons}
@@ -399,9 +416,49 @@ We estimate $b$ by assuming that the next SN is somewhere near the galactic cent
 \acknowledgments
 
 This work is supported by the Canadian Government through the Canadian Institute for Advance Research and Industry Canada, and by Province of Ontario through the Ministry of Research and Innovation.
-%
-%\appendix
-%
+
+\appendix
+
+\section{Proper time for a photon going from point A to B and coming back}
+
+In this calculation we first calculate the time, $t_1$, it takes for the photon released at time $t$ from point $A$ to reach point $B$. Then we calculate the time, $t_2$, it takes for the photon to come back to point $A$. The quantities are clearly defined in figure \ref{fig:2}. The final result is obtained by adding these times and converting to proper time. 
+
+\begin{eqnarray}
+	t_1 & = & d + \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 + \frac{\delta M}{r_0} \left( 1 - \frac{2(M-\delta M)}{r_0} \right)^\frac{1}{2} t - \frac{1}{2} \frac{M}{(r_0+d)^2} d^2 - \frac{1}{2} \frac{M- \delta M}{(r_0+d)^2} (t+t_1-d)^2 - \frac{\delta M}{r_0 + d} (t+t_1-d)	\nonumber	\\
+	& - & \frac{M d}{r_0^2} (t + t_1 -d)	\nonumber	\\
+	& = & d - \frac{1}{2} \frac{Md^2}{r_0^2} - \frac{M - \delta M}{r_0^2} d t + \mathcal{O}(r_0^{-3})
+\end{eqnarray}
+
+where we used $t_1 = d + \mathcal{O}(r_0^{-1})$. Similarly we calculate the time, $t_2$, it takes for a photon to go from $r_B$ to $r_A$. 
+
+\begin{eqnarray}
+	t_2 &  = & d + \frac{1}{2} \frac{M- \delta M}{r_0^2} (t + t_1 + t_2)^2 + \frac{\delta M}{r_0} \left( 1 - \frac{2(M- \delta M)}{r_0} \right)^\frac{1}{2} (t + t_1 + t_2) -  \frac{1}{2}\frac{M- \delta M}{(r_0 + d)^2} (t + t_1 - d)^2 \nonumber	\\
+	& - & \frac{\delta M}{r_0 + d} \left( 1 - \frac{2(M- \delta M)}{r_0 + d} \right)^\frac{1}{2} (t + t_1 - d) - \frac{Md}{(r_0+d)^2} (t + t_1 -d )	\nonumber	\\
+	& = & d + \frac{2 \delta M d}{r_0} + \frac{2 \delta M^2 d}{r_0^2} + 2 \frac{M- \delta M}{r_0^2} d^2 - 2 \frac{\delta M(M-\delta M) d}{r_0^2} +  \frac{M - \delta M}{r_0^2} dt + \mathcal{O}(r_0^{-3})
+\end{eqnarray}
+ 
+Lets convert these coordinate times into proper times, 
+
+\begin{eqnarray}
+	t_1' & = & \left( 1 - \frac{2(M- \delta M)}{r_0} \right) t_1	\nonumber	\\
+	& = & d - \frac{M - \delta M}{r_0} d - \frac{1}{2} \frac{Md^2}{r_0^2} - \frac{M- \delta M}{r_0^2} dt	 + \mathcal{O}(r_0^{-3})
+\end{eqnarray}
+
+and for $t_2'$ we get
+
+\begin{eqnarray}
+	t_2' & = & \left( 1 - \frac{2(M- \delta M)}{r_0 + d} \right) t_2	\nonumber	\\
+	& = & d + \frac{2 \delta M d}{r_0} + \frac{2 \delta M^2 d}{r_0^2} + \frac{2(M- \delta M) d^2}{r_0^2} + \frac{M - \delta M}{r_0^2} dt - \frac{2(M- \delta M) d}{r_0} - \frac{6 \delta M( M - \delta M) d}{r_0^2} + \frac{2 (M - \delta M) d^2}{r_0^2} + \mathcal{O}(r_0^{-3})	\nonumber	\\
+\end{eqnarray}
+
+giving the total travel time
+
+\begin{equation}
+	\bar{\tau} \equiv t_1' + t_2' = 2d - \frac{3 (M - \delta M) d}{r_0} + \frac{2 \delta M d}{r_0} - \frac{1}{2} \frac{M d^2}{r_0^2} + \frac{2 \delta M^2 d}{r_0^2} + \frac{4 (M-\delta M) d^2}{r_0^2} - \frac{6 \delta M (M- \delta M) d}{r_0^2} + \mathcal{O}(r_0^{-3})
+\end{equation}
+
+so we see there is no time dependence. 
+
 %\section{Full calculation change in proper time}
 %
 %We would expect that the any difference in proper times would appear at $\mathcal{O}(r_E^{-2})$ thus all quantities are expanded to this order in the calculation. 
