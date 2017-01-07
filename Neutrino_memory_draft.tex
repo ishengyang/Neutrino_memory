@@ -97,30 +97,31 @@ Note that $\frac{\delta M}{r_{crossing}}$ is a coordinate velocity and to conver
 
 \subsection{The relationship between proper time and distance}\label{concept}
 
-The distance change is measured by an interferometer. The interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. To demonstrate this we consider the simple case shown in figure \ref{fig:3}. Two freely falling points $A$ and $B$ are in the gravitational field of an object with mass $M$. The two points have a separation $d$ between them at $T_0$. The distance of the first point from the mass $M$ is $R_0$. The trajectories of the two points (as shown in figure (\ref{fig:3})) are given by
+The distance change is measured by an interferometer. The interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. To demonstrate this we consider the simple case shown in figure \ref{fig:3}. Two freely falling points $A$ and $B$ are in the gravitational field of an object with mass $M$. The initial velocity of the points is set to zero. Thus, the only change in $R$ will come from the acceleration that the points feel towards the mass. The distance of the first point from the mass $M$ is $R_0$ and the separation between the two points is $d$ initially. The trajectories of the two points (as shown in figure (\ref{fig:3})) are given by
 \begin{equation}
 	R_A(t) = R_0 - \frac{1}{2} \frac{M}{R_0^2} t^2,
 \end{equation}
 
 \begin{equation}
-	R_B(t) = R_0 - \frac{1}{2} \frac{M}{(R_0 + d)^2} t^2.
+	R_B(t) = R_0 +d - \frac{1}{2} \frac{M}{(R_0 + d)^2} t^2.
 \end{equation}
-The time at which the photon reaches $R_B$ is $T$. We can calculate $T$ using the metric in Eq (\ref{SCH}) with mass $M$. Setting $ds^2 = 0$ for the photons gives
+
+At time $t = T_0$ a photon is emitted from point $A$ and reaches point $B$ at time $t = T$. We can calculate the time interval, $T-T_0$, using the metric in Eq (\ref{SCH}) with mass $M$. Setting $ds^2 = 0$ for the photons gives
 
 \begin{equation}
 	\int^T_{T_0} \ dt = \int^{R_B}_{R_A} \ \left( 1 - \frac{2M}{r} \right)^{-1} dr 
 \end{equation}
-We take $\frac{M}{r_0^2}\ll 1$ and so we can approximate that $r$ doesn't change with time to do the integral,
+We take $\frac{M}{R_0^2}\ll 1$ and so we assume that $r$ doesn't change with time to do the integral,
 
 \begin{equation}
-	T = R_B(T_0) - R_A(T_0) + 2M \ln \left( \frac{R_B(T_0) - 2M}{R_A(T_0) - 2M} \right).	\label{11}
+	T-T_0 = R_B(T_0) - R_A(T_0) + 2M \ln \left( \frac{R_B(T_0) - 2M}{R_A(T_0) - 2M} \right).	\label{11}
 \end{equation}
 Note that there is some ambiguity over what time the $R$'s on the right hand side of Eq (\ref{11}) should be evaluated at. Looking ahead to the problem we will construct in the later section, we assume\footnote{Note that $T - T_0 \sim \mathcal{O}(d)$.} $T - T_0 \ll T_0$ and so to leading order we can evaluate the $R$'s at $T_0$. If we only keep leading order terms in Eq (\ref{11}), we can drop the log term as well.
 
 \begin{equation}
-	T \approx d + \frac{1}{2} \frac{M}{(R_0 + d)^2} T_0^2 - \frac{1}{2} \frac{M}{R_0^2} T_0^2 = d + \mathcal{O}(R_0^{-3}).
+	T - T_0 \approx d + \frac{1}{2} \frac{M}{(R_0 + d)^2} T_0^2 - \frac{1}{2} \frac{M}{R_0^2} T_0^2 = d + \mathcal{O}(R_0^{-3}).
 \end{equation}
-The proper time $\tau = \left( 1- \frac{2M}{r} \right)^\frac{1}{2} T$. Thus we see that for a weak gravitational field, $\tau$ is the distance $d$ to leading order. This shows that whenever we measure the proper time interval it takes for photons to travel a distance between two points, we are also measuring the distance between two points.  
+The proper time $\tau = \left( 1- \frac{2M}{r} \right)^\frac{1}{2} (T-T_0)$. Thus we see that for a weak gravitational field, $\tau$ is the distance $d$ to leading order. This shows that whenever we measure the proper time interval it takes for photons to travel a distance between two points, we are also measuring the distance between two points.  
 
 \begin{figure}[h]
 \begin{center}
@@ -132,17 +133,17 @@ The proper time $\tau = \left( 1- \frac{2M}{r} \right)^\frac{1}{2} T$. Thus we s
 
 \subsection{Full interferometric calculation}
 
-Now lets move on the more realistic case of the interferometer shown in figure \ref{fig:2}. We parametrize the trajectory of each point in a piecewise form. For point $A$ we have
+Now lets move on to the more realistic case of the interferometer shown in figure \ref{fig:2}. We parametrize the trajectory of each point in a piecewise form. For point $A$ we have
 
 \begin{eqnarray}
 	r_A(t)  & = & r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2, \hspace{85mm} (t \leq 0)	\nonumber	\\
 	&  = & r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M t}{r_0} \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2}. \hspace{30mm} (t>0)	\label{rA}
 \end{eqnarray}
-$t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change coming from the shell crossing. The trajectory of point $B$ is given by.
+$t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ we assume there is no velocity and the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change coming from the shell crossing. In principle the $r_0$ on the RHS of Eq (\ref{rA}) should be $r_A(t)$ however we know $r_A(t) = r_0 + \mathcal{O}(M/r_0)$. Thus the effect of replacing $r_0$ with $r_A(t)$ will not affect the leading order answer. The trajectory of point $B$ is given by
 
 \begin{eqnarray}
 	r_B(t) & = & r_0 + d - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2,  \hspace{73mm}	(t \leq d) \nonumber	\\
-	& = & r_0 +d - \frac{1}{2} \frac{M}{(r_0 + d)^2}d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - d)^2 \nonumber	\\
+	& = & r_0 +d - \frac{1}{2} \frac{M}{(r_0 + d)^2}d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - d)^2, \nonumber	\\
 	& - & \frac{1}{2} \frac{\delta M}{r_0 + d}  \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2} (t-d) - \frac{Md}{r_0^2}(t-d). \hspace{30mm} (t>d)	\label{rB}
 \end{eqnarray}
 For $t <d$ there is just the acceleration of the point towards mass $M$. After $t>d$ the shell has crossed and now there is a change in distance in the time $d$ (to leading order the shell takes time $d$ to go from $r_0$ to $r_0 + d$) that the point is accelerating towards $M$. This is the second term in the expression. The next term corresponds to the acceleration of the point towards mass $M-\delta M$. The next line contains the velocity terms for this point. The first term is the term that comes from the IJC. The second term is the velocity picked up by this point in the time the shell reaches it. Using these trajectories we can calculate how the distance between points $A$ and $B$ changes as a function of time. 
