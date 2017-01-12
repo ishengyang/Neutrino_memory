@@ -60,7 +60,43 @@ We will present a simple and natural occurrence of this effect. During a superno
 
 The SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a SN explosion to provide us with a good estimation of the total energy in the neutrino shell of the explosion. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
-The rest of the paper is organized as follows. In section \ref{RelV} we derive the change in velocities with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section \ref{sec-scint} discusses how an astrophysical interferometer formed by pulsar scintillometry can measure the same effect.
+The rest of the paper is organized as follows. In \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a SNe. In section \ref{RelV} we derive the change in velocities caused by shell crossing with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
+
+\section{Memory effect in Pulsar Scintillation}
+\label{sec-scint}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
+\caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
+\label{fig:4}
+\end{center}
+\end{figure}
+
+It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a SN progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distortion when it explodes. 
+
+The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a SN explosion has been worked out in \cite{Olum:2013gza}
+\begin{equation}
+	\Delta t = 2\delta M \left[ \ln \left(1 + \frac{t^2}{b^2} \right) - \frac{t^2}{b^2 + t^2} \right].
+\end{equation}
+Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the SN. $t$ is the proper time on earth, with $t=0$ the time we directly observe the SN explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
+
+When the separation between two light rays has a component in the radial direction from the SN, $\Delta b$, there will be a nonzero relative change between their path lengths.
+\begin{equation}
+	(\Delta t|_b - \Delta t|_{b+\Delta b}) \approx 
+	\frac{\partial \Delta t}{\partial b} \Delta b 
+	= - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b~.
+	\label{eq-change}
+\end{equation}
+We can see that this effect grows from zero and approaches an asymptotic value,
+\begin{equation}
+	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
+	\longrightarrow \frac{4\delta M \Delta b}{b}~,
+\end{equation}
+at a characteristic time scale given by $b$. This result can be obtained by calculating the change in time 
+
+We estimate $b$ by assuming that the next SN is somewhere near the galactic centre. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic centre. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}). 
+
 
 \section{Change in relative velocity}
 \label{RelV}
@@ -69,11 +105,10 @@ The rest of the paper is organized as follows. In section \ref{RelV} we derive t
 \begin{center}
 \includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
 \caption{Schematic of a spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell.}
-\label{fig:2}
+\label{calculation}
 \end{center}
 \end{figure}
-
-We assume the geometry of the spacetime is governed by the SN progenitor star. We assume the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric,
+In this section we discuss how this effect can be also seen in traditional interferometers such as LIGO. We assume the geometry of the spacetime is governed by the SN progenitor star. We assume the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric,
 \begin{equation}
 	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt_i^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,	\label{SCH}
 \end{equation}
@@ -81,84 +116,101 @@ where are working in units with $G = c =1$. After the star explodes, it emits a 
 \begin{equation}
 	\Sigma^\mu_{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).	\label{sigma}
 \end{equation}
-We choose a coordinate chart in which the interferometer points are initially at rest (denoted by the points $A,B,C$ in figure \ref{fig:1}) and are described by the following geodesic
+Since we expect the interferometer points (denoted by the points $A,B,C$ in figure \ref{fig:1}) to be very far for the massive object we assume they have a small velocity\footnote{We assume $v_i^2 = 0$.} $v_{i}$ and are described by the following geodesic in either metric
 \begin{equation}
-	\zeta^\mu_{i} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, 0, 0, 0 \right).	\label{zeta}
+	\zeta^\mu_{i} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, v_{i}, 0, 0 \right).	\label{zeta}
 \end{equation}
-The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points we expect $\zeta$ to have a velocity component. This can be found using the IJC, 
+The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points the velocity of the interferometer points will change from $v_i$ to $v_f$. Given $v_i$, we can calculate $v_f$ using the IJC, 
 \begin{equation}
-	 g_{\mu \nu} \Sigma^\mu_{(i)} \zeta_{(i)}^\nu = \hat{g}_{\mu \nu} \Sigma^\mu_{(f)} \zeta_{(f)}^\nu,	\label{0IJC}
+	 g_{\mu \nu} \Sigma^\mu_{i} \zeta_{i}^\nu = \hat{g}_{\mu \nu} \Sigma^\mu_{f} \zeta_{f}^\nu,	\label{0IJC}
 \end{equation}
 where $\hat{g}_{\mu \nu}$ represents the metric of the ``final" spacetime and $g_{\mu \nu}$ is the metric of the initial spacetime. This expression comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer, to leading order,
 \begin{equation}
-	\zeta^\mu_{f} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).	\label{5}
+	\zeta^\mu_{f} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, v_i - \frac{\delta M}{r_{crossing}}, 0, 0 \right).	\label{5}
 \end{equation}
-Note that $\frac{\delta M}{r_{crossing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{crossing}} \right)^\frac{1}{2}$. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $\approx r_0 + d$ as well.\footnote{The exact expression is $r_0 \left( 1 + \frac{2d}{r_0} + \frac{2d^2}{r_0^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}
+Thus $v_f = v_i - \frac{\delta M}{r_{crossing}}$. Note that $\frac{\delta M}{r_{crossing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{crossing}} \right)^\frac{1}{2}$. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $r_0 + d + \mathcal{O}(d/r_0)$.
+%
+%\subsection{The relationship between proper time and distance}\label{conceptsec}
+%
+%The distance change is measured by an interferometer. The interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. To demonstrate this we consider the simple case shown in figure \ref{fig:3}. Two freely falling points $A$ and $B$ are in the gravitational field of an object with mass $M$. The initial velocity of the points is set to zero. Thus, the only change in $R$ will come from the acceleration that the points feel towards the mass. The distance of the first point from the mass $M$ is $R_0$ and the separation between the two points is $d$ initially. The trajectories of the two points (as shown in figure (\ref{fig:3})) are given by
+%\begin{equation}
+%	R_A(t) = R_0 - \frac{1}{2} \frac{M}{R_0^2} t^2,
+%\end{equation}
+%
+%\begin{equation}
+%	R_B(t) = R_0 +d - \frac{1}{2} \frac{M}{(R_0 + d)^2} t^2.
+%\end{equation}
+%
+%At time $t = T_0$ a photon is emitted from point $A$ and reaches point $B$ at time $t = T$. We can calculate the time interval, $T-T_0$, using the metric in Eq (\ref{SCH}) with mass $M$. Setting $ds^2 = 0$ for the photons gives
+%\begin{equation}
+%	T-T_0 = (R_B(T_0 + d) - R_A(T_0))\left(1 - \frac{2M}{R_0} \right)^{-1}.	\label{11}
+%\end{equation}
+%
+%Here we have assumed $M/R_0 \ll 1$. Note that $R_B$ is evaluated at time $T_0 + d$ since to leading order we know the time taken to go from $r_A$ to $r_B$ is $d$. We can convert the coordinate time interval $T- T_0$ into a proper time interval $\Delta \tau_0$ 
+%
+%\begin{equation}
+%	\Delta \tau_0 = \left( 1 - \frac{2M}{r_0} \right)^{-\frac{1}{2}} (R_B(T_0 + d) - R_A(T_0)) = d + \mathcal{O} (M/R_0)	 \label{concept}
+%\end{equation}
+%Thus we see that for a weak gravitational field, $\tau$ is the distance $d$ to leading order. This shows that whenever we measure the proper time interval it takes for photons to travel a distance between two points, we are also measuring the distance between two points.  
+%
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width =\textwidth, height = 12cm]{time_concept.pdf}
+%\caption{Space-time diagram showing two points free falling towards a mass $M$. A photon is emitted from the point on the inside at time $T_0$ and is received at the outer point at time $T$. The dark blue lines parametrize the trajectories of the two points and the orange line represents the trajectory of the photon. }
+%\label{fig:3}
+%\end{center}
+%\end{figure}
 
-\subsection{The relationship between proper time and distance}\label{concept}
+\section{Full interferometric calculation}
 
-The distance change is measured by an interferometer. The interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. To demonstrate this we consider the simple case shown in figure \ref{fig:3}. Two freely falling points $A$ and $B$ are in the gravitational field of an object with mass $M$. The initial velocity of the points is set to zero. Thus, the only change in $R$ will come from the acceleration that the points feel towards the mass. The distance of the first point from the mass $M$ is $R_0$ and the separation between the two points is $d$ initially. The trajectories of the two points (as shown in figure (\ref{fig:3})) are given by
+Distance change between two points can be measured by an interferometer. An interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. In this section we calculate how an interferometer will measure a distance change in its arms lengths when a shell of matter crosses it. We conisder points $A$, $B$ and $C$ in figure \ref{fig:1} as the ends of the arms of the interferometer. We parametrize the trajectories of the points in a piecewise form. For point $A$ we have
+
 \begin{equation}
-	R_A(t) = R_0 - \frac{1}{2} \frac{M}{R_0^2} t^2,
+	r_A(t)  = \begin{cases} r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2 & (t \leq 0), 	\\
+	 r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M t}{r_0} \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2} & (t>0).
+	 \end{cases}	\label{rA}
 \end{equation}
-
-\begin{equation}
-	R_B(t) = R_0 +d - \frac{1}{2} \frac{M}{(R_0 + d)^2} t^2.
-\end{equation}
-
-At time $t = T_0$ a photon is emitted from point $A$ and reaches point $B$ at time $t = T$. We can calculate the time interval, $T-T_0$, using the metric in Eq (\ref{SCH}) with mass $M$. Setting $ds^2 = 0$ for the photons gives
-
-\begin{equation}
-	\int^T_{T_0} \ dt = \int^{R_B}_{R_A} \ \left( 1 - \frac{2M}{r} \right)^{-1} dr 
-\end{equation}
-We take $\frac{M}{R_0^2}\ll 1$ and so we assume that $r$ doesn't change with time to do the integral,
-
-\begin{equation}
-	T-T_0 = R_B(T_0) - R_A(T_0) + 2M \ln \left( \frac{R_B(T_0) - 2M}{R_A(T_0) - 2M} \right).	\label{11}
-\end{equation}
-Note that there is some ambiguity over what time the $R$'s on the right hand side of Eq (\ref{11}) should be evaluated at. Looking ahead to the problem we will construct in the later section, we assume\footnote{Note that $T - T_0 \sim \mathcal{O}(d)$.} $T - T_0 \ll T_0$ and so to leading order we can evaluate the $R$'s at $T_0$. If we only keep leading order terms in Eq (\ref{11}), we can drop the log term as well.
-
-\begin{equation}
-	T - T_0 \approx d + \frac{1}{2} \frac{M}{(R_0 + d)^2} T_0^2 - \frac{1}{2} \frac{M}{R_0^2} T_0^2 = d + \mathcal{O}(R_0^{-3}).
-\end{equation}
-The proper time $\tau = \left( 1- \frac{2M}{r} \right)^\frac{1}{2} (T-T_0)$. Thus we see that for a weak gravitational field, $\tau$ is the distance $d$ to leading order. This shows that whenever we measure the proper time interval it takes for photons to travel a distance between two points, we are also measuring the distance between two points.  
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width =\textwidth, height = 12cm]{time_concept.pdf}
-\caption{Space-time diagram showing two points free falling towards a mass $M$. A photon is emitted from the point on the inside at time $T_0$ and is received at the outer point at time $T$. The dark blue lines parametrize the trajectories of the two points and the orange line represents the trajectory of the photon. }
-\label{fig:3}
-\end{center}
-\end{figure}
-
-\subsection{Full interferometric calculation}
-
-Now lets move on to the more realistic case of the interferometer shown in figure \ref{fig:2}. We parametrize the trajectory of each point in a piecewise form. For point $A$ we have
-
-\begin{eqnarray}
-	r_A(t)  & = & r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2, \hspace{85mm} (t \leq 0)	\nonumber	\\
-	&  = & r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M t}{r_0} \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2}. \hspace{30mm} (t>0)	\label{rA}
-\end{eqnarray}
 $t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ we assume there is no velocity and the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change coming from the shell crossing. In principle the $r_0$ on the RHS of Eq (\ref{rA}) should be $r_A(t)$ however we know $r_A(t) = r_0 + \mathcal{O}(M/r_0)$. Thus the effect of replacing $r_0$ with $r_A(t)$ will not affect the leading order answer. The trajectory of point $B$ is given by
 
-\begin{eqnarray}
-	r_B(t) & = & r_0 + d - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2,  \hspace{73mm}	(t \leq d) \nonumber	\\
-	& = & r_0 +d - \frac{1}{2} \frac{M}{(r_0 + d)^2}d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - d)^2, \nonumber	\\
-	& - & \frac{1}{2} \frac{\delta M}{r_0 + d}  \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2} (t-d) - \frac{Md}{r_0^2}(t-d). \hspace{30mm} (t>d)	\label{rB}
-\end{eqnarray}
-For $t <d$ there is just the acceleration of the point towards mass $M$. After $t>d$ the shell has crossed and now there is a change in distance in the time $d$ (to leading order the shell takes time $d$ to go from $r_0$ to $r_0 + d$) that the point is accelerating towards $M$. This is the second term in the expression. The next term corresponds to the acceleration of the point towards mass $M-\delta M$. The next line contains the velocity terms for this point. The first term is the term that comes from the IJC. The second term is the velocity picked up by this point in the time the shell reaches it. Using these trajectories we can calculate how the distance between points $A$ and $B$ changes as a function of time. 
-
- A photon is released at time $t$ after the shell has crossed point $A$. Using Eqs (\ref{rA}, \ref{rB}) we can calculate the time, $\bar{\tau}$, it takes for this photon to go to point $B$ and come back to point $A$. The full calculation is presented in the appendix. The leading order result is
- 
- \begin{equation}
-	 \bar{\tau} = 2d \left( 1 + \frac{\delta M}{r_0} - \frac{M - \delta M}{r_0} \right)
+\begin{equation}
+	r_B(t) = \begin{cases} (r_0 + d)- \frac{1}{2}\frac{M}{(r_0+d)^2} t^2 &	(t \leq d), 	\\
+	 (r_0 +d) - \frac{1}{2} \frac{M}{(r_0 + d)^2}d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - d)^2 
+	-  \frac{1}{2} \frac{\delta M}{r_0 + d}  \left( 1 - \frac{2(M -\delta M)}{r_0} \right)^\frac{1}{2} (t-d) - \frac{Md}{r_0^2}(t-d) &  (t>d).
+	\end{cases}	\label{rB}
 \end{equation}
-Note that there is no time dependence in this expression. In fact, the time dependence will come in at $\mathcal{O}(r_0^{-3})$ in this case.\footnote{See appendix where we show that there is no time dependence at second order.} As shown in section \ref{concept} this expression for $\bar{\tau}$ will the leading order distance between $A$ and $B$. The change in distance, $\Delta L_{AB}$, between the two points is given by subtracting the proper time it takes for a photon to complete this journey without any shell crossing from $\bar{\tau}$.
+For $t <d$ there is just the acceleration of the point towards mass $M$. After $t>d$ the shell has crossed and now there is a change in distance in the time $d$ (to leading order the shell takes time $d$ to go from $r_0$ to $r_0 + d$) that the point is accelerating towards $M$. This is the second term in the expression. The next term corresponds to the acceleration of the point towards mass $M-\delta M$. The next two terms contain the velocity terms for this point. The first term is the comes from the IJC. The second term is the velocity picked up by this point in the time the shell reaches it. Using these trajectories we can calculate how the distance between points $A$ and $B$ changes as a function of time. 
+
+A photon is released at time $t$ after the shell has crossed point $A$. Using Eqs (\ref{rA}, \ref{rB}) we can calculate the proper time, $\tau$, it takes for this photon to go to point $B$ and come back to point $A$. The time taken, $\Delta t$, to travel between two points $r_A$ and $r_B$ is calculated by setting $ds = 0$ in Eq (\ref{SCH})
+  
+ \begin{equation}
+ 	\Delta t = \left( 1 -\frac{2M}{r_0} \right)^{-1} (r_B - r_A).
+\end{equation}
+Here we assume $r_0$ doesn't change to leading order. $r_B$ and $r_A$ will be time dependent in general. If we assume $r_B$ and $r_A$ change slowly in the time interval $\Delta t$ then we can simply evaluate $r_B$ at the time at the photon arrives and $r_A$ at the time the photon leaves (thus we don't have to integrate $r$ w.r.t time when solving Eq (\ref{SCH})). Converting the coordinate time interval to a proper time, $\Delta \tau$, gives
 
 \begin{equation}
-	\Delta L_{AB} = \bar{\tau} - 2d \left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2} = 4 d \frac{\delta M}{r_0} 
+	\Delta \tau = \left( 1 - \frac{2M}{r_0} \right)^{- \frac{1}{2}} (r_B - r_A).
 \end{equation}
-Since this is a permanent change in the distance - it is nothing but a memory effect. Next we show an effect which is much more interesting since it grows with time.
+We apply this equation to the trajectories in Eqs (\ref{rA}, \ref{rB}). The full calculation is given in the appendix. The proper time, $\tau$, it takes for a photon to go from $A$ to point $B$ and come back to $A$ (as shown in figure \ref{calculation}) is given by
+ 
+ \begin{equation}
+	 \tau = 2 d \left( 1 - \frac{M- \delta M}{r_0} + \frac{\delta M}{r_0} \right) + \mathcal{O}(r_0^{-2}).
+\end{equation}
+Note that there is no time dependence in this expression. The change in distance, $\Delta L_{AB}$, between the two points is given by subtracting the proper time it takes for a photon to complete this journey without any shell crossing
+
+\begin{equation}
+	\Delta L_{AB} = \tau - 2d \left( 1 - \frac{2M}{r_0} \right)^{\frac{1}{2}}= 4 d \frac{\delta M}{r_0} + \mathcal{O} (r_0^{-2}).
+\end{equation}
+Since this is a permanent change in the distance - it is nothing but a memory effect. There is another way to appreciate the lack of time dependence. We have assumed point $A$ has velocity zero at the time of shell crossing. After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}$. In the time the shell takes to go from $A$ to $B$ (which is $d$ to leading order), $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} d$. The final velocity of $A$ at time $d$ is, therefore, given by
+
+\begin{equation}
+	v_A(t = d) = \frac{\delta M}{r_0} + \frac{M-\delta M}{r_0^2} d.
+\end{equation}
+Similarly, point $B$ will gain a velocity from the acceleration towards mass $M$ with magnitude $\frac{M}{r_0^2}d$. The velocity change from shell crossing is $\frac{\delta M}{r_0 + d}$. The final velocity of point $B$ at time $d$ is
+
+\begin{equation}
+	v_B(t=d) = \frac{\delta M}{r_0+d} + \frac{M}{(r_0+d)^2} d.
+\end{equation}
+Thus we see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-3})$ and therefore we don't expect the distance to change with time at leading order. Next we show an effect which is much more interesting since it grows with time.
 \\
 \\
 The interferometer arm that goes from $B$ to $C$ will see the distance between these two points change. In fact, this distance is much simpler to calculate. The points $B$ and $C$ will feel the same acceleration to $M$ to leading order and so we can simply look at the change in velocities due to shell crossing. The velocities for points $B$, $v_B$, and $C$, $v_C$, have the same magnitudes to leading order but are pointing in slightly different directions. From the geometry of figure \ref{fig:1} we see that the relative change in velocity between the two points along the vertical direction will be $v_C \sin \theta$ where $\sin \theta \approx d/r_0$. The distance change between the two points, $\Delta L_{BC}$, is therefore given by 
@@ -168,7 +220,7 @@ The interferometer arm that goes from $B$ to $C$ will see the distance between t
 	\nonumber \\
 	&=& - d \frac{\delta M}{r_0^2} t + \mathcal{O}(r_0^{-3})~.
 \end{eqnarray}
-Since they both fall toward the SN, they are getting closer to each other thus $\Delta L_{BC}$ is \emph{decreasing}. Thus we have found a memory effect that grows with time. This effect is suppressed compared to $\Delta L_{AB}$ by a factor of $r_0^{-1}$ but since it grows with time there will be times for which this effect will be dominant.
+Since they both fall toward the SN, they are getting closer to each other thus $\Delta L_{BC}$ is \emph{decreasing} with time. Thus we have found a memory effect that grows with time. This effect is suppressed compared to $\Delta L_{AB}$ by a factor of $r_0^{-1}$ but since it grows with time there will be times for which this effect will be dominant. 
 
 %
 %\subsection{The effect of change in velocity on photons}
@@ -348,7 +400,7 @@ Since they both fall toward the SN, they are getting closer to each other thus $
 %\end{equation}
 %This shows that there is no change in proper time to $\mathcal{O}(r_E^{-1})$ which is what is expected and there is a term that grows linearly with time at $\mathcal{O}(r_E^{-2})$ which is in agreement with results presented in section \ref{RelV}.
 
- \section{Observation with Space-based Interferometers}
+\section{Observation with Space-based Interferometers}
 \label{obs}
 Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta M d}{r_0^2} t$ we can estimate the distance a SN would have to be from the interferometer to have an observable change in strain, which is a unitless number quantifying the amount of space-time distortion.
 \begin{equation}
@@ -376,42 +428,6 @@ Finally, we expect 2 to 3 SN per century in our galaxy and we can assume that th
 \end{equation}
 This requires a measurement of the strain that is six orders of magnitude better than BBO and is not yet achievable by interferometers that are currently being planned. 
 
-\section{Observation with Pulsar Scintillation}
-\label{sec-scint}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
-\caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
-\label{fig:4}
-\end{center}
-\end{figure}
-
-We learned from the previous section how difficult it is to measure the spacetime distortion. It is strongly suppressed by a factor of $r_0^{-2}$, which is proportional to the energy density of the shell when it reaches us. If we can have an interferometer much closer to the SN, the signal will be larger.
-
-In this final section we discuss a possibility to do just that. It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a SN progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distortion when it explodes. 
-
-The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a SN explosion has been worked out in \cite{Olum:2013gza}
-\begin{equation}
-	\Delta t = 2\delta M \left[ \ln \left(1 + \frac{t^2}{b^2} \right) - \frac{t^2}{b^2 + t^2} \right].
-\end{equation}
-Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the SN. $t$ is the proper time on earth, with $t=0$ the time we directly observe the SN explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
-
-When the separation between two light rays has a component in the radial direction from the SN, $\Delta b$, there will be a nonzero relative change between their path lengths.
-\begin{equation}
-	(\Delta t|_b - \Delta t|_{b+\Delta b}) \approx 
-	\frac{\partial \Delta t}{\partial b} \Delta b 
-	= - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b~.
-	\label{eq-change}
-\end{equation}
-We can see that this effect grows from zero and approaches an asymptotic value,
-\begin{equation}
-	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
-	\longrightarrow \frac{4\delta M \Delta b}{b}~,
-\end{equation}
-at a characteristic time scale given by $b$. 
-
-We estimate $b$ by assuming that the next SN is somewhere near the galactic centre. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic centre. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
 
 \acknowledgments
 
@@ -421,7 +437,7 @@ This work is supported by the Canadian Government through the Canadian Institute
 
 \section{Proper time for a photon going from point A to B and coming back}
 
-In this calculation we first calculate the time, $t_1$, it takes for the photon released at time $t$ from point $A$ to reach point $B$. Then we calculate the time, $t_2$, it takes for the photon to come back to point $A$. The quantities are clearly defined in figure \ref{fig:2}. The final result is obtained by adding these times and converting to proper time. 
+In this calculation we first calculate the time, $t_1$, it takes for the photon released at time $t$ from point $A$ to reach point $B$. Then we calculate the time, $t_2$, it takes for the photon to come back to point $A$. The quantities are clearly defined in figure \ref{calculation}. The final result is obtained by adding these times and converting to proper time. 
 \\
 \\
 Lets start by finding $t_1$,
@@ -431,7 +447,6 @@ Lets start by finding $t_1$,
 	& = & d + \underbrace{\frac{1}{2} \frac{M-\delta M}{r_0^2} t^2}_{T1} + \underbrace{\frac{\delta M}{r_0} \left( 1 - \frac{2(M-\delta M)}{r_0} \right)^\frac{1}{2} t}_{T2} - \underbrace{\frac{1}{2} \frac{M}{(r_0+d)^2} d^2}_{T3} - \underbrace{\frac{1}{2} \frac{M- \delta M}{(r_0+d)^2} (t+t_1-d)^2}_{T4}	\nonumber	\\
 	& - & \underbrace{\frac{\delta M}{r_0 + d} \left( 1 - \frac{2(M-\delta M)}{r_0} \right)^\frac{1}{2} (t+t_1-d)}_{T5} - \underbrace{\frac{M d}{(r_0+d)^2} (t + t_1 -d)}_{T6}.	\label{t1full}
 \end{eqnarray}
-
 Lets interpret each term individually. $T1$ is the acceleration of point $A$ until the photon is released at time $t$. Similarly $T2$ is the proper velocity of point $A$. $T3$ accounts for the acceleration of point $B$ in the time it takes the shell to go from $A$ to $B$. $T4$ is the acceleration of point $B$ after the shell has crossed it. $T5$ is the velocity change from the shell crossing point $B$. $T6$ is the velocity gained while the point is accelerating before the shell crosses it. 
 We can expand Eq (\ref{t1full}) to leading order in small quantities. 
 
@@ -459,16 +474,10 @@ Again we expand this to leading order in small quantities (following the same st
 	& = & d + \frac{2 \delta Md}{r_0} +\frac{\delta M^2 d}{r_0^2} - \frac{1}{2} \frac{Md^2}{r_0^2} + \frac{M - \delta M}{r_0^2} dt
 \end{eqnarray}
 
-Adding $t_1$ and $t_2$ to get the total time it takes for the photon to go from $A$ to $B$ and then come back 
+Using $t_1$ and $t_2$ we get the proper time, $\tau$
 
 \begin{equation}
-	t_1 + t_2 = 2d \left( 1 + \frac{\delta M}{r_0} \right) + \mathcal{O}(r_0^{-2}).
-\end{equation}
-
-This is a coordinate time and we need the proper time, $\bar{\tau}$, which is 
-
-\begin{equation}
-	\bar{\tau} = \left( 1 - \frac{M- \delta M}{r_0} \right) (t_1 + t_2) = 2d \left( 1+ \frac{\delta M}{r_0} - \frac{M - \delta M}{r_0} \right) + \mathcal{O}(r_0^{-2}).
+	\tau = 2d \left( 1 - \frac{M - \delta M}{r_0} + \frac{\delta M}{r_0} \right).
 \end{equation}
 
 
