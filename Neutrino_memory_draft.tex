@@ -56,7 +56,7 @@ The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes perm
 
 In terms of the dynamics, a change in velocity is higher order than a change in distance measured in gravitational waves. This however does not mean that our effect is harder to measure. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable whereas our effect does not and therefore it can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
 
-We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
+We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change in the phase of the photons in the interferometer after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
 The SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a SN explosion to provide us with a good estimation of the total energy in the neutrino shell of the explosion. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
@@ -1016,27 +1016,15 @@ This work is supported by the Canadian Government through the Canadian Institute
 
 \section{Full calculation of distance between $A$ and $B$}
 
-The trajectories are 
-
-\begin{equation}
-	r_A(t) = \begin{cases} r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2 & (t \leq 0)	\\
-	r_0 - \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t & (t>0)	\end{cases}
-\end{equation}
-
-\begin{equation}
-	r_B(t) = \begin{cases} r_0 + d - \frac{1}{2} \frac{M}{(r_0+d)^2} t^2 & (t \leq t_c)	\\
-	r_0 + d - \frac{1}{2} \frac{M - \delta M}{(r_0+d)^2} d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0+d)^2} (t - d)^2  - \frac{\delta M}{r_0+d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)(t-d) - \frac{Md}{(r_0 + d)^2}(t - d) & (t>t_c)	\end{cases}
-\end{equation}
-
 \subsection{Crossing time}
 
-Assuming that $t = 0$ when the shell crosses $r_A$. We assume $r_A(t =0) = d$ and $r_B(t=0) = d + r_0$. Solving the metric equation for the shell, which is a null shell, is $t_c$ 
+Assuming that $t = 0$ when the shell crosses $r_A$. We assume $r_A(t =0) = r_0$ and $r_B(t=0) = r_0 +d $. Using the metric for a null shell we can calculate the coordinate time, $t_c$, at which the shell crosses point $B$. 
 
 \begin{equation}
 	t_c = \left( 1 + \frac{2(M - \delta M)}{r_0} \right) d
 \end{equation}
 
-This is to leading order. 
+To leading order $t_c = d$ as expected. It will turn out that for our calculations we will require the leading order correction to this.  
 
 \subsection{Before shell crossing}
 
