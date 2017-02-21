@@ -1,4 +1,4 @@
-\documentclass[aps,showpacs,twocolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4-1} 
+\documentclass[aps,showpacs,onecolumn,floats,prd,superscriptaddress,nofootinbib]{revtex4-1} 
 \usepackage{graphicx,amsmath,amssymb,amstext}
 \usepackage{amssymb,amsbsy,amsfonts,amsthm,color}
 \usepackage{epsfig}
@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Longitudinal gravitational memory and its potential detection by space based and astrophysical interferometers}
+\title{Gravitational memory of Neutrinos}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -29,7 +29,9 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two radially separated geodesics pick up a relative velocity proportional to their separation. We study the possibility to measure such effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
+
+We calculate the gravitational memory effect when a spherically symmetric shell of energy passes through a spacetime region. In particular, this effect includes a longitudinal component, such that two geodesics can pick up a relative velocity proportional to their separation. Such a measurement will allow us to obtain the total energy released by a supernova explosion in the form of neutrinos. We study the possibility to measure such an effect by space-based interferometers such as LISA and BBO, and also by astrophysical interferometers such as pulsar scintillometry.
+
 \end{abstract}
 
 \maketitle
@@ -41,73 +43,356 @@ The recent detection of gravitational waves \cite{GW1509} has proved that gravit
 \begin{figure}[b]
 \begin{center}
 \includegraphics[scale = 0.27]{intro.pdf}
-\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The velocities (represented by the black arrows) $v_A, v_B, v_C$ they pick up are all different, since they cross the shell at different locations.}
+\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
 \label{fig:1}
 \end{center}
 \end{figure}
 
 The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes permanent relative displacements between geodesics. It contains only transverse-traceless components and can leave an imprint in an interferometer. In this paper, we will introduce another memory effect that is different in two ways:
 \begin{itemize}
-\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric. While coupled to matters, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric.
-\item Instead of displacements, it causes permanent changes in relative velocities between geodesics, with magnitudes proportional to their separations.
+\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric (i.e gravitational waves). While coupled to matter, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric.
+\item In addition to displacements of geodesics, it also causes permanent changes in relative velocities between geodesics, with magnitudes proportional to their separations.
 \end{itemize}
 
-In terms of the dynamics, a change in velocity is higher order than a change in distance. This however does not mean that our effect is harder to measure. First of all, without the transverse-traceless constraint, our effect does not require breaking of spherical symmetry. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable. Our effect does not thus can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
+In terms of the dynamics, a change in velocity is higher order than a change in distance measured in gravitational waves. This however does not mean that our effect is harder to measure. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable whereas our effect does not and therefore it can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
 
-We will present a simple and natural occurrence of this effect, which is when a shell of energetic neutrinos are released during a core-collapse supernova explosion (SNe). As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate that by showing the possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delay while being hit by the neutrino shell.
+We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
-The rest of the paper is organized as the following. In section \ref{RelV} we derive the change in velocities with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO. The final section \ref{sec-scint} discusses how an astrophysical interferometer formed by pulsar scintillometry can measure the same effect.
+The SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a SN explosion to provide us with a good estimation of the total energy in the neutrino shell of the explosion. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
+
+The rest of the paper is organized as follows. In \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a SNe. In section \ref{RelV} we derive the change in velocities caused by shell crossing with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
+
+\section{Memory effect in Pulsar Scintillation}
+\label{sec-scint}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
+\caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
+\label{fig:4}
+\end{center}
+\end{figure}
+
+It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a SN progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distortion when it explodes. 
+
+The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a SN explosion has been worked out in \cite{Olum:2013gza}
+\begin{equation}
+	\Delta t = 2\delta M \left[ \ln \left(1 + \frac{t^2}{b^2} \right) - \frac{t^2}{b^2 + t^2} \right].
+\end{equation}
+Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the SN. $t$ is the proper time on earth, with $t=0$ the time we directly observe the SN explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
+
+When the separation between two light rays has a component in the radial direction from the SN, $\Delta b$, there will be a nonzero relative change between their path lengths.
+\begin{equation}
+	(\Delta t|_b - \Delta t|_{b+\Delta b}) \approx 
+	\frac{\partial \Delta t}{\partial b} \Delta b 
+	= - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b~.
+	\label{eq-change}
+\end{equation}
+We can see that this effect grows from zero and approaches an asymptotic value,
+\begin{equation}
+	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
+	\longrightarrow \frac{4\delta M \Delta b}{b}~,	\label{pulsescint}
+\end{equation}
+at a characteristic time scale given by $b$. This result can be obtained by calculating the change in time 
+
+We estimate $b$ by assuming that the next SN is somewhere near the galactic centre. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic centre. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}). 
 
 
-\section{Change in relative velocity}
+\section{Velocity change from junction conditions}
 \label{RelV}
 
-We assume the geometry of the spacetime is governed by the SN and thus is parametrised by the Schwarzschild metric. Before the SN explosion the geometry is
-
-\begin{equation}
-	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,
-\end{equation}
-where are working in units with $G = c =1$. After the SN explosion the $i$ index is replaced by $f$. Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows,
-
-\begin{equation}
-	\Sigma_\mu^{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).
-\end{equation}
-We choose a coordinate chart in which the interferometer is initially at rest and is described by the following geodesic
-
-\begin{equation}
-	\zeta_\mu^{(i)} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, 0, 0, 0 \right).
-\end{equation}
-The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed we expect $\zeta$ to have a velocity component. This can be found using the IJC, which states $g^{\mu \nu}_{(i)} \Sigma_\mu^{(i)} \zeta^{(i)}_\nu = g^{\mu \nu}_{(f)} \Sigma_\mu^{(f)} \zeta^{(f)}_\nu$. This gives the final vector for the interferometer
-\begin{equation}
-	\zeta_\mu^{(f)} = \left( \left( 1 - \frac{2M_f}{r} \right)^{-\frac{1}{2}}, - \frac{\delta M}{r_{crossing}}, 0, 0 \right).
-\end{equation}
-Note that $\frac{\delta M}{r_{corssing}}$ is a coordinate velocity and to convert to proper velocity it will need to be multiplied by a factor of $\left( 1 - \frac{2M}{r_{corrsing}} \right)^\frac{1}{2}$. Since this is a higher order correction it is not important here. $\delta M \equiv M_i - M_f$ and $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_E$, for $B$ it is $r_E + d$ and for $C$ it is $\approx r_E + d$ as well.
-%\footnote{The exact expression is $r_E \left( 1 + \frac{2d}{r_E} + \frac{2d^2}{r_E^2} \right)^\frac{1}{2}$ but we are working to leading order so we can make the given approximation.}. 
-
- The relative velocity between a the ends of a horizontal interferometer, $A$ and $B$, that is in radial alignment with the SN as shown in figure \ref{fig:1} is given by
-\begin{equation}
-	\Delta L_{AB} =  (v_A - v_B)t = d \frac{\delta M}{r_E^2}  t+ \mathcal{O}(r_E^{-3})~.
-\end{equation}
-where $v_A$ and $v_B$ are the velocities picked up by points $A$ and $B$ after shell crossing and $t$ is the time passed after shell crossing. Note that since the point $A$ picks up a larger velocity toward the supernova, $\Delta L_{AB}$ is increasing.
-
-The total velocities for point $B$ and $C$ has the same magnitudes but are pointing in slightly different directions. It is easy to work out the geometry to see that
-\begin{eqnarray}
-	\Delta L_{BC} &=& -\left( \frac{ \delta M}{r_E} \sin \theta \right) t 
-	\\ \nonumber
-	&=& - \frac{\delta M}{r_E^2} d + \mathcal{O}(r_E^{-3})~.
-\end{eqnarray}
-Here $\theta\approx (d/r_E)$ is the angle between point $B$ and $C$ to the supernova. Since they both fall toward the supernova, they are getting closer to each other thus $\Delta L_{BC}$ is decreasing.
-
-In summary, we have an interferometer whose one arm decreases in length while the other increases, resulting in a detectable change if the interference pattern. 
+\begin{figure}[h]
 \begin{center}
-\begin{tabular}{| c | c |} 
-\hline
-$\Delta L_{AB}$ &  $  \Delta L_{BC} $  \\   \hline 
-$\frac{\delta M d}{r_E^2} t$ & $ -\frac{\delta M d}{r_E^2} t$  \\ 
-\hline 
-\end{tabular}
+\includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
+\caption{Schematic of a spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell.}
+\label{calculation}
 \end{center}
-Note that for the conventional memory effect, the signal is maximized when the interferometer is face-on to the source. In our case, a face-on interferometer would get zero signal, since both arms will be decreasing in length. Our signal is maximized by having an longitudinal arm, in this case $AB$.
+\end{figure}
+In this section we discuss how a similar effect can be also seen in traditional interferometers such as LIGO. We assume the geometry of the spacetime is governed by the SN progenitor star. Assuming the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric,
+\begin{equation}
+	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt_i^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,	\label{SCH}
+\end{equation}
+where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the $i$ index used above to denote the ``initial" metric is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
+\begin{equation}
+	\Sigma^\mu_{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).	\label{sigma}
+\end{equation}
+Since we expect the interferometer points (denoted by the points $A,B,C$ in figure \ref{fig:1}) to be very far for the massive object we assume they have a small velocity\footnote{We assume $v_i^2 = 0$.} $v_{i}$ and are described by the following geodesic in either metric
+\begin{equation}
+	\zeta^\mu_{i} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, v_{i}, 0, 0 \right).	\label{zeta}
+\end{equation}
+The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points the velocity of the interferometer points will change from $v_i$ to $v_f$. Given $v_i$, we can calculate $v_f$ using the IJC, 
+\begin{equation}
+	 g_{\mu \nu} \Sigma^\mu_{i} \zeta_{i}^\nu = \hat{g}_{\mu \nu} \Sigma^\mu_{f} \zeta_{f}^\nu,	\label{0IJC}
+\end{equation}
+where $\hat{g}_{\mu \nu}$ represents the metric of the ``final" spacetime and $g_{\mu \nu}$ is the metric of the initial spacetime. This expression comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. 
+Throughout this calculation we assume that the interferometer is very far from the SNe. Thus we assume there are three small quantities, $\frac{M}{r_0}, \frac{\delta M}{r_0}, \frac{d}{r_0} \ll1$. To simplify notation we will use the symbol $\mathcal{O}(r^{-1})$ to represent suppression by any one of the three small quantities. 
+Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer, to order $\mathcal{O}(r_{crossing}^{-2})$,
+\begin{equation}
+	\zeta^\mu_{f} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, v_i - \frac{\delta M}{r_{crossing}} \left( 1 + \frac{M + \frac{1}{2} \delta M}{r_{crossing}} \right), 0, 0 \right).	\label{5}
+\end{equation}
+Thus the change in velocity due a shell crossing is $v_f - v_i= - \frac{\delta M}{r_{crossing}} \left( 1 + \frac{3}{2} \frac{\delta M}{r_{crossing}} \right)$. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $r_0 + \mathcal{O}(d/r_0)$. Note that this is the proper velocity $\frac{dr}{d\tau}$. We will need the coordinate velocity for the our calculations which is given by $\frac{dr}{dt} = \frac{dr}{d \tau} \frac{d \tau}{dt} = \frac{dr}{d \tau} \left( 1 - \frac{2(M - \delta M)}{r_{crossing}} \right)^{\frac{1}{2}} \approx - \frac{\delta M}{r_{crosssing}} \left(1 + \frac{3}{2} \frac{\delta M}{r_{crossing}} \right)$
+
+
+%
+%\subsection{The relationship between proper time and distance}\label{conceptsec}
+%
+%The distance change is measured by an interferometer. The interferometer calculates the distance by sending photons to a target and measuring the time it takes for them to come back. To demonstrate this we consider the simple case shown in figure \ref{fig:3}. Two freely falling points $A$ and $B$ are in the gravitational field of an object with mass $M$. The initial velocity of the points is set to zero. Thus, the only change in $R$ will come from the acceleration that the points feel towards the mass. The distance of the first point from the mass $M$ is $R_0$ and the separation between the two points is $d$ initially. The trajectories of the two points (as shown in figure (\ref{fig:3})) are given by
+%\begin{equation}
+%	R_A(t) = R_0 - \frac{1}{2} \frac{M}{R_0^2} t^2,
+%\end{equation}
+%
+%\begin{equation}
+%	R_B(t) = R_0 +d - \frac{1}{2} \frac{M}{(R_0 + d)^2} t^2.
+%\end{equation}
+%
+%At time $t = T_0$ a photon is emitted from point $A$ and reaches point $B$ at time $t = T$. We can calculate the time interval, $T-T_0$, using the metric in Eq (\ref{SCH}) with mass $M$. Setting $ds^2 = 0$ for the photons gives
+%\begin{equation}
+%	T-T_0 = (R_B(T_0 + d) - R_A(T_0))\left(1 - \frac{2M}{R_0} \right)^{-1}.	\label{11}
+%\end{equation}
+%
+%Here we have assumed $M/R_0 \ll 1$. Note that $R_B$ is evaluated at time $T_0 + d$ since to leading order we know the time taken to go from $r_A$ to $r_B$ is $d$. We can convert the coordinate time interval $T- T_0$ into a proper time interval $\Delta \tau_0$ 
+%
+%\begin{equation}
+%	\Delta \tau_0 = \left( 1 - \frac{2M}{r_0} \right)^{-\frac{1}{2}} (R_B(T_0 + d) - R_A(T_0)) = d + \mathcal{O} (M/R_0)	 \label{concept}
+%\end{equation}
+%Thus we see that for a weak gravitational field, $\tau$ is the distance $d$ to leading order. This shows that whenever we measure the proper time interval it takes for photons to travel a distance between two points, we are also measuring the distance between two points.  
+%
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width =\textwidth, height = 12cm]{time_concept.pdf}
+%\caption{Space-time diagram showing two points free falling towards a mass $M$. A photon is emitted from the point on the inside at time $T_0$ and is received at the outer point at time $T$. The dark blue lines parametrize the trajectories of the two points and the orange line represents the trajectory of the photon. }
+%\label{fig:3}
+%\end{center}
+%\end{figure}
+
+\section{Memory effect in interferometer}
+
+\subsection{Distance between $A$ and $B$}
+
+An interferometer can calculate the displacement between geodesics. There are two ways to calculate this displacement. The first is to directly calculate the photon geodesics from the metric and find the difference between them. The second is to integrate the geodesics deviation equation. In this paper we will use the first approach and calculate the trajectories of the interferometer points. We consider points $A$, $B$ and $C$ in figure \ref{fig:1} as the ends of the arms of the interferometer. 
+We parametrize the trajectories of the points in a piecewise form. For point $A$ we have
+
+\begin{equation}
+	r_A(t)  = \begin{cases} r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2 & (t \leq 0), 	\\
+	 r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M }{r_0}\left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t \ & (t>0).
+	 \end{cases}	\label{rA}
+\end{equation}
+$t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ we assume there is no velocity and the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change (as we calculated from the IJC) coming from shell crossing. In principle the $r_0$ on the RHS of Eq (\ref{rA}) should be $r_A(t)$ however we know $r_A(t) = r_0 + \mathcal{O}(M/r_0)$. Thus the effect of replacing $r_0$ with $r_A(t)$ will not affect the leading order answer. The trajectory of point $B$ is given by
+
+\begin{equation}
+	r_B(t) = \begin{cases} r_0 + d  - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2 &	(t \leq t_c), 	\\
+	 r_0 +d  - \frac{1}{2} \frac{M}{(r_0 + d)^2}t_c^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - t_c)^2 
+	- \frac{\delta M}{r_0 + d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t-t_c) -\frac{Md}{(r_0+d)^2}(t-t_c) &  (t>t_c).
+	\end{cases}	\label{rB}
+\end{equation}
+For $t <t_c$ there is just the acceleration of the point towards mass $M$. After $t>t_c$ the shell has crossed and now there is a change in distance in the time $t_c$ that the point is accelerating towards $M$. This is the second term in the expression. The next term corresponds to the acceleration of the point towards mass $M-\delta M$. The next two terms contain the velocity terms for this point. The first term is the comes from the IJC. The second term is the velocity picked up by this point in the time the shell reaches it. Using these trajectories we can calculate the proper time $\tau$ shown in figure \ref{calculation}. 
+We know $t_c = d$ to leading order. Since we are interested in terms up to $ \mathcal{O}(r_0^{-2})$, we can substitute $t_c$ with $d$ in terms that are already $\mathcal{O}(r_0^{-2})$. Using the trajectories we can calculate the proper time it takes for the photon to complete a round trip to from point $A$ to $B$. This can then be compared to the proper time it would take without shell crossing. The difference between the proper times will represent the physical distance change between the geodesics. The full calculation is presented in the appendix and the result is a constant change in distance 
+
+\begin{equation}
+	\Delta \tau_{AB} = \tau - \bar{\tau} = \frac{d \delta M}{r_0^2} (d - 3\delta M)
+\end{equation}
+
+There is a simple way to appreciate the lack of time dependence. We have assumed point $A$ has velocity zero at the time of shell crossing. After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}$. In the time the shell takes to go from $A$ to $B$, $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} d$. The final velocity of $A$ at time $d$ is, therefore, given by
+
+\begin{equation}
+	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.
+\end{equation}
+Similarly, point $B$ will gain a velocity from the acceleration towards mass $M$ with magnitude $\frac{M}{r_0^2}d$. The velocity change from shell crossing is $\frac{\delta M}{r_0 + d}$. The final velocity of point $B$ at time $d$ is
+
+\begin{equation}
+	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.
+\end{equation}
+
+We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-3})$ and therefore we don't expect the distance to change with time at leading order. Next we show an effect which is much more interesting since it grows with time.
+
+\subsection{Distance between $A$ and $C$}
+
+The coordinates for this calculation are set up as follows; we let the $y$ coordinate be $0$ at $A$ and increases as we go down. Thus point $C$ is at $y$ coordinate $d$. The time is set to zero when the shell crosses point $A$ and $C$ (to leading order the shell crosses both of them at the same time). 
+The interferometer arm that goes from $A$ to $C$ will see the distance between these two points change. We can parametrize the trajectory of $r_C(t)_\bot$ in the perpendicular direction to the radial vector as 
+
+\begin{equation}
+	r_{C}(t)_\bot = \begin{cases} d - \frac{1}{2} \frac{M}{(r_0^2 + d^2)} t^2 \sin \theta ,  & (t\leq 0 )	
+	\\ d - \frac{1}{2} \frac{M - \delta M}{(r_0^2 + d^2)} t^2 \sin \theta - \frac{\delta M}{\sqrt{r_0^2 + d^2}} t \sin \theta,  & (t >0)  \end{cases}. 
+\end{equation}
+
+where $\sin \theta \approx \theta = \frac{d}{r_0}$. Point $A$ will only move in the radial direction so we don't need to consider its motion in this case. Using this trajectory we can calculate how the proper time it takes a photon to get to $C$ and come back to $A$ changes due to shell crossing.
+
+\begin{equation}
+	\Delta \tau_{AC}  =  -2d \left( \frac{\delta M(t + d)}{r_0^2} + \frac{\delta M}{r_0} \right)
+\end{equation}
+
+We emphasize two things here; 
+
+\begin{itemize}
+
+\item There is a time dependent term $ -\frac{2d \delta M t}{r_0^2}$ . 
+
+\item There is a constant term at leading order $\frac{-2d\delta M}{r_0}$. Note the similarity to the result seen from pulsar scintillometry in Eq (\ref{pulsescint}).
+
+\end{itemize}
+
+
+%
+%\subsection{The effect of change in velocity on photons}
+%
+%%
+%%\begin{figure}[h]
+%%\begin{center}
+%%\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
+%%\caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
+%%\label{fig:4}
+%%\end{center}
+%%\end{figure}
+%
+%An interferometer works by sending photons from a source to another point that reflects them back to the source. Usually this is done using two arms of equal length so that if the length of one of the arms increases the photons that leave the source will not arrive back in phase with the photons that went along the other arm (as there will be a path difference in their travel distance) and it is this phase change that is observed in an interferometer. There is an equivalent way of calculating this effect which is to count the number of wavelengths of the photon along its total trajectory. In general, a photon trajectory, $k^\mu$, is of the form
+%
+%\begin{equation}
+%	k^\mu = (E, p_r, p_\theta, p_\phi),
+%\end{equation}
+%for a photon moving in a radial direction $p_r = \frac{1}{\lambda}$ where $\lambda$ is the wavelength of the photon. A photon moving in a Schwarzschild geometry will have the following four vector 
+%
+%\begin{equation}
+%	k^\mu(\omega_\infty, M, r) = \omega_\infty \left(  \frac{1}{1 - \frac{2M}{r}}, \sqrt{1 - \frac{b^2}{r^2} \left( 1 - \frac{2M}{r} \right)}, \frac{b}{r^2}, 0 \right),
+%\end{equation}
+%$\omega_\infty$ is a normalization factor that corresponds to the frequency of the photon as observed by an observer at rest sitting infinitely far away and $b$ represents the impact parameter of the photon. By setting $b= 0$ we get
+%
+%\begin{equation}
+%	k^\mu(\omega_\infty, M, r) = \omega_\infty \left( \frac{1}{1 - \frac{2M}{r}}, 1 , 0 , 0  \right).
+%\end{equation}
+%This photon has wavelength $\lambda_\infty = \frac{1}{\omega_\infty}$. As an illustration, we consider the effect a neutrino shell has on just one arm of an interferometer, i.e two free falling points separated by distance $r_a - r_b = d$,\footnote{This is representative of the two points $A$ and $B$ in figure \ref{fig:1} as the two points are assumed to be in line with the SN.} as shown in the bottom part of figure \ref{fig:2}. A photon leaves from $r_a$ with four vector $k^\mu_i(\omega_a)$ and goes to point $r_b$. The frequency measured, $\omega_{O1}$, by an observer at $r_b$ of this photon is
+%
+%\begin{equation}
+%	\omega_{O1} = - g_{\mu \nu}(M_i, r_b) k^\mu(M_i, \omega_a, r_b) \zeta^\nu_i(M_i, r_b).	\label{9}
+%\end{equation}
+%This must be the same as the frequency observed for a photon coming from the opposite direction which, in figure \ref{fig:2}, is denoted by $k^\mu_i(\omega_b)$, 
+%
+%\begin{equation}
+%	\omega_{O1} = - g_{\mu \nu}(M_i, r_b) k^\mu(M_i, \omega_b, r_b) \zeta^\nu_i(M_i, r_b).	\label{10}
+%\end{equation}
+%Since the photon is travelling in the opposite direction in this case, the velocity component of the $k^\mu_i(\omega_b)$ will have the opposite sign
+%
+%\begin{equation}
+%	k^\mu(\omega_b) = \omega_b \left( \frac{1}{1 - \frac{2M}{r}}, -1, 0, 0 \right).
+%\end{equation}
+%By equating Eq (\ref{9}) and (\ref{10}) we see $\omega_a = \omega_b$ and therefore the wavelengths of the photons must be the same. Since the distance between the two points, $d$, does not change, the total number of wavelengths traversed by the photons along there paths is a constant number, $N_i$, given by
+%
+%\begin{equation}
+%	N_i = \frac{d}{\lambda_a} = d\omega_a = d \omega_b
+%\end{equation}
+%When a neutrino shell crosses the two points, they pick up a velocity as is shown in Eq (\ref{5}). This means both, the frequency of the photons and the distance between the two points will change. Let's begin by calculating the change in the frequency. Consider the photon $k^\mu_f(\omega_1)$ emitted from a distance $r_1$, shown in the upper part of figure \ref{fig:2}. An observer $O2$ at $r_2$ will measure the frequency of photon $k^\mu_f(\omega_1)$ to be
+%
+%\begin{eqnarray}
+%	\omega_{O2} & = & -g_{\mu \nu}(M_f, r_2) k^\mu(M_f, \omega_1, r_2) \zeta^\nu(M_f, r_2) 	\nonumber	\\
+%	& = & \left( 1 + \frac{M_f + \delta M}{r_2} + \frac{2M_f \delta M}{r_2^2} \right) \omega_1.
+%\end{eqnarray}
+%Similarly the photon $k^\mu_f(\omega_2)$ has the measured frequency
+%\begin{eqnarray}
+%	\omega_{O2}  & = & -g_{\mu \nu}(M_f, r_2) k^\mu(M_f, \omega_2, r_2) \zeta^\nu(M_f, r_2) 	\nonumber	\\
+%	& = & \left( 1 + \frac{M_f - \delta M}{r_2} - \frac{2M_f \delta M}{r_2^2} \right) \omega_2.
+%\end{eqnarray}
+%Combining these two equations gives, to second order in small quantities, 
+%
+%\begin{equation}
+%	\omega_1 = \left( 1- \frac{2 \delta M}{r_2} - \frac{4 M_f \delta M - M_f^2 + \delta M^2}{r_2^2} \right) \omega_2.
+%\end{equation}
+%The distance, $d$, will also change as both the points will have different velocities. Therefore the distance, $d_1$, traversed by photon $k^\mu_f(\omega_1)$ is
+%
+%\begin{equation}
+%	d_1 = r_2 - r_1 = d - \frac{\delta M}{r_b} t_2 + \frac{\delta M}{r_a} t_1.
+%\end{equation}
+%We want to get everything in terms of one time $t_1$, so lets find $t_2$ in terms of $t_1$
+%
+%\begin{equation}
+%	t_2 = t_1 + d -\frac{\delta M}{r_a} t_1 + \frac{\delta M}{r_b} t_2
+%\end{equation}
+%
+%\begin{equation}
+%	t_2 \left( 1 - \frac{\delta M}{r_b} \right) = t_1 + d - \frac{\delta M t_1}{r_a}
+%\end{equation}
+%which to leading order is
+%
+%\begin{equation}
+%	t_2 = t_1 + d + \mathcal{O}(r^{-1}).
+%\end{equation}
+%and so $d_1$ becomes,
+%
+%\begin{equation}
+%	d_1 = d\left(1 - \frac{\delta M }{r_a} - \frac{\delta M t_1 }{r_a^2} + \mathcal{O}(r_a^{-3}) \right).
+%\end{equation}
+%Therefore the number of wavelengths, $N_{f1}$, traversed by photon $k^\mu_f(\omega_1)$ is
+% 
+% \begin{eqnarray}
+% 	N_{f1} & = & \frac{d_1}{\lambda_1} = \frac{d\left(1 - \frac{\delta M }{r_a} - \frac{\delta M t_1 }{r_a^2} \right)}{\lambda_1}
+%\end{eqnarray}
+%So we see that there is a term that increases linearly with time and so the number of wavelengths increases linearly with time. Similarly we can calculate the number of wavelengths, $N_{f2}$, traversed by the photon $k^\mu_f (\omega_2)$ on its way back to $r_3$. The distance $d_3$ traveresed by the photon is
+%
+%\begin{equation}
+%	d_3 = r_2 - r_3 = d - \frac{\delta M}{r_a} t_3 + \frac{\delta M}{r_b} t_2
+%\end{equation}
+%
+%Again lets get $t_3$ in terms of $t_2$ (which we know how to write in terms of $t_1$), 
+%
+%\begin{equation}
+%	t_3 = t_2 + d + \frac{\delta M}{r_a} t_3 - \frac{\delta M}{r_b} t_2
+%\end{equation}
+%
+%\begin{equation}
+%	t_3 \left( 1 - \frac{\delta M}{r_a} \right) = t_2 + d - \frac{\delta M }{r_b} t_2
+%\end{equation}
+%
+%and so to leading order
+%
+%\begin{equation}
+%	t_3 = t_2 + d = t_1 + 2d + \mathcal{O}(r^{-1})
+%\end{equation}
+%
+%which is again expected. So $d_3$ becomes
+%
+%\begin{eqnarray}
+%	d_3 & = & d - \frac{\delta M d}{r_a} - \frac{\delta M t_1}{r_a} + \frac{\delta M}{r_b} t_1	\nonumber	\\
+%	& = & d \left( 1 - \frac{\delta M}{r_a} \right) + \frac{\delta M d}{r_a^2} t_1
+%\end{eqnarray}
+%
+%And the number of wavelengths $N_{f2}$ is
+%
+%\begin{equation}
+%	N_{f2} = \frac{d \left( 1 - \frac{\delta M}{r_a} \right) + \frac{\delta M d}{r_a^2} t_1}{\lambda_2}
+%\end{equation}
+%
+%where $\lambda_2 = \frac{1}{\omega_2}$.
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection{Distance change in interferometer}
+%
+%We have seen in the previous section how the effect of the nuetrino shell crossing the points manifests itself to an interferometer. Here we expand on this calculation and apply it to a general interferometer like the one shown in figure \ref{fig:1}. 
+%\\
+%\\
+%The relative velocity between the ends of a horizontal interferometer, $A$ and $B$, that is in radial alignment with the SN as shown in figure \ref{fig:1} is given by
+%\begin{equation}
+%	\Delta L_{AB} =  (v_A - v_B)t = d \frac{\delta M}{r_E^2}  t+ \mathcal{O}(r_E^{-3})~.
+%\end{equation}
+%where $v_A$ and $v_B$ are the velocities picked up by points $A$ and $B$ after shell crossing and $t$ is the time passed after shell crossing. Note that since the point $A$ picks up a larger velocity toward the supernova, $\Delta L_{AB}$ is \emph{increasing}.
+%
+%The total velocities for points $B$ and $C$ have the same magnitudes but are pointing in slightly different directions. It is easy to work out the geometry to see that
+%\begin{eqnarray}
+%	\Delta L_{BC} &=& -\left( \frac{ \delta M}{r_E} \sin \theta \right) t 
+%	\\ \nonumber
+%	&=& - d \frac{\delta M}{r_E^2} t + \mathcal{O}(r_E^{-3})~.
+%\end{eqnarray}
+%Here $\theta\approx (d/r_E)$ is the angle between point $B$ and $C$ to the SN. Since they both fall toward the SN, they are getting closer to each other thus $\Delta L_{BC}$ is \emph{decreasing}\footnote{This is important; if the distance $\Delta L_{BC}$ was also increasing, since the magnitude of the increase is the same as $\Delta L_{AB}$, we would not see an effect since the photons in the interferometer arms would still have the same phase when they come back to point $B$.}.
+%
+%In summary, we have an interferometer whose one arm decreases in length while the other increases, resulting in a detectable change in the interference pattern. 
+%\begin{center}
+%\begin{tabular}{| c | c |} 
+%\hline
+%$\Delta L_{AB}$ &  $  \Delta L_{BC} $  \\   \hline 
+%$\frac{\delta M d}{r_E^2} t$ & $ -\frac{\delta M d}{r_E^2} t$  \\ 
+%\hline 
+%\end{tabular}
+%\end{center}
+%Note that for the conventional memory effect, the signal is maximized when the interferometer is face-on to the source. In our case, a face-on interferometer would get zero signal, since both arms will be decreasing in length. Our signal is maximized by having a longitudinal arm, in this case $AB$.
 
 %\section{Change in proper time}
 %\label{Ptime}
@@ -125,81 +410,448 @@ Note that for the conventional memory effect, the signal is maximized when the i
 %\end{equation}
 %This shows that there is no change in proper time to $\mathcal{O}(r_E^{-1})$ which is what is expected and there is a term that grows linearly with time at $\mathcal{O}(r_E^{-2})$ which is in agreement with results presented in section \ref{RelV}.
 
- \section{Observation with Space-based Interferometers}
+\section{Observation with Space-based Interferometers}
 \label{obs}
-Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta M d}{r_E^2} t$ we can estimate the distance a SN would have to be from the interferometer to have an observable change in strain, which is a unitless number quantifying the amount of space-time distortion.
+Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta M d}{r_0^2} t$ we can estimate the distance a SN would have to be from the interferometer to have an observable change in strain, which is a unitless number quantifying the amount of space-time distortion.
 \begin{equation}
-h \sim \frac{\Delta L}{d} \sim \frac{\delta M t}{r_E^2}~.
+h \sim \frac{\Delta L}{d} \sim \frac{\delta M t}{r_0^2}~.
 \label{eq-strain}
 \end{equation} 
-Since our strain grows linearly with time, we do not expect detections from ground based experiments. Since for those setups, the three points $A,B,C$ cannot remain in free fall long enough for the signal to build up. 
+Since our strain grows linearly with time, we do not expect detections from ground based experiments as for those setups the three points $A,B,C$ cannot remain in free fall for a long enough amount of time such that the signal builds up to an observable value. 
 
-If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point the sensitivity curve of a device crosses with a 45-degree line is the best chance our effect can be detected by such device. In all these estimation, we take $\delta M$ as a faction of solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
+If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point at which the sensitivity curve of a device crosses with a 45-degree line will give the best chance for our effect being detected. In all these estimations, we take $\delta M$ to be a faction of a solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
 
-For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sensitivity in strain $\sim 10^{-21}$. Using Eq.~(\ref{eq-strain}), we can solve for the distance to the supernova $r_E$ for our effect to be detectable.
+For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sensitivity in strain $\sim 10^{-21}$. Using Eq.~(\ref{eq-strain}), we can solve for the distance to the SN, $r_0$, for our effect to be detectable.
 \begin{eqnarray}
-	r_E & = &  \left(  \frac{\delta M}{h} t \right)^\frac{1}{2} \label{Meas}	\\
-	& = &  \left( \frac{1 km}{10^{-21}} \times 10^7 km \right)^\frac{1}{2} \approx 10^{14} km = 10 ly.
+	r_0 & = &  \left(  \frac{\delta M}{h} t \right)^\frac{1}{2} \label{Meas}	\\
+	& = &  \left( \frac{1 \ km}{10^{-21}} \times 10^7 \ km \right)^\frac{1}{2} \approx 10^{14} \ km = 10 \ ly.
 \end{eqnarray}
-This is clearly too close. It is unlikely that we will witness a supernova explosion within 10 light years.\footnote{And we should pray not to, since it might kill us.}
+This is clearly too close. It has been estimated that only once in $10^8$ years will a SN go off within a distance of $30 \ ly$ \cite{EllSch93}.\footnote{And if that happens, it might kill us.} By a naive volume scaling, an explosion within 10 $ly$ only occurs once every billion years.
 
-If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. That gives a value for $r_E$ of $\sim 100 ly$. This is a factor of $10^3$ increase in the volume for detectable events, and therefore significantly improves the chance of observation. Moreover, the frequency range $\sim 0.5 Hz$ does not have as many background signals from compact binaries, making BBO a much better device to measure our effect.
+If we look at the Big Bang Observer (BBO) instead, the best observing frequency is $\sim 0.5 Hz$ with a sensitivity in strain $\sim 10^{-24}$. First of all, this frequency range does not have as many background signals from compact binaries, making it a much better device to measure our effect. The improved sensitivity gives a value for $r_0$ of $\sim 100 \ ly$. This is a factor of $10^3$ increase in the volume for detectable events, thus improves the expectation of one SN that is within $10 \ ly$ to occur in less than a million years . That is unfortunately still a long shot.
 
 In this type of simple estimation, we cannot go lower in the frequency. The exact duration of the neutrino-shell passage is not known, but we do no expect it to be much less than a second. Thus for higher frequencies, the co-dimension-one delta function approximation breaks down, and the effect will be weaker than Eq.~(\ref{eq-strain}).
 
-Finally, we can assume that the next supernova would be at a distance comparable to the Galactic diameter of $\sim 10^5 ly$, and estimate what sensitivity would be required to measure our effect in about $1 Hz$. Again using Eq.~(\ref{eq-strain}), we find
+Finally, we expect 2 to 3 SN per century in our galaxy and we can assume that the next SN would be at a distance comparable to the galactic diameter of $\sim 10^5 \ ly$. If we are going to measure such effect at $1 \ Hz$, Again using Eq.~(\ref{eq-strain}), we find
 \begin{equation}
 	h = \frac{ 1~km \times ~ (3\times10^8~m)}{(10^5~ly)^2}\sim 10^{-30}~.
 \end{equation}
-This is not yet achievable by interferometers that are currently being planned. 
+This requires a measurement of the strain that is six orders of magnitude better than BBO and is not yet achievable by interferometers that are currently being planned. 
 
-\section{Observation with Pulsar Scintillation}
-\label{sec-scint}
-
-\onecolumngrid
-
-\begin{figure}[tb]
-\begin{center}
-\includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
-\caption{Geometry of the astrophysical interferometer formed by pulsar scintillemotry. Due to scattering or lensing, the image we see is actually an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the supernova, the spacetime distortion of the neutrino shell will change the interference pattern we see.}
-\label{fig:4}
-\end{center}
-\end{figure}
-
-\twocolumngrid
-
-We learned from the previous section how difficult it is to measure the spacetime distortion. It is strongly suppressed by a factor of $r_E^{-2}$, which is proportional to the energy density of the shell when it reaches us. If we can have an interferometer much closer to the supernova, the signal will be larger.
-
-In this final section we discuss a possibility to do just that. It is known that the images of many astronomical bodies scintillate \cite{PulsarScint}. A general reason for scintillation is that due to scattering or lensing, we receive multiple light rays from the same objects. These light rays are very close to each other, so they cannot be individually resolved and have to interfere. The scintillation pattern we see is the time dependence of their interference. If we consider two light rays from a faraway pulsar which happen to pass by a supernova progenitor, as illustrated in Fig.\ref{fig:4}, they can probe the spacetime distort when it explodes. 
-
-The scintillation/interference pattern is directly related to the path lengths of these light rays. The change in such path length during a supernova explosion has been worked out in \cite{Olum:2013gza}. 
-\begin{equation}
-	\Delta t = 2\delta M \left[ \ln \left(1 + \frac{t^2}{b^2} \right) - \frac{t^2}{b^2 + t^2} \right].
-\end{equation}
-Here $b$ is the impact parameter as shown in Fig.\ref{fig:4}, the shortest distance between the light ray and the supernova. $t$ is the proper time on earth, with $t=0$ the time we directly observe the supernova explosion. $\delta M$ is the total energy of the neutrino shell, and $\Delta t$ is the resulting time shift. A photon which should have reached the earth at time $t$, will arrive earlier at $(t-\Delta t)$ instead.
-
-When the separation between two light rays has a component in the radial direction from the supernova $\Delta b$, there will be a nonzero relative change between their path lengths.
-\begin{equation}
-	(\Delta t|_b - \Delta t|_{b+\Delta b}) \approx 
-	\frac{\partial \Delta t}{\partial b} \Delta b 
-	= - \frac{4\delta Mt^4}{b(b^2 + t^2)^2} \Delta b~.
-	\label{eq-change}
-\end{equation}
-We can see that this effect grows from zero and approaches an asymptotic value,\begin{equation}
-	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
-	\longrightarrow \frac{4\delta M \Delta b}{b}~,
-\end{equation}
-at a characteristic time scale given by $b$. 
-
-The light ray separation $\Delta b$ is determined by the size of the scattering screen/lens, which can optimistically go up to the order of 1000 au $\sim 10^{10} km$. The impact parameter $b$ is estimated by taking a sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation}. The minimum value for $b$ estimated by assuming a SN explosion takes place in the centre of the galaxy is $\sim 10 ly = 10^{14} km$. We again use $\delta M \sim 1 km$ and estimate that $(\delta M b / b) \sim 1 m$. This is comparable to the wavelength of high radio waves, which is conveniently a good window to observe pulsar signals. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a supernova explosion, we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}).
-\ \\
 
 \acknowledgments
 
 This work is supported by the Canadian Government through the Canadian Institute for Advance Research and Industry Canada, and by Province of Ontario through the Ministry of Research and Innovation.
 
-%\appendix
+\appendix
 
+%
+%\section{Full calculation of proper time}
+%
+%\subsection{Distance between $B$ and $C$}
+%
+%In this calculation we first calculate the time, $t_1$, it takes for the photon released at time $t$ from point $A$ to reach point $B$. Then we calculate the time, $t_2$, it takes for the photon to come back to point $A$. The quantities are clearly defined in figure \ref{calculation}. The final result is obtained by adding these times and converting to proper time. 
+%\\
+%\\
+%Lets start by finding $t_1$. The expression that will give us a value for $t_1$ is the metric in Eq (\ref{SCH}) with $ds^2 = 0$. To begin with we look at the leading order calculation. The leading order behaviour of $t_1$ will allow us to make simplifying approximations in the higher order calculations. 
+%
+%\begin{eqnarray}
+%	t_1  & = &  \left(  1 - \frac{2(M- \delta M)}{r_0} \right)^{-1} (r_B(t+t_1) - r_A(t))	\nonumber	\\
+%	& = &  d - \frac{\delta M t_1}{r_0} + \frac{\delta M d}{r_0} + \frac{2(M - \delta M)}{r_0}d
+%\end{eqnarray}
+%
+%Note that the term on the r.h.s containing the $t_1$ can be moved over to the l.h.s to solve for $t_1$
+%
+%\begin{equation}
+%	t_1 \left( 1 + \frac{\delta M}{r_0} \right) = d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} \right)
+%\end{equation}
+%
+%Simplifying this gives the final expression for $t_1$
+%
+%\begin{equation}
+%	t_1 = d \left( 1 + \frac{2(M - \delta M)}{r_0} \right) 	\label{A3}
+%\end{equation}
+%
+%Now lets work out $t_2$. 
+%
+%\begin{eqnarray}
+%	t_2 & = & \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{-1} ( r_B(t + t_1) - r_A(t + t_1 + t_2) )	\nonumber \\
+%	& = & d + \frac{\delta M}{r_0} d + \frac{\delta M}{r_0} t_2 + \frac{2(M- \delta M)}{r_0} d
+%\end{eqnarray}
+%
+%Move the $t_2$ term on the r.h.s to the l.h.s
+%\begin{equation}
+%	t_2 \left( 1 - \frac{\delta M}{r_0} \right) = d \left( 1+  \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} \right)  
+%\end{equation}
+%
+%Simplifying to the final expression
+%
+%\begin{equation}
+%	t_2 = d \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{2 \delta M}{r_0} \right)
+%\end{equation}	
+%
+%Now we combine them to get the total coordinate time it takes for the photon to go from point $A$ to $B$ and come back. 
+%
+%\begin{equation}
+%	 t_1 + t_2 = 2d \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{\delta M}{r_0} \right)
+%\end{equation}
+%
+%Converting to proper time, $\tau$, seen by point $A$
+%
+%\begin{eqnarray}
+%	\tau & = & - \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^\frac{1}{2} (t_1 + t_2)\nonumber	\\
+%	& = & -2d \left( 1 + \frac{M}{r_0} \right)
+%\end{eqnarray}
+%
+%Since we are interested in the difference in proper time before and after shell crossing, we need to compute the proper time without shell crossing. We do this using the same method. 
+%We start by finding $\bar{t}_1$.
+%
+%\begin{equation}
+%	\bar{t}_1  = \left( 1 - \frac{2M}{r_0} \right)^{-1}(\bar{r}_b(t + t_1) - \bar{r}_A(t) ) = d \left( 1 - \frac{2M}{r_0} \right)^{-1}
+%\end{equation}
+%
+%$\bar{t}_2$ is the same as $\bar{t}_1$ to leading order. The proper time $\bar{\tau}$ is
+%
+%\begin{equation}
+%	\bar{\tau} = - \left( 1 - \frac{2M}{r_0} \right)^\frac{1}{2} (\bar{t}_1 + \bar{t}_2) = -2d \left( 1 + \frac{M}{r_0} \right)	\label{A11}
+%\end{equation}
+%
+%The difference between the proper times, to $\mathcal{O}(r_0^{-1})$ is 
+%
+%\begin{equation}
+%	\Delta \tau \equiv \tau - \bar{\tau} =  0.	\label{M1}
+%\end{equation}
+%
+%Now we look at the $\mathcal{O}(r_0^{-2})$ calculation. 
+%
+%\begin{eqnarray}
+%	t_1 \left( 1 - \frac{2(M - \delta M)}{r_0} \right) & = & d - \frac{1}{2} \frac{M d^2}{(r_0 + d)^2} - \frac{1}{2} \frac{(M - \delta M)}{(r_0 + d)^2 } (t + t_1 -d)^2 - \frac{\delta M}{r_0} (t  + t_1 -d) + \frac{\delta Md}{r_0^2}(t + t_1 -d) 	\nonumber	\\
+%	& - & \frac{Mdt}{r_0^2} + \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 + \frac{\delta M}{r_0}t
+%\end{eqnarray}
+%
+%We previously showed in Eq (\ref{A11}) that to order $\mathcal{O}(r_0^{-1})$ we don't expect any change in proper time and also in Eq (\ref{A3}) we show that $t_1 -d = \mathcal{O}(r_0^{-1})$. Therefore we can set the $t_1 - d$ in the equation above to zero as it is multiplying a term that is $\mathcal{O}(r_0^{-2})$ and we are not interested in terms at order $\mathcal{O}(r_0^{-3})$. 
+%
+%\begin{equation}
+%	t_1 \left( 1 - \frac{2(M - \delta M)}{r_0} \right) = d - \frac{1}{2} \frac{Md^2}{r_0^2} - \frac{\delta M}{r_0} t_1 + \frac{\delta M d}{r_0} - \frac{(M - \delta M) dt}{r_0^2} 
+%\end{equation}
+%
+%Moving the $t_1$ term to the left
+%
+%\begin{equation}
+%	t_1\left( 1 - \frac{2(M - \delta M)}{r_0} + \frac{\delta M}{r_0} \right) = d \left( 1 - \frac{1}{2} \frac{Md}{r_0^2} + \frac{\delta M}{r_0} - \frac{(M - \delta M)t}{r_0^2} \right)
+%\end{equation}
+%
+%Finally simplifying
+%
+%\begin{eqnarray}
+%	t_1 & = & d \left( 1 + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{M d}{r_0^2} - \frac{( M - \delta M)}{r_0^2}t + \frac{4(M - \delta M)^2}{r_0^2} - \frac{2 \delta M(M - \delta M)}{r_0^2} \right)
+%\end{eqnarray}
+%
+%Here we note that when $\delta M =0$ this equation reduces to Eq (\ref{A21}). 
+%\\
+%\\
+%Now lets compute $t_2$
+%
+%\begin{eqnarray}
+%	t_2 \left( 1 - 2 \frac{M - \delta M}{r_0} \right) & = & r_B(t + t_1) - r_A(t+t_1 + t_2)	\nonumber	\\
+%	& = & d - \frac{1}{2} \frac{Md^2}{r_0^2} - \frac{1}{2} \frac{(M - \delta M)}{r_0^2} t^2 - \frac{\delta M}{r_0}  \left( 1 - \frac{M- \delta M}{r_0} \right) (t + t_1 -d) + \frac{\delta Mdt}{r_0^2} - \frac{Md t}{r_0^2}	\nonumber	\\
+%	& + & \frac{1}{2} \frac{(M - \delta M)(t+t_1 + t_2)^2}{r_0^2} + \frac{\delta M}{r_0}  \left( 1 - \frac{M- \delta M}{r_0} \right) (t + t_1 + t_2)	\nonumber	\\
+%	& = & d - \frac{1}{2} \frac{M}{r_0^2} d^2 + \frac{\delta M d}{r_0} + \frac{\delta M t_2}{r_0} + \frac{(M - \delta M)dt}{r_0^2} + \frac{2(M - \delta M)d^2}{r_0^2} - \frac{2 \delta M( M - \delta M)d}{r_0^2} 
+%\end{eqnarray}
+%
+%Again we set $t_1, t_2 = d$ as the corrections to this will come in at $\mathcal{O}(r_0^{-3})$ because the terms that contain $t_1, t_2$ are already $\mathcal{O}(r_0^{-2})$. 
+%\\
+%Moving the $t_2$ term to the l.h.s 
+%
+%\begin{eqnarray}
+%	t_2 \left( 1 - \frac{2(M - \delta M)}{r_0} - \frac{\delta M}{r_0} \right) & = & d \left( 1 + \frac{\delta M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{\delta M t}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{2(M - \delta M)d}{r_0^2} - \frac{2 \delta M(M - \delta M)}{r_0^2}  \right)	\nonumber	\\
+%\end{eqnarray}
+%
+%Finally simplifying
+%
+%\begin{eqnarray}
+%	t_2 & = & d \left( 1 + \frac{\delta M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{(M - \delta M) t}{r_0^2} + \frac{2(M - \delta M) d}{r_0^2} - \frac{2\delta M(M - \delta M)}{r_0^2} \right)	\nonumber	\\
+%	& \times & \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{\delta M}{r_0} + \left(\frac{2(M - \delta M)}{r_0} + \frac{\delta M}{r_0} \right)^2 \right)		\nonumber	\\
+%	& = & d \left( 1+ \frac{2 \delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{2(M - \delta M) d}{r_0^2} + \frac{ 6 \delta M (M - \delta M)}{r_0^2} + \frac{2\delta M^2}{r_0^2} \right.	\nonumber	\\
+%	& + & \left. \frac{4(M - \delta M)^2}{r_0^2}  - \frac{2(M - \delta M) \delta M}{r_0^2} \right)	\nonumber	\\
+%	& = & d \left( 1+ \frac{2 \delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{2(M - \delta M) d}{r_0^2} + \frac{ 4 \delta M (M - \delta M)}{r_0^2} + \frac{2\delta M^2}{r_0^2} \right.	\nonumber	\\
+%	& + & \left. \frac{4(M - \delta M)^2}{r_0^2}  \right)	\nonumber	\\
+%\end{eqnarray}
+%
+%as a check again we see that this reduces to $\bar{t}_2$ when $\delta M = 0$. Adding the two times to get the coordinate time $t_1 + t_2$,  
+%
+%\begin{eqnarray}
+%	t_1 + t_2 & = & 2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} + \frac{(M - \delta M)d}{r_0^2} + \frac{\delta M (M - \delta M)}{r_0^2} + \frac{\delta M^2}{r_0^2} \right)
+%\end{eqnarray}
+%
+%converting to proper time
+%
+%\begin{eqnarray}
+%	\tau & = & - \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^\frac{1}{2}(t_1 + t_2)	\nonumber	\\
+%	& = & -2d \left( 1 - \frac{(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)^2}{r_0^2} \right) 	\nonumber	\\
+%	& \times &\left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{M d}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} + \frac{(M - \delta M)d}{r_0^2} + \frac{\delta M(M - \delta M)}{r_0^2} + \frac{\delta M^2}{r_0^2} \right)	\nonumber	\\
+%	& = & -2d \left(1 + \frac{M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{3}{2} \frac{(M - \delta M)^2}{r_0^2} + \frac{(M - \delta M)d}{r_0^2} + \frac{\delta M^2}{r_0^2} \right)
+%\end{eqnarray}
+%	
+%Lets compare this to the proper time before shell crossing $\bar{\tau}$. Lets start with $t_1$ 
+%
+%\begin{eqnarray}
+%	\bar{t}_1 & = & \left( 1 - \frac{2M}{r_0} \right)^{-1} (r_B(\bar{t} + \bar{t}_1) - r_A(\bar{t}))	\nonumber	\\
+%	& = & \left( 1 - \frac{2M}{r_0} \right)^{-1} \left( d - \frac{1}{2} \frac{M}{r_0^2} (\bar{t} + \bar{t}_1)^2 + \frac{1}{2} \frac{M}{r_0^2} \bar{t}^2 \right)	\nonumber	\\
+%	& = & d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{M \bar{t}}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)	\label{A21}
+%\end{eqnarray}
+%
+%Now $t_2$ 
+%
+%\begin{eqnarray}
+%	\bar{t}_2 & = & \left( 1 - \frac{2M}{r_0} \right)^{-1} \left(d + \frac{1}{2} \frac{M}{r_0^2} (\bar{t}^2 + 4 d \bar{t} + 4d^2 - \bar{t}^2 - 2d \bar{t}  - d^2) \right)	\nonumber	\\
+%	& = & d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} + \frac{M\bar{t}}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right)
+%\end{eqnarray}
+%
+%The proper time is
+%
+%\begin{eqnarray}
+%	\bar{\tau} & = & - \left( 1 - \frac{2M}{r_0} \right)^{\frac{1}{2}}(\bar{t}_1 + \bar{t}_2) 	\nonumber	\\
+%	& = & - 2d \left( 1  +\frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} + \frac{1}{2} \frac{Md}{r_0^2} \right)
+%\end{eqnarray}
+%
+%The difference in proper times is therefore given by 
+%
+%\begin{eqnarray}
+%	\tau - \bar{\tau} & = & -2d \left( - \frac{Md}{r_0^2} + \frac{3}{2} \frac{(M - \delta M)^2}{r_0^2} + \frac{(M - \delta M)d}{r_0^2} + \frac{\delta M^2}{r_0^2} - \frac{3}{2}\frac{M^2}{r_0^2} \right)		\nonumber	\\
+%	& = & -2d \frac{\delta M}{r_0^2} (-3M + \frac{5}{2} \delta M -d)
+%\end{eqnarray}
+%	
+%%	
+%%\subsection{Change in frequency}
+%%
+%%Since the phase of the photons is a product of the proper time and the frequency $\omega$. The frequency at time $t$ is $\omega_0$
+%%
+%%\begin{eqnarray}
+%%	\omega_0 & =& -  k^\mu \zeta_f^\nu g_{\mu \nu} |_{r_A(t)}		\nonumber	\\
+%%	& = & - k^0 \zeta_f^0 g_{00}|_{r_A(t)} - k^1 \zeta_f^1g_{11}|_{r_A(t)}	\nonumber	\\
+%%	& = & \omega_\infty \left( \left(1 - \frac{2(M - \delta M)}{r_A(t)} \right)^{-\frac{1}{2}} + \frac{\delta M}{r_0} \left(1 - \frac{2(M - \delta M)}{r_A(t)} \right)^{-1} \right)	\nonumber	\\
+%%	& = & \omega_\infty \left( 1 + \frac{M}{r_A(t)} - \delta M \left( \frac{1}{r_A(t)} - \frac{1}{r_0} \right) \right)
+%%\end{eqnarray}
+%%
+%%This will be observed at $B$ at time $t+t_1$
+%%
+%%\begin{equation}
+%%	\omega_1 = \omega_\infty \left( \left( 1 - \frac{2(M - \delta M)}{r_B(t+t_1)} \right)^{-\frac{1}{2}} + \frac{\delta M}{r_0} \left( 1 - \frac{2(M - \delta M)}{r_B(t+t_1)} \right)^{-1} \right)
+%%\end{equation}
+%%
+%%The point $B$ now emits a photon with frequency $\omega_1$ and the measured frequency at $A$ at time $t + t_1 + t_2$ is
+%%
+%%\begin{eqnarray}
+%%	\omega_2 & = & \omega_1 \left( \left( 1 - \frac{2(M - \delta M)}{r_A(t+t_1 +t_2)} \right)^{-\frac{1}{2}} + \frac{\delta M}{r_0} \left( 1 - \frac{2(M - \delta M)}{r_A(t + t_1 + t_2)} \right)^{-1} \right)
+%%\end{eqnarray}
+%%
+%%we can substitute in for $\omega_1$ to find $\omega_2$ in terms of $\omega_\infty$ so that we can compare $\omega_2$ with $\omega_0$. 
+%%
+%%\begin{eqnarray}
+%%	\omega_2 & = & \omega_\infty \left( \left( 1 - \frac{2(M - \delta M)}{r_B(t+t_1)} \right)^{-\frac{1}{2}} + \frac{\delta M}{r_0} \left( 1 - \frac{2(M - \delta M)}{r_B(t+t_1)} \right)^{-1} \right) \left( \left( 1 - \frac{2(M - \delta M)}{r_A(t+t_1 +t_2)} \right)^{-\frac{1}{2}} + \frac{\delta M}{r_0} \left( 1 - \frac{2(M - \delta M)}{r_A(t + t_1 + t_2)} \right)^{-1} \right)	\nonumber	\\
+%%	& = & \omega_\infty \left( \left( 1 - 2(M - \delta M) \left( \frac{1}{r_B(t + t_1)} + \frac{1}{r_A(t + t_1 + t_2)} \right) + \frac{4(M - \delta M)^2}{r_B(t + t_1) r_A(t + t_1 +t_2)} \right)^{-\frac{1}{2}}  \right. \nonumber	\\
+%%	& + &  \left. \frac{\delta M}{r_0} \left( 1 + \frac{M - \delta M}{r_B(t + t_1)} \right) \left( 1  +\frac{2(M - \delta M)}{r_A(t + t_1 + t_2)} \right) + \frac{\delta M}{r_0 + d} \left( 1 + \frac{2(M - \delta M)}{r_B(t + t_1)} \right) \left( 1 + \frac{M - \delta M}{r_A(t + t_1 + t_2)} \right) + \frac{\delta M^2}{r_0^2} \right)	\nonumber	 \\
+%%	& = & \omega_\infty \left( 1 + (M  - \delta M) \left( \frac{1}{r_B(t+t_1)} + \frac{1}{r_A(t + t_1 + t_2} \right) - \frac{2(M - \delta M)^2}{r_B(t + t_1) r_A(t + t_1 + t_2)} \right.\nonumber	\\
+%%	& + & \left. \frac{3}{4} (M - \delta M) \left( \frac{1}{r_B(t + t_1)} + \frac{1}{r_A(t + t_1 + t_2)} \right) + \frac{\delta M}{r_0} + \frac{\delta M ( M - \delta M)}{r_0 r_B(t + t_1)} + 2 \frac{\delta M (M - \delta M)}{r_0 r_A(t + t_1 + t_2)} + \frac{\delta M}{r_0} + \frac{2\delta M (M - \delta M)}{r_0 r_B(t + t_1)} \right. \nonumber		\\
+%%	& + & \left. \frac{\delta M(M - \delta M)}{r_0 r_A(t + t_1 + t_2)} - \frac{\delta M d}{r_0^2} + \frac{\delta M^2}{r_0^2} \right)
+%%\end{eqnarray}
+%%
+%\subsection{Proper time and distance relation}
+%
+%Lets compute the proper time it would take a free falling observer
+%
+%\begin{eqnarray}
+%	t_1 & = & r_B(t + t_1) - r_A(t)	\nonumber	\\
+%	& = & d - \frac{1}{2} \frac{M}{(r_0 + d)^2} (t + t_1)^2 + \frac{1}{2} \frac{M}{r_0^2} t^2	\nonumber	\\
+%	& = & d - \frac{Mdt}{r_0^2} - \frac{1}{2} \frac{Md^2}{r_0^2}
+%\end{eqnarray}
+%
+%\begin{eqnarray}
+%	t_2 & = & r_B(t + t_1) - r_A(t + t_1 + t_2)	\nonumber	\\
+%	& = & d + \frac{Mdt}{r_0^2} + \frac{3}{2} \frac{Md^2}{r_0^2}
+%\end{eqnarray}
+%
+%Adding the two times gives
+%
+%\begin{equation}
+%	t_1 + t_2 = 2 d + \frac{Md^2}{r_0^2} = 2d \left( 1+ \frac{1}{2} \frac{Md}{r_0^2} \right)
+%\end{equation}
+%
+%The proper time is
+%
+%\begin{eqnarray}
+%	\tau & = & - \left( 1 - \frac{2M}{r_0} \right)^{-\frac{1}{2}} (t_1 + t_2)	\nonumber	\\
+%	& = & -2d \left( 1 + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} + \frac{1}{2} \frac{Md}{r_0^2} \right)
+%\end{eqnarray}
+%
+%the change in distance is just
+%
+%\begin{eqnarray}
+%	r_B(t + t_1) - r_A(t + t_1) = d - \frac{1}{2} \frac{M}{r_0^2}(t + t_1)^2 + \frac{1}{2} \frac{M}{r_0^2} (t + t_1)^2 = d
+%\end{eqnarray}
+%
+%\subsection{Distance between $A$ and $C$}
+%
+%Lets start with the trajectory of particle $C$, perpendicular to the radial direction, which is a distance $d$ from $A$ 
+%
+%\begin{equation}
+%	r_C(t)_{\bot} = d - \frac{1}{2} \frac{\delta M}{\sqrt{r_0^2 + d^2}} t \sin \theta - \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 \sin \theta = d - \frac{1}{2} \frac{\delta M}{r_0^2} d t - \frac{1}{2} \frac{(M - \delta M)d}{r_0^3} t^2 
+%\end{equation}
+%
+%we know the acceleration term will be $\frac{1}{2} \frac{M}{r_0^2} t^2 \sin \theta$ therefore it will be suppressed by a further factor of $r_0$. The perpendicular trajectory for $A$
+%
+%\begin{equation}
+%	r_A(t)_{\bot} = 0 
+%\end{equation}
+%
+%We compute the times as we did before
+%
+%\begin{equation}
+%	t_1  =  r_C(t+ t_1)_{\bot} - r_A(t)_{\bot} = r_C(t + t_1)_\bot = t_2
+%\end{equation}
+%
+%\begin{eqnarray}
+%	t_2 & = & r_C(t+ t_1)_{\bot} - r_A(t+t_1+t_2)_{\bot} = r_C(t + t_1)_\bot	\nonumber	\\
+%	& = &  d - \frac{\delta M}{r_0^2} d (t+t_1) - \frac{1}{2} \frac{(M - \delta M)d}{r_0^3} (t+t_1)^2 
+%\end{eqnarray}
+%
+%The proper time is 
+%
+%\begin{eqnarray}
+%	\tau & = & \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{ - \frac{1}{2}} ( t_1 + t_2 )	\nonumber	\\
+%	& = & 2 \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{ - \frac{1}{2}} r_C(t+t_1)	\nonumber	\\
+%	& = & 2 \left(d + \frac{M - \delta M}{r_0} d + \frac{3}{2} \frac{(M - \delta M)^2 d}{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^3} d (t + t_1)^2 - \frac{\delta M d}{r_0^2} (t+ t_1) \right)	\nonumber	\\
+%	& = & 2 d \left(1 + \frac{M - \delta M}{r_0}  + \frac{3}{2} \frac{(M - \delta M)^2 }{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^3} (t + d)^2 - \frac{\delta M }{r_0^2} (t+ d) \right)
+%\end{eqnarray}
+%
+%For just background time trajectory there would be no velocity so just acceleration would give
+%
+%\begin{eqnarray}
+%	\bar{\tau} & = & - 2 \left( 1 - \frac{2M}{r_0} \right)^{-\frac{1}{2}}r_C(t+t_1)	\nonumber	\\
+%	& = & 2 \left( 1 - \frac{2M}{r_0} \right)^{-\frac{1}{2}} \left( d  -\frac{1}{2} \frac{M}{r_0^3} d (t + d)^2 \right)	\nonumber	\\
+%	& = & -2d \left( 1 + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{M}{r_0^3} (t + d)^2 \right)
+%\end{eqnarray}
+%
+%The difference between these proper times is
+%
+%\begin{eqnarray}
+%	\tau - \bar{\tau} & = & -2d \left( - \frac{\delta M}{r_0} + \frac{3}{2} \frac{\delta M^2 -2 M \delta M}{r_0^2} + \frac{1}{2} \frac{\delta M}{r_0^3} (t + d)^2 - \frac{\delta M}{r_0^2} (t+d) \right)
+%\end{eqnarray}
+%
+%\subsection{Geodesics in Schwarschild}
+%
+%The Lagrangian for a material particle is moving in radial direction. 
+%
+%\begin{equation}
+%	L = 1 = - \left( 1 - \frac{2M}{r} \right) \dot{t}^2 + \left( 1 - \frac{2M}{r} \right)^{-1} \dot{r}^2
+%\end{equation}
+%
+%The EOM for $t$ is 
+%
+%\begin{equation}
+%	\frac{dL}{dt} = \frac{\partial}{\partial \tau} \frac{dL}{d \dot{t}} 
+%\end{equation}
+%
+%\begin{equation}
+%	\frac{\partial}{\partial \tau} \left( 2 \left( 1 - \frac{2M}{r} \right) \dot{t} \right) = 0 \Rightarrow \left( 1 - \frac{2M}{r} \right) \dot{t} \equiv E
+%\end{equation}
+%
+%where $E$ is the conserved quantity w.r.t $t$. The metric/Lagrangian now tells us
+%
+%\begin{equation}
+%	1 = - \left( 1 - \frac{2M}{r} \right)^{-1} E^2 + \left( 1 - \frac{2M}{r} \right)^{-1} \dot{r}^2 = - \left( 1 - \frac{2M}{r} \right)^{-1} \left( E^2 - \dot{r}^2 \right)
+%\end{equation}
+%
+%The EOM for $r$
+%
+%\begin{equation}
+%	\frac{dL}{dr} = - \left( \frac{2M}{r^2} \right) \left( 1 - \frac{2M}{r} \right)^{-2} \dot{r}^2
+%\end{equation}
+%
+%\begin{equation}
+%	\frac{\partial}{\partial \tau} \frac{dL}{d \dot{r}} = \frac{\partial}{\partial \tau} \left( 2 \dot{r} \left( 1- \frac{2M}{r} \right) \right)  = \frac{2M}{r^2} \dot{r}^2 + 2 \ddot{r} \left( 1 - \frac{2M}{r} \right) 
+%\end{equation}
+%
+%Combining these terms
+%
+%\begin{equation}
+%	\frac{2M \dot{r}^2}{r^2} + 2 \ddot{r} \left( 1 - \frac{2M}{r} \right) = - \left( \frac{2M}{r^2} \right) \left( 1 - \frac{2M}{r} \right)^{-2} \dot{r}^2
+%\end{equation}
+%
+%A better way to write the geodesic equation:
+%
+%\begin{eqnarray}
+%	\frac{\partial^2 r}{\partial \tau}  + \Gamma^r_{\mu \nu} \frac{\partial x^\mu}{\partial \tau} \frac{\partial x^\nu}{\partial \tau} =  \frac{\partial^2 r}{\partial \tau} + \Gamma^r_{tt} \left( \frac{dt}{d \tau} \right)^2 - \Gamma^r_{rr} \left( \frac{\partial r}{\partial \tau} \right)^2 = 0
+%\end{eqnarray}
+%
+%\begin{eqnarray}
+%	& & \ddot{r} + \frac{M}{r^3}(r-2M) \dot{t}^2 - \frac{M\dot{r}^2}{r(r-2M)} = 0 	\nonumber	\\
+%	& & \ddot{r} + \frac{M}{r^3} \frac{(r-2M)E^2}{\left( 1 - \frac{2M}{r} \right)^2} - \frac{M \dot{r}^2}{r(r-2M)}= 0  	\nonumber	\\
+%	& & \ddot{r} + \frac{M}{r^\frac{5}{2}} \frac{E^2}{r - 2M} - \frac{M}{r(r-2M)} \left( E^2 + \frac{r - 2M}{r} \right) = 0	\nonumber	\\
+%	& & \ddot{r} + \frac{M}{r- 2M} \left( \frac{E^2}{r} \left( \frac{1}{r^\frac{3}{2}} - 1\right) - \frac{r- 2M}{r^2} \right) = 0
+%\end{eqnarray}
+%
+%From Hartle Eq 9.39 we get
+%
+%\begin{equation}
+%	\frac{dt}{dr} = - \left( \frac{2M}{r} \right)^{-\frac{1}{2}} \left( 1  -\frac{2M}{r} \right)^{-1}
+%\end{equation}
+%
+%expanding to leading order in $M/r$ 
+%
+%\begin{equation}
+%	\int dt = - \int dr \ \left( \frac{r}{2M} \right)^\frac{1}{2} + \left( \frac{2M}{r} \right)^\frac{1}{2}
+%\end{equation}
+%
+%integrating
+%
+%\begin{equation}
+%	t = -\frac{2}{3 \sqrt{2M}} \left( r^\frac{3}{2} + \frac{1}{2} \sqrt{r} \right)
+%\end{equation}
+%
+%\begin{equation}
+%	\frac{3}{2} Mt^2 = r(r + 1/2)^2
+%\end{equation}
+%
+%for very large $r$ we can ignore the factor of $1/2$ to get
+%
+%\begin{equation}
+%	r(t) = \frac{3}{2} \frac{Mt^2}{r^2}
+%\end{equation} 
+%
+%\subsection{Calculating the velocity from IJC}
+%
+%\begin{equation}
+%	g_{\mu \nu} \zeta^\mu_{i}  \Sigma^\nu_{i} = \hat{g}_{\mu \nu} \zeta^\mu_{f}  \Sigma^\nu_{f} 
+%\end{equation}
+%
+%\begin{equation}
+%	g_{00} \zeta^0_{i}  \Sigma^0_{i} + g_{11} \zeta^1_{i}  \Sigma^1_{i} = \hat{g}_{00} \zeta^0_{f}  \Sigma^0_{f}  + \hat{g}_{11} \zeta^1_{f}  \Sigma^1_{f}
+%\end{equation}
+%
+%\begin{equation}
+%	- \left( 1 - \frac{2M}{r} \right) \left( 1 - \frac{2M}{r} \right)^{-1} \left( 1 - \frac{2M}{r} \right)^{-\frac{1}{2}} = - \left( 1 - \frac{2(M - \delta M)}{r} \right) \left( 1 - \frac{2(M - \delta M)}{r} \right)^{-1} \left( 1 - \frac{2(M - \delta M)}{r} \right)^{-\frac{1}{2}} + v \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{-1}
+%\end{equation}
+%
+%\begin{equation}
+%	- \left( 1 + \frac{M}{r} + \frac{3}{2} \frac{M^2}{r^2} \right) = - \left( 1 - \frac{2(M - \delta M)}{r} \right)^{-\frac{1}{2}} + v \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{-1}
+%\end{equation}
+%
+%\begin{equation}
+%	- \frac{\delta M}{r_0} - \frac{3 \delta M M }{r_0^2}+ \frac{3}{2} \frac{\delta M^2}{r_0^2} = v \left( 1 + \frac{2(M - \delta M)}{r_0 }+ 4 \frac{(M - \delta M)^2}{r_0^2} \right)
+%\end{equation}
+%
+%\begin{equation}
+%	v = \left(  - \frac{\delta M}{r_0} - \frac{3 \delta M M }{r_0^2} + \frac{3}{2} \frac{\delta M^2}{r_0^2} \right) \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} \right)^{-1}
+%\end{equation}
+%
+%\begin{equation}
+%	v = - \frac{\delta M}{r_0} - \frac{M \delta M}{r_0^2} - \frac{1}{2} \frac{\delta M^2}{r_0^2}
+%\end{equation}
+%
+%\newpage
+%	
 %\section{Full calculation change in proper time}
 %
 %We would expect that the any difference in proper times would appear at $\mathcal{O}(r_E^{-2})$ thus all quantities are expanded to this order in the calculation. 
@@ -277,7 +929,7 @@ This work is supported by the Canadian Government through the Canadian Institute
 %r_2(t) &=& r_E + d - \frac{\delta M}{r_E+d} \left( 1 - \frac{2M_f}{r_E+d} \right)^\frac{1}{2}(t-\tilde{t}) \\ \nonumber
 %&=& r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E^2} ((M_f + d)t + (M_f - d)d)
 %\end{eqnarray}
-%Now, for a light ray that starts from $r_1$ at a later time $t_0$, we solve where $r_2$ crosses the null ray by substituting $r_0 = r_1(t_0) = r_E - \frac{\delta M}{r_E}t_0~$ and $r &=& r_2(t) = r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E}\frac{d}{r_E}(t-d+2M_f)$ into Eq (\ref{eq-null1out}). A further approximation we may use is $t_0\gg d\approx(t-t_0)$. Thus when a term is already second order, we ignore the difference between $t$ and $t_0$. We can then start to solve the crossing time at $r_2$, while carefully keeping all the expansions up to the second order.
+%Now, for a light ray that starts from $r_1$ at a later time $t_0$, we solve where $r_2$ crosses the null ray by substituting $r_0 = r_1(t_0) = r_E - \frac{\delta M}{r_E}t_0~$ and $r =r_2(t) = r_E + d - \frac{\delta M}{r_E}(t-d) + \frac{\delta M}{r_E}\frac{d}{r_E}(t-d+2M_f)$ into Eq (\ref{eq-null1out}). A further approximation we may use is $t_0\gg d\approx(t-t_0)$. Thus when a term is already second order, we ignore the difference between $t$ and $t_0$. We can then start to solve the crossing time at $r_2$, while carefully keeping all the expansions up to the second order.
 %
 %\begin{eqnarray}
 %& & \Delta t_{out} \equiv  t - t_0 = d - \frac{\delta M}{r_E}(t - t_0 - d) + \frac{\delta M M_f}{r_E^2} (t - t_0 -d)	\nonumber	\\
@@ -359,6 +1011,249 @@ This work is supported by the Canadian Government through the Canadian Institute
 %\begin{equation}
 %	\Delta \tau=  \frac{2d}{r_E^2} \left( \frac{3}{2} (M_i^2 - M_f^2) - \frac{d \delta M}{2} - 3 M_f \delta M - \frac{\delta M^2}{2} - t \delta M  \right).
 %\end{equation}
+%
+%\newpage
+
+\section{Full calculation of distance between $A$ and $B$}
+
+The trajectories are 
+
+\begin{equation}
+	r_A(t) = \begin{cases} r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2 & (t \leq 0)	\\
+	r_0 - \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t & (t>0)	\end{cases}
+\end{equation}
+
+\begin{equation}
+	r_B(t) = \begin{cases} r_0 + d - \frac{1}{2} \frac{M}{(r_0+d)^2} t^2 & (t \leq t_c)	\\
+	r_0 + d - \frac{1}{2} \frac{M - \delta M}{(r_0+d)^2} d^2 - \frac{1}{2} \frac{M - \delta M}{(r_0+d)^2} (t - d)^2  - \frac{\delta M}{r_0+d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)(t-d) - \frac{Md}{(r_0 + d)^2}(t - d) & (t>t_c)	\end{cases}
+\end{equation}
+
+\subsection{Crossing time}
+
+Assuming that $t = 0$ when the shell crosses $r_A$. We assume $r_A(t =0) = d$ and $r_B(t=0) = d + r_0$. Solving the metric equation for the shell, which is a null shell, is $t_c$ 
+
+\begin{equation}
+	t_c = \left( 1 + \frac{2(M - \delta M)}{r_0} \right) d
+\end{equation}
+
+This is to leading order. 
+
+\subsection{Before shell crossing}
+
+From the metric, we can set $ds = 0$, for the photon to get
+
+\begin{equation}
+	\int^{t + t_1}_{t} dt = \int^{r_B(t + t_1)}_{r_A(t)} \frac{dr}{\left( 1 - \frac{2M}{r} \right)}	
+\end{equation}
+
+Integrating this gives
+
+\begin{equation}
+	t_1 = r_B(t + t_1) - r_A(t) + 2M \ln \left( \frac{r_B(t + t_1) -2M}{r_A(t) - 2M} \right)	\label{B22}
+\end{equation}
+
+Now we can expand the log using $\ln(x) \approx (x-1) - \frac{1}{2} (x-1)^2 + ...$. For us $x = \frac{r_B(t + t_1) - 2M}{r_A(t) - 2M} $ Thus $x-1= \frac{r_B(t + t_1) - r_A(t)}{r_A(t) - 2M} = \frac{r_B(t + t_1) - r_A(t) }{r_A(t)} \left( 1 - \frac{2M}{r_A(t)} \right)^{-1}$ and we get
+
+\begin{equation}
+	2M \ln \left( \frac{r_B(t + t_1) - 2M}{r_A(t) - 2M} \right) =  2M \left( \frac{r_B(t +t_1) - r_A(t)}{r_A(t)} \left( 1 + \frac{2M}{r_A(t)} \right) - \frac{1}{2} \left( \frac{r_B(t + t_1) - r_A(t)}{r_A(t)} \right)^2 \left( 1 -\frac{2M}{r_A(t)} \right)^{-2} \right)
+\end{equation}
+
+Since we only want to keep terms that are $\mathcal{O}(r_0^{-2})$ we can replace $\frac{M}{r_A(t)}$ with $\frac{M}{r_0}$. Thus Eq (\ref{B22}) becomes
+
+\begin{eqnarray}
+	t_1 & =  & (r_B(t + t_1) - r_A(t)) \left( 1 + \frac{2M}{r_0} \left( 1 + \frac{2M}{r_0} - \frac{1}{2} \frac{r_B(t + t_1) - r_A(t)}{r_0} \right) \right)	\nonumber	\\
+	& = & (r_B(t + t_1) - r_A(t)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M (r_B(t + t_1) - r_A(t))}{r_0^2} \right)
+\end{eqnarray}
+
+
+to leading order $r_B(t + t_1) - r_A(t) = d$ 
+
+\begin{equation}
+	t_1 = (r_B(t + t_1) - r_A(t)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M d}{r_0^2} \right)
+\end{equation}
+
+\begin{equation}
+	r_B(t + t_1) - r_A(t) = d - \frac{1}{2} \frac{M}{r_0^2}(t + d)^2 + \frac{1}{2} \frac{Mt^2}{r_0^2} = d \left( 1 - \frac{1}{2} \frac{Md}{r_0^2} - \frac{Mt}{r_0^2} \right)
+\end{equation}
+
+Therefore $t_1$ becomes
+
+\begin{equation}
+	t_1 = d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{3}{2} \frac{Md}{r_0^2} - \frac{Mt}{r_0^2} \right)
+\end{equation}
+
+Now we can compute $t_2$.
+
+\begin{equation}
+	t_2 = (r_B(t + t_1) - r_A(t+t_1 +t_2)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M (r_B(t + t_1) - r_A(t+t_1+t_2))}{r_0^2} \right)
+\end{equation}
+
+
+\begin{eqnarray}
+	r_B(t + t_1) - r_A(t + t_1 + t_2) & = & d - \frac{1}{2} \frac{M}{r_0^2} (t + d)^2 + \frac{1}{2} \frac{M}{r_0^2} (t + 2d)^2	\nonumber	\\
+	& = & d \left( 1 + \frac{Mt}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right) 
+\end{eqnarray}
+
+Thus $t_2$ becomes
+
+\begin{eqnarray}
+	t_2 & = & d \left( 1 + \frac{Mt}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - Md}{r_0^2} \right)\nonumber	\\
+	& = & d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} + \frac{1}{2} \frac{Md}{r_0^2} + \frac{Mt}{r_0^2} \right)
+\end{eqnarray}
+
+Summing $t_1$ and $t_2$
+
+\begin{equation}
+	t_1 +t_2 = 2d \left(1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2}\right)
+\end{equation}
+
+The proper time measured is
+
+\begin{eqnarray}
+	\tau & = & - \left( 1 - \frac{2M}{r} \right)^\frac{1}{2} (t_1 + t_2) 	\nonumber	\\
+	& = & -2d \left( 1 - \frac{M}{r} - \frac{1}{2} \frac{M^2}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)		\nonumber	\\
+	&  = & -2d \left( 1  + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)
+\end{eqnarray}
+	
+\subsection{After shell crossing}
+
+The time $t_1$ is again given by
+
+\begin{equation}
+	t_1 = (r_B(t+t_1) - r_A(t)) \left( 1 + \frac{2(M-\delta M)}{r_0} + \frac{4(M-\delta M)^2}{r_0^2} - \frac{d(M-\delta M)}{r_0^2} \right)
+\end{equation}
+
+First lets look at 
+
+\begin{eqnarray}
+	r_B(t + t_1) - r_A(t) & = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2}d^2 - \frac{1}{2} \frac{M - \delta M}{r_0^2}t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)(t + t_1 -d) + \frac{\delta M d t}{r_0^2} - \frac{Mdt}{r_0^2}  \nonumber	\\
+	& + & \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 + \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
+	& = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{\delta M}{r_0} t_1 + \frac{\delta M d}{r_0} - \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2}
+\end{eqnarray}
+
+So $t_1$ becomes
+
+\begin{eqnarray}
+	t_1 & = & \left( d + \frac{2 \delta M (M - \delta M)d}{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{\delta M}{r_0} t_1 + \frac{\delta M}{r_0} d - \frac{(M - \delta M) dt}{r_0^2} \right)	\nonumber	\\
+	& \times & \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d(M - \delta M)}{r_0^2} \right)	\nonumber	\\
+	& = & d - \frac{\delta M}{r_0} t_1 + \frac{\delta M}{r_0} d + \frac{2\delta M(M - \delta M)d}{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{(M - \delta M)dt}{r_0^2} + \frac{2d(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2d}{r_0^2} - \frac{d^2(M - \delta M)}{r_0^2}
+\end{eqnarray}
+	
+\begin{equation}
+	t_1\left( 1 + \frac{\delta M}{r_0} \right) = d \left( 1 +\frac{\delta M}{r_0} + \frac{2\delta M(M - \delta M)}{r_0^2} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} - \frac{(M - \delta M)t}{r_0^2} + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{(M - \delta M)d}{r_0^2} \right)
+\end{equation}
+
+\begin{equation}	
+	t_1 = d \left( 1 + \frac{2(M - \delta M)}{r_0} - \frac{3}{2} \frac{(M - \delta M)d}{r_0^2} - \frac{(M - \delta M)t}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{2\delta M^2}{r_0^2} \right)
+\end{equation}
+
+Now we can compute $t_2$. 
+
+\begin{equation}
+	t_2 = (r_B(t + t_1) - r_A(t + t_1 + t_2)) \left(1 + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d(M - \delta M)}{r_0^2} \right)
+\end{equation}
+
+\begin{eqnarray}
+	r_B(t + t_1) - r_A(t + t_1 + r_2) & = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2}d^2 - \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t + t_1 -d) + \frac{\delta M dt}{r_0^2} - \frac{Mdt}{r_0^2} \nonumber	\\
+	&+ & \frac{1}{2} \frac{M - \delta M}{r_0^2}(t +2d)^2 + \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t + t_1 + t_2) + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
+	& = & d + \frac{3}{2} \frac{M - \delta M}{r_0^2} d^2 + \frac{\delta M d}{r_0} + \frac{\delta M t_2}{r_0} + 3 \frac{\delta M^2}{r_0^2} d + \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
+\end{eqnarray}
+
+Thus $t_2$ becomes
+
+\begin{eqnarray}
+	t_2 &  =& \left( d + \frac{3}{2} \frac{M - \delta M}{r_0^2}d^2 + \frac{\delta M}{r_0} d + \frac{\delta Mt_2}{r_0} + \frac{3 \delta M^2}{r_0^2} d + \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2} \right) \nonumber	\\
+	& \times & \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d (M - \delta M)}{r_0^2} \right)	\nonumber	\\
+	& = & d + \frac{3}{2} \frac{(M - \delta M) d^2}{r_0^2} + \frac{\delta M}{r_0} d + \frac{\delta M t_2}{r_0} + \frac{3 \delta M^2 d}{r_0^2} + \frac{(M - \delta M)dt}{r_0^2} + \frac{2\delta M(M - \delta M)d}{r_0^2} + \frac{2(M - \delta M)d}{r_0} 	\nonumber	\\
+	& & + \frac{2\delta M(M - \delta M)d}{r_0^2} + \frac{2\delta M(M - \delta M)t_2}{r_0^2} + \frac{4(M - \delta M)^2d}{r_0^2} - \frac{d^2(M - \delta M)}{r_0^2}	\nonumber	\\
+\end{eqnarray}
+
+Now we use $t_2 =d$ for the term which is $\mathcal{O}(r_0^{-2}) t_2$. 
+
+\begin{eqnarray}
+	t_2 \left( 1 - \frac{\delta M}{r_0} \right) & = & d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} + \frac{3}{2} \frac{(M - \delta M)d}{r_0^2} + 3 \frac{\delta M^2}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{2\delta M(M - \delta M)}{r_0^2}  \right.	\nonumber	\\
+	& + & \left. \frac{2 \delta M(M - \delta M)}{r_0^2} + \frac{2\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d(M - \delta M)}{r_0^2} \right)
+\end{eqnarray}
+
+\begin{equation}
+	t_2 = d \left( 1 + \frac{2\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} + \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{5 \delta M^2}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{8 \delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)
+\end{equation}
+
+Combining this with $t_1$ gives
+
+\begin{equation}
+	t_1 + t_2 = 2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{\delta M^2}{r_0^2} + \frac{4\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)
+\end{equation}
+
+Now we need to turn this into proper time, which is surprisingly tricky here.
+
+\begin{equation}
+	d \tau^2 = - dt^2 \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{-1} \left( \left( \frac{dr}{dt} \right)^2 - \left( 1  - \frac{2(M - \delta M)}{r_0} \right)^2 \right)
+\end{equation}
+
+Using the expression for velocity we get
+
+\begin{equation}
+	d \tau = dt \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^{-\frac{1}{2}} \left( - \frac{\delta M^2}{r_0^2} + \left(1 - \frac{2(M - \delta M)}{r_0} \right)^2 \right)^\frac{1}{2}
+\end{equation}
+
+Which we can expand to get
+
+\begin{equation}
+	d \tau = dt \left( 1 - \frac{M - \delta M}{r_0} - \frac{1}{2} \frac{(M - \delta M)^2}{r_0^2} - \frac{1}{2} \frac{\delta M^2}{r_0^2}\right)
+\end{equation}
+
+Thus we get
+
+\begin{eqnarray}
+	\tau & = &-  2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{\delta M^2}{r_0^2} + \frac{4\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)\nonumber	\\
+	& \times & \left( 1 - \frac{(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)^2}{r_0^2} - \frac{1}{2} \frac{\delta M^2}{r_0^2} \right)	\nonumber	\\
+	& = & - 2d \left( 1 + \frac{M}{r_0}  - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{(M - \delta M)^2}{r_0^2} + \frac{\delta M^2}{r_0^2} + \frac{3 \delta M(M - \delta M)}{r_0^2} \right)
+\end{eqnarray}
+	
+Comparing this to the proper time before shell crossing we get 
+
+\begin{equation}
+	\Delta \tau = \tau - \bar{\tau} = \frac{2d \delta M}{r_0^2} (d - 3 \delta M)
+\end{equation}
+
+\section{Distance between $A$ and $C$}
+
+We follow the same procedure as we did for the distance between $A$ and $B$. First we calculate the time, $t_1$, it takes for a photon starting from $A$ to go to $B$
+
+\begin{equation}
+	t_1 = r_C(t + t_1)_\bot - r_A(t)_\bot = d - \frac{\delta M d(t + d)}{r_0^2}.
+\end{equation}
+
+The time it takes for the photon to go from $C$ to $A$, $t_2$, is also equal to $t_1$. Therefore the proper time is
+
+\begin{equation}
+	\tau_{AC} = 2t_1 \left( 1 - \frac{2(M - \delta M)}{r_0} \right)^\frac{1}{2} = 2d \left( 1 - \frac{\delta M(t +d)}{r_0^2} - \frac{M - \delta M}{r_0} \right)
+\end{equation}
+
+The proper time without any shell crossing would be
+
+\begin{equation}
+	\bar{\tau}_{AC} = - 2d \left(1 - \frac{M}{r_0} \right).
+\end{equation}
+
+The change in proper time is
+
+\begin{equation}
+	\Delta \tau_{AC} \equiv \tau_{AC} - \bar{\tau}_{AC} = - 2d \left( \frac{\delta M(t + d)}{r_0^2} + \frac{\delta M}{r_0} \right)
+\end{equation}
+
+
+
+	
+	
+	
+	
+	
+	
+	
+
+
 
 \bibliography{all_active}
 
