@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Gravitational memory of Neutrinos}
+\title{Longitudinal gravitational memory and its detection in interferometers}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -110,28 +110,29 @@ We estimate $b$ by assuming that the next SN is somewhere near the galactic cent
 \end{figure}
 In this section we discuss how a similar effect can be also seen in traditional interferometers such as LIGO. We assume the geometry of the spacetime is governed by the SN progenitor star. Assuming the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric,
 \begin{equation}
-	ds^2_i = - \left( 1 - \frac{2M_i}{r} \right) dt_i^2 + \left( 1 - \frac{2M_i}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2,	\label{SCH}
+	d\bar{s}^2 = \bar{g}_{\mu \nu} d\bar{x}^\mu d\bar{x}^\nu = - \left( 1 - \frac{2M}{r} \right) d\bar{t}^2 + \left( 1 - \frac{2M}{r} \right)^{-1} d\bar{r}^2 + r^2 d \bar{\Omega}_2^2,	\label{SCH}
 \end{equation}
-where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the $i$ index used above to denote the ``initial" metric is replaced by $f$ to denote the ``final" metric with a smaller mass $M _f = M_i -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
+where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the bar used above to denote the ``initial" metric is removed to denote the ``final" metric, $ds^2 = g_{\mu \nu} dx^\mu dx^\nu$, with a smaller mass $M -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
 \begin{equation}
-	\Sigma^\mu_{(i,f)} = \left( \left( 1 - \frac{2M_{(i,f)}}{r} \right)^{-1}, 1, 0, 0 \right).	\label{sigma}
+	k^\mu = \left( g_{tt}^{-1}, 1, 0, 0 \right).	\label{sigma}
 \end{equation}
-Since we expect the interferometer points (denoted by the points $A,B,C$ in figure \ref{fig:1}) to be very far for the massive object we assume they have a small velocity\footnote{We assume $v_i^2 = 0$.} $v_{i}$ and are described by the following geodesic in either metric
+
+and similarly for $\bar{k}^\mu$. Since we expect the interferometer points (denoted by the points $A,B,C$ in figure \ref{fig:1}) to be very far for the massive object we assume they have a negligible initial velocity.
 \begin{equation}
-	\zeta^\mu_{i} = \left( \left( 1 - \frac{2M_i}{r} \right)^{-\frac{1}{2}}, v_{i}, 0, 0 \right).	\label{zeta}
+	\bar{u}^\mu = \left( (-1/\bar{g}_{tt})^\frac{1}{2}, 0, 0, 0 \right).	\label{zeta}
 \end{equation}
-The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points the velocity of the interferometer points will change from $v_i$ to $v_f$. Given $v_i$, we can calculate $v_f$ using the IJC, 
+The $r$ will be different for points $A,B$ and $C$ as shown in figure \ref{fig:1}. After the shell has crossed the points will pick up a velocity $v$. We can calculate $v$ using the IJC, 
 \begin{equation}
-	 g_{\mu \nu} \Sigma^\mu_{i} \zeta_{i}^\nu = \hat{g}_{\mu \nu} \Sigma^\mu_{f} \zeta_{f}^\nu,	\label{0IJC}
+	 g_{\mu \nu} u^\mu k^\nu = \bar{g}_{\mu \nu} \bar{u}^\mu \bar{k}^\nu,	\label{0IJC}
 \end{equation}
-where $\hat{g}_{\mu \nu}$ represents the metric of the ``final" spacetime and $g_{\mu \nu}$ is the metric of the initial spacetime. This expression comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. 
+
+This expression comes from demanding the continuity of geodesics from one geometry to another and was used in \cite{PhysRevD.93.103006} to calculate a similar effect. 
 Throughout this calculation we assume that the interferometer is very far from the SNe. Thus we assume there are three small quantities, $\frac{M}{r_0}, \frac{\delta M}{r_0}, \frac{d}{r_0} \ll1$. To simplify notation we will use the symbol $\mathcal{O}(r^{-1})$ to represent suppression by any one of the three small quantities. 
 Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer, to order $\mathcal{O}(r_{crossing}^{-2})$,
 \begin{equation}
-	\zeta^\mu_{f} = \left( \left( 1 - \frac{2M_f}{r_{crossing}} \right)^{-\frac{1}{2}}, v_i - \frac{\delta M}{r_{crossing}} \left( 1 + \frac{M + \frac{1}{2} \delta M}{r_{crossing}} \right), 0, 0 \right).	\label{5}
+	u^\mu = \left( (-1/g_{tt})^\frac{1}{2} \sqrt{1-v^2g_{tt}^{-1}}, v , 0, 0 \right).	\label{5}
 \end{equation}
-Thus the change in velocity due a shell crossing is $v_f - v_i= - \frac{\delta M}{r_{crossing}} \left( 1 + \frac{3}{2} \frac{\delta M}{r_{crossing}} \right)$. $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $r_0 + \mathcal{O}(d/r_0)$. Note that this is the proper velocity $\frac{dr}{d\tau}$. We will need the coordinate velocity for the our calculations which is given by $\frac{dr}{dt} = \frac{dr}{d \tau} \frac{d \tau}{dt} = \frac{dr}{d \tau} \left( 1 - \frac{2(M - \delta M)}{r_{crossing}} \right)^{\frac{1}{2}} \approx - \frac{\delta M}{r_{crosssing}} \left(1 + \frac{3}{2} \frac{\delta M}{r_{crossing}} \right)$
-
+Thus the change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing}} \bar{g}_{tt}^{-\frac{1}{2}} $ . $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $r_0 + \mathcal{O}(d/r_0)$. Note that this is the proper velocity $\frac{dr}{d\tau}$. We will need the coordinate velocity for the our calculations which is given by $\frac{dr}{dt} = \frac{dr}{d \tau} \frac{d \tau}{dt} = v g_{tt}^{\frac{1}{2}} = - \frac{\delta M}{r_{crossing}} \bar{g}_{tt}^{-\frac{1}{2}} g_{tt}^\frac{1}{2} = -\frac{\delta M}{r_{crossing}} \left( 1 + \frac{\delta M}{r_{crossing}} \right)$. 
 
 %
 %\subsection{The relationship between proper time and distance}\label{conceptsec}
@@ -170,37 +171,60 @@ Thus the change in velocity due a shell crossing is $v_f - v_i= - \frac{\delta M
 \subsection{Distance between $A$ and $B$}
 
 An interferometer can calculate the displacement between geodesics. There are two ways to calculate this displacement. The first is to directly calculate the photon geodesics from the metric and find the difference between them. The second is to integrate the geodesics deviation equation. In this paper we will use the first approach and calculate the trajectories of the interferometer points. We consider points $A$, $B$ and $C$ in figure \ref{fig:1} as the ends of the arms of the interferometer. 
-We parametrize the trajectories of the points in a piecewise form. For point $A$ we have
+We parametrize the trajectories of the points in a piecewise form. We will use the following terms to represent the acceleration and velocity of the points:
+
+\begin{eqnarray}
+	\bar{a}^{(A)}_{(2)} & = & \bar{a}^{(B)}_{(2)} = \bar{a}^{(C)}_{(2)} = \frac{M}{r_0^2}	\nonumber	\\
+	a^{(A)}_{(2)} & = & a^{(B)}_{(2)} = a^{(C)}_{(2)} = \frac{M - \delta M}{r_0^2}	\nonumber	\\
+	v^{(A)}_{(1)} & = & v^{(B)}_{(1)} = v^{(C)}_{(1)}  = - \frac{\delta M}{r_0} 	\nonumber	\\
+	v^{(A)}_{(2)} & = & v^{(C)}_{(2)} = - \frac{\delta M^2}{r_0^2}	\nonumber	\\
+	v^{(B)}_{(2)} & = & -\frac{\delta M^2}{r_0^2} - \frac{\delta M d}{r_0^2}.
+\end{eqnarray}
+The notation is to take the superscript to be the label of the particle. The subscript represents the number of factors of $r_0$ the term is suppressed by, i.e $a^{(A)}_{(2)}$ is term of $\mathcal{O}(r_0^{-2})$. We will only keep terms up to order $\mathcal{O}(r_0^{-2})$.
+The trajectory for point $A$ is
+
+%\begin{equation}
+%	r_A(t)  = \begin{cases} r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2 & (t \leq 0), 	\\
+%	 r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M }{r_0}\left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t \ & (t>0).
+%	 \end{cases}	\label{rA}
+%\end{equation}
 
 \begin{equation}
-	r_A(t)  = \begin{cases} r_0 - \frac{1}{2} \frac{M}{r_0^2} t^2 & (t \leq 0), 	\\
-	 r_0 - \frac{1}{2} \frac{M-\delta M}{r_0^2} t^2 - \frac{\delta M }{r_0}\left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t \ & (t>0).
-	 \end{cases}	\label{rA}
+	r_A(t) = \begin{cases} r_0 - \frac{1}{2} \bar{a}_{(2)}^{(A)} t^2 & (t \leq 0)	\\
+	r_0 - \frac{1}{2} a^{(A)}_{(2)} t^2 - \left(v^{(A)}_{(1)} + v^{(A)}_{(2)} \right)t  \ & (t>0)
+	\end{cases} \label{rA}.
 \end{equation}
+	
 $t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ we assume there is no velocity and the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change (as we calculated from the IJC) coming from shell crossing. In principle the $r_0$ on the RHS of Eq (\ref{rA}) should be $r_A(t)$ however we know $r_A(t) = r_0 + \mathcal{O}(M/r_0)$. Thus the effect of replacing $r_0$ with $r_A(t)$ will not affect the leading order answer. The trajectory of point $B$ is given by
+%
+%\begin{equation}
+%	r_B(t) = \begin{cases} r_0 + d  - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2 &	(t \leq t_c), 	\\
+%	 r_0 +d  - \frac{1}{2} \frac{M}{(r_0 + d)^2}t_c^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - t_c)^2 
+%	- \frac{\delta M}{r_0 + d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t-t_c) -\frac{Md}{(r_0+d)^2}(t-t_c) &  (t>t_c).
+%	\end{cases}	\label{rB}
+%\end{equation}
 
 \begin{equation}
-	r_B(t) = \begin{cases} r_0 + d  - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2 &	(t \leq t_c), 	\\
-	 r_0 +d  - \frac{1}{2} \frac{M}{(r_0 + d)^2}t_c^2 - \frac{1}{2} \frac{M - \delta M}{(r_0 +d)^2}(t - t_c)^2 
-	- \frac{\delta M}{r_0 + d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t-t_c) -\frac{Md}{(r_0+d)^2}(t-t_c) &  (t>t_c).
+	r_B(t) = \begin{cases} r_0 + d  - \frac{1}{2} \bar{a}_{(2)}^{(B)} t^2  & (t \leq 0)	\\
+	 r_0 +d  - \frac{1}{2}  \bar{a}^{(B)}_{(2)} t_c^2 - \left( \bar{a}_{(2)}^{(B)} t_c + v^{(B)}_{(1)} + v^{(B)}_{(2)} \right)(t-t_c) - \frac{1}{2} a_{(2)}^{(B)}(t-t_c)^2 &  (t>t_c).
 	\end{cases}	\label{rB}
 \end{equation}
 For $t <t_c$ there is just the acceleration of the point towards mass $M$. After $t>t_c$ the shell has crossed and now there is a change in distance in the time $t_c$ that the point is accelerating towards $M$. This is the second term in the expression. The next term corresponds to the acceleration of the point towards mass $M-\delta M$. The next two terms contain the velocity terms for this point. The first term is the comes from the IJC. The second term is the velocity picked up by this point in the time the shell reaches it. Using these trajectories we can calculate the proper time $\tau$ shown in figure \ref{calculation}. 
 We know $t_c = d$ to leading order. Since we are interested in terms up to $ \mathcal{O}(r_0^{-2})$, we can substitute $t_c$ with $d$ in terms that are already $\mathcal{O}(r_0^{-2})$. Using the trajectories we can calculate the proper time it takes for the photon to complete a round trip to from point $A$ to $B$. This can then be compared to the proper time it would take without shell crossing. The difference between the proper times will represent the physical distance change between the geodesics. The full calculation is presented in the appendix and the result is a constant change in distance 
 
 \begin{equation}
-	\Delta \tau_{AB} = \tau - \bar{\tau} = \frac{d \delta M}{r_0^2} (d - 3\delta M)
+	\Delta \tau_{AB} = \tau - \bar{\tau} = \frac{d \delta M}{r_0^2} (d - \delta M)
 \end{equation}
 
 There is a simple way to appreciate the lack of time dependence. We have assumed point $A$ has velocity zero at the time of shell crossing. After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}$. In the time the shell takes to go from $A$ to $B$, $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} d$. The final velocity of $A$ at time $d$ is, therefore, given by
 
 \begin{equation}
-	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.
+	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.
 \end{equation}
 Similarly, point $B$ will gain a velocity from the acceleration towards mass $M$ with magnitude $\frac{M}{r_0^2}d$. The velocity change from shell crossing is $\frac{\delta M}{r_0 + d}$. The final velocity of point $B$ at time $d$ is
 
 \begin{equation}
-	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.
+	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.
 \end{equation}
 
 We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-3})$ and therefore we don't expect the distance to change with time at leading order. Next we show an effect which is much more interesting since it grows with time.
@@ -210,11 +234,15 @@ We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-3})$ and therefore 
 The coordinates for this calculation are set up as follows; we let the $y$ coordinate be $0$ at $A$ and increases as we go down. Thus point $C$ is at $y$ coordinate $d$. The time is set to zero when the shell crosses point $A$ and $C$ (to leading order the shell crosses both of them at the same time). 
 The interferometer arm that goes from $A$ to $C$ will see the distance between these two points change. We can parametrize the trajectory of $r_C(t)_\bot$ in the perpendicular direction to the radial vector as 
 
-\begin{equation}
-	r_{C}(t)_\bot = \begin{cases} d - \frac{1}{2} \frac{M}{(r_0^2 + d^2)} t^2 \sin \theta ,  & (t\leq 0 )	
-	\\ d - \frac{1}{2} \frac{M - \delta M}{(r_0^2 + d^2)} t^2 \sin \theta - \frac{\delta M}{\sqrt{r_0^2 + d^2}} t \sin \theta,  & (t >0)  \end{cases}. 
-\end{equation}
+%\begin{equation}
+%	r_{C}(t)_\bot = \begin{cases} d - \frac{1}{2} \frac{M}{(r_0^2 + d^2)} t^2 \sin \theta ,  & (t\leq 0 )	
+%	\\ d - \frac{1}{2} \frac{M - \delta M}{(r_0^2 + d^2)} t^2 \sin \theta - \frac{\delta M}{\sqrt{r_0^2 + d^2}} t \sin \theta,  & (t >0)  \end{cases}. 
+%\end{equation}
 
+\begin{equation}
+	r_{C}(t)_\bot = \begin{cases} d - \frac{1}{2} \bar{a}_{(2)}^{(C)} \sin \theta  t^2 ,  & (t\leq 0 )	
+	\\ d - \frac{1}{2} a_{(2)}^{(C)}  \sin \theta t^2 - (v^{(C)}_{(1)} + v^{(C)}_{(2)}) t \sin \theta,  & (t >0)  \end{cases}. 
+\end{equation}
 where $\sin \theta \approx \theta = \frac{d}{r_0}$. Point $A$ will only move in the radial direction so we don't need to consider its motion in this case. Using this trajectory we can calculate how the proper time it takes a photon to get to $C$ and come back to $A$ changes due to shell crossing.
 
 \begin{equation}
@@ -1114,8 +1142,8 @@ The time $t_1$ is again given by
 First lets look at 
 
 \begin{eqnarray}
-	r_B(t + t_1) - r_A(t) & = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2}d^2 - \frac{1}{2} \frac{M - \delta M}{r_0^2}t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right)(t + t_1 -d) + \frac{\delta M d t}{r_0^2} - \frac{Mdt}{r_0^2}  \nonumber	\\
-	& + & \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 + \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) t + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
+	r_B(t + t_1) - r_A(t) & = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2}d^2 - \frac{1}{2} \frac{M - \delta M}{r_0^2}t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right)(t + t_1 -d) + \frac{\delta M d t}{r_0^2} - \frac{Mdt}{r_0^2}  \nonumber	\\
+	& + & \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 + \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right) t + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
 	& = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{\delta M}{r_0} t_1 + \frac{\delta M d}{r_0} - \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2}
 \end{eqnarray}
 
@@ -1124,7 +1152,7 @@ So $t_1$ becomes
 \begin{eqnarray}
 	t_1 & = & \left( d + \frac{2 \delta M (M - \delta M)d}{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{\delta M}{r_0} t_1 + \frac{\delta M}{r_0} d - \frac{(M - \delta M) dt}{r_0^2} \right)	\nonumber	\\
 	& \times & \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d(M - \delta M)}{r_0^2} \right)	\nonumber	\\
-	& = & d - \frac{\delta M}{r_0} t_1 + \frac{\delta M}{r_0} d + \frac{2\delta M(M - \delta M)d}{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{(M - \delta M)dt}{r_0^2} + \frac{2d(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2d}{r_0^2} - \frac{d^2(M - \delta M)}{r_0^2}
+	& = & d - \frac{\delta M}{r_0} t_1 + \frac{\delta M}{r_0} d + \frac{2\delta M(M - \delta M)d}{r_0^2} - \frac{1}{2} \frac{M - \delta M}{r_0^2} d^2 - \frac{(M - \delta M)dt}{r_0^2} + \frac{2d(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2d}{r_0^2} - \frac{d^2(M - \delta M)}{r_0^2}	\nonumber	\\
 \end{eqnarray}
 	
 \begin{equation}
@@ -1142,35 +1170,35 @@ Now we can compute $t_2$.
 \end{equation}
 
 \begin{eqnarray}
-	r_B(t + t_1) - r_A(t + t_1 + r_2) & = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2}d^2 - \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t + t_1 -d) + \frac{\delta M dt}{r_0^2} - \frac{Mdt}{r_0^2} \nonumber	\\
-	&+ & \frac{1}{2} \frac{M - \delta M}{r_0^2}(t +2d)^2 + \frac{\delta M}{r_0} \left( 1 + \frac{3}{2} \frac{\delta M}{r_0} \right) (t + t_1 + t_2) + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
-	& = & d + \frac{3}{2} \frac{M - \delta M}{r_0^2} d^2 + \frac{\delta M d}{r_0} + \frac{\delta M t_2}{r_0} + 3 \frac{\delta M^2}{r_0^2} d + \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
+	r_B(t + t_1) - r_A(t + t_1 + t_2) & = & d - \frac{1}{2} \frac{M - \delta M}{r_0^2}d^2 - \frac{1}{2} \frac{M - \delta M}{r_0^2} t^2 - \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right) (t + t_1 -d) + \frac{\delta M dt}{r_0^2} - \frac{Mdt}{r_0^2} \nonumber	\\
+	&+ & \frac{1}{2} \frac{M - \delta M}{r_0^2}(t +2d)^2 + \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right) (t + t_1 + t_2) + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
+	& = & d + \frac{3}{2} \frac{M - \delta M}{r_0^2} d^2 + \frac{\delta M d}{r_0} + \frac{\delta M t_2}{r_0} +  \frac{\delta M^2}{r_0^2} d + \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2}	\nonumber	\\
 \end{eqnarray}
 
 Thus $t_2$ becomes
 
 \begin{eqnarray}
-	t_2 &  =& \left( d + \frac{3}{2} \frac{M - \delta M}{r_0^2}d^2 + \frac{\delta M}{r_0} d + \frac{\delta Mt_2}{r_0} + \frac{3 \delta M^2}{r_0^2} d + \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2} \right) \nonumber	\\
+	t_2 &  =& \left( d + \frac{3}{2} \frac{M - \delta M}{r_0^2}d^2 + \frac{\delta M}{r_0} d + \frac{\delta Mt_2}{r_0} + \frac{\delta M^2}{r_0^2} d + \frac{(M - \delta M)dt}{r_0^2} + \frac{2 \delta M (M - \delta M)d}{r_0^2} \right) \nonumber	\\
 	& \times & \left( 1 + \frac{2(M - \delta M)}{r_0} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d (M - \delta M)}{r_0^2} \right)	\nonumber	\\
-	& = & d + \frac{3}{2} \frac{(M - \delta M) d^2}{r_0^2} + \frac{\delta M}{r_0} d + \frac{\delta M t_2}{r_0} + \frac{3 \delta M^2 d}{r_0^2} + \frac{(M - \delta M)dt}{r_0^2} + \frac{2\delta M(M - \delta M)d}{r_0^2} + \frac{2(M - \delta M)d}{r_0} 	\nonumber	\\
+	& = & d + \frac{3}{2} \frac{(M - \delta M) d^2}{r_0^2} + \frac{\delta M}{r_0} d + \frac{\delta M t_2}{r_0} + \frac{\delta M^2 d}{r_0^2} + \frac{(M - \delta M)dt}{r_0^2} + \frac{2\delta M(M - \delta M)d}{r_0^2} + \frac{2(M - \delta M)d}{r_0} 	\nonumber	\\
 	& & + \frac{2\delta M(M - \delta M)d}{r_0^2} + \frac{2\delta M(M - \delta M)t_2}{r_0^2} + \frac{4(M - \delta M)^2d}{r_0^2} - \frac{d^2(M - \delta M)}{r_0^2}	\nonumber	\\
 \end{eqnarray}
 
 Now we use $t_2 =d$ for the term which is $\mathcal{O}(r_0^{-2}) t_2$. 
 
 \begin{eqnarray}
-	t_2 \left( 1 - \frac{\delta M}{r_0} \right) & = & d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} + \frac{3}{2} \frac{(M - \delta M)d}{r_0^2} + 3 \frac{\delta M^2}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{2\delta M(M - \delta M)}{r_0^2}  \right.	\nonumber	\\
+	t_2 \left( 1 - \frac{\delta M}{r_0} \right) & = & d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} + \frac{3}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{\delta M^2}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{2\delta M(M - \delta M)}{r_0^2}  \right.	\nonumber	\\
 	& + & \left. \frac{2 \delta M(M - \delta M)}{r_0^2} + \frac{2\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} - \frac{d(M - \delta M)}{r_0^2} \right)
 \end{eqnarray}
 
 \begin{equation}
-	t_2 = d \left( 1 + \frac{2\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} + \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{5 \delta M^2}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{8 \delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)
+	t_2 = d \left( 1 + \frac{2\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} + \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{4 \delta M^2}{r_0^2} + \frac{(M - \delta M)t}{r_0^2} + \frac{8 \delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)
 \end{equation}
 
 Combining this with $t_1$ gives
 
 \begin{equation}
-	t_1 + t_2 = 2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{\delta M^2}{r_0^2} + \frac{4\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)
+	t_1 + t_2 = 2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{\delta M^2}{r_0^2} + \frac{4\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)
 \end{equation}
 
 Now we need to turn this into proper time, which is surprisingly tricky here.
@@ -1194,15 +1222,15 @@ Which we can expand to get
 Thus we get
 
 \begin{eqnarray}
-	\tau & = &-  2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{\delta M^2}{r_0^2} + \frac{4\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)\nonumber	\\
+	\tau & = &-  2d \left( 1 + \frac{\delta M}{r_0} + \frac{2(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} +\frac{\delta M^2}{r_0^2} + \frac{4\delta M(M - \delta M)}{r_0^2} + \frac{4(M - \delta M)^2}{r_0^2} \right)\nonumber	\\
 	& \times & \left( 1 - \frac{(M - \delta M)}{r_0} - \frac{1}{2} \frac{(M - \delta M)^2}{r_0^2} - \frac{1}{2} \frac{\delta M^2}{r_0^2} \right)	\nonumber	\\
-	& = & - 2d \left( 1 + \frac{M}{r_0}  - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{(M - \delta M)^2}{r_0^2} + \frac{\delta M^2}{r_0^2} + \frac{3 \delta M(M - \delta M)}{r_0^2} \right)
+	& = & - 2d \left( 1 + \frac{M}{r_0}  - \frac{1}{2} \frac{(M - \delta M)d}{r_0^2} + \frac{3}{2} \frac{(M - \delta M)^2}{r_0^2} + \frac{1}{2} \frac{\delta M^2}{r_0^2} + \frac{3 \delta M(M - \delta M)}{r_0^2} \right)
 \end{eqnarray}
 	
 Comparing this to the proper time before shell crossing we get 
 
 \begin{equation}
-	\Delta \tau = \tau - \bar{\tau} = \frac{2d \delta M}{r_0^2} (d - 3 \delta M)
+	\Delta \tau = \tau - \bar{\tau} = \frac{2d \delta M}{r_0^2} (d -  \delta M)
 \end{equation}
 
 \section{Distance between $A$ and $C$}
@@ -1230,6 +1258,67 @@ The change in proper time is
 \begin{equation}
 	\Delta \tau_{AC} \equiv \tau_{AC} - \bar{\tau}_{AC} = - 2d \left( \frac{\delta M(t + d)}{r_0^2} + \frac{\delta M}{r_0} \right)
 \end{equation}
+
+%\subsection{Normalization of four-velocity of observer}
+%
+%The exact, normalized, four vector describing the four velocity of a time-like observer (in our case the arms of the interferometer).\footnote{One check explicitly that it satisfies $u^\mu u^\nu g_{\mu \nu} = -1$ exactlly.}
+%
+%\begin{equation}
+%	u^\mu = \begin{pmatrix} (-1)^{\frac{1}{2}} (v^2 g_{tt}^{-1} -1)^\frac{1}{2} g^{-\frac{1}{2}}_{tt}, v, 0, 0 \end{pmatrix}
+%\end{equation}
+%
+%The other vectors we need are
+%
+%\begin{eqnarray}
+%	& & \bar{u}^\mu = ((-1)^\frac{1}{2} \bar{g}_{tt}^{-\frac{1}{2}}, 0, 0, 0)	\nonumber	\\
+%	& & k^\mu = (g_{tt}^{-1}, 1, 0, 0)	\nonumber	\\
+%	& & \bar{k}^\mu = (\bar{g}_{tt}^{-1},1,0,0)
+%\end{eqnarray}
+%	
+%	
+%Using this we can calculate the junction conditions and the velocity $v$. 
+%
+%\begin{equation}	
+%	k^\mu u^\nu g_{\mu \nu} = \bar{k}^\mu \bar{u}^\nu \bar{g}_{\mu \nu}
+%\end{equation}
+%
+%To begin with we keep the $i$'s and then we just ignore it to get the real part. 
+%
+%\begin{equation}
+%	ig_{tt}^{-\frac{1}{2}} \sqrt{1-v^2 g_{tt}^{-1}} - vg_{tt}^{-1} = (-1)^\frac{1}{2} \bar{g}_{tt}^{-\frac{1}{2}}
+%\end{equation}
+%
+%Which has the solution
+%
+%\begin{equation}
+%	v  = - \frac{1}{2} i \bar{g}_{tt}^{-\frac{1}{2}}(g_{tt} - \bar{g}_{tt})
+%\end{equation}
+%
+%which simplifies to
+%
+%\begin{equation}
+%	v = - \frac{\delta M}{r} \left( 1 - \frac{2M}{r} \right)^{-\frac{1}{2}} = - \frac{\delta M}{r} \bar{g}_{tt}^{-\frac{1}{2}}
+%\end{equation}
+%
+%
+%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
