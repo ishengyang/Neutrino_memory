@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Longitudinal gravitational memory and its detection in interferometers}
+\title{Longitudinal gravitational memory}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -56,11 +56,14 @@ The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes perm
 
 In terms of the dynamics, a change in velocity is higher order than a change in distance measured in gravitational waves. This however does not mean that our effect is harder to measure. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable whereas our effect does not and therefore it can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
 
-We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change in the phase of the photons in the interferometer after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
+We start by analyzing an astrophysical scenario inspired by previous work in \cite{PhysRevD.93.103006} . We calculate what happens to geodesics that are parallel when an energy shell crosses them. The particular set-up we consider is a neutrino shell emitted by supernova. The shell crosses the path of light rays coming from a pulsar that is scintillating due to lensing in the interstellar medium. 
+The SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a supernova explosion to provide us with a good estimation of the total energy in the neutrino shell of the explosion. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
-The SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a SN explosion to provide us with a good estimation of the total energy in the neutrino shell of the explosion. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detections such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
+Following from this we consider what happens if one considers an interferometer such as LISA instead of the two geodesics of the pulsar photons. Our calculation will show that the ends of the interferometer will see a change in their geodesic distance: this is a memory effect. When the interferometer arm is oriented perpendicular to the line of sight of the supernova we will find a more interesting effect that grows linearly with time. 
 
-The rest of the paper is organized as follows. In \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a SNe. In section \ref{RelV} we derive the change in velocities caused by shell crossing with the Israel Junction Conditions (IJC) \cite{Isr66}, treating the neutrino shell as a co-dimension-one delta function. In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
+%We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change in the phase of the photons in the interferometer after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
+
+The rest of the paper is organized as follows. In section \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a supernova. In section \ref{RelV} we derive the change in velocities caused by shell crossing the ends of an interferometer. This is done using the Israel Junction Conditions (IJC) \cite{Isr66} and by treating the neutrino shell as a co-dimension-one delta function. In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
 
 \section{Memory effect in Pulsar Scintillation}
 \label{sec-scint}
@@ -93,7 +96,7 @@ We can see that this effect grows from zero and approaches an asymptotic value,
 	(\Delta t|_b - \Delta t|_{b+\Delta b}) 
 	\longrightarrow \frac{4\delta M \Delta b}{b}~,	\label{pulsescint}
 \end{equation}
-at a characteristic time scale given by $b$. This result can be obtained by calculating the change in time 
+at a characteristic time scale given by $b$.
 
 We estimate $b$ by assuming that the next SN is somewhere near the galactic centre. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic centre. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}). 
 
@@ -104,19 +107,23 @@ We estimate $b$ by assuming that the next SN is somewhere near the galactic cent
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
-\caption{Schematic of a spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell.}
+\caption{Spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell. the proper lengths before(after) shell crossing are $\bar{l}_{AB}(l_{AB})$. Proper times before(after) shell crossing are $\bar{\tau}_{AB}(\tau_{AB})$. The coordinate time at which the shell crosses point $B$ is different in both metrics. $t_c$ in metric of mass $M-\delta M$ and $\bar{t}_c$ in the metric of mass $M$. }
 \label{calculation}
 \end{center}
 \end{figure}
-In this section we discuss how a similar effect can be also seen in traditional interferometers such as LIGO. We assume the geometry of the spacetime is governed by the SN progenitor star. Assuming the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric,
+In this section we discuss how a similar effect can be also seen in traditional interferometers such as LIGO. We assume the geometry of the spacetime is governed by the SN progenitor star. Assuming the star is not rotating very rapidly and thus the surrounding spacetime is parametrized by the Schwarzschild metric. In the calculations we will need two Schwarzschild metrics. One with mass $M$ and the other with mass $M - \delta M$, where $\delta M$ will be the energy carried by the neutrinos after the SN explosion. The metric with mass $M$ will have a bar over its coordinates and the one with $M- \delta M$ will not. 
+ 
 \begin{equation}
-	d\bar{s}^2 = \bar{g}_{\mu \nu} d\bar{x}^\mu d\bar{x}^\nu = - \left( 1 - \frac{2M}{r} \right) d\bar{t}^2 + \left( 1 - \frac{2M}{r} \right)^{-1} d\bar{r}^2 + r^2 d \bar{\Omega}_2^2,	\label{SCH}
-\end{equation}
-where are working in units with $G = c =1$. After the star explodes, it emits a shell of neutrinos carrying energy $\delta M$. The metric surrounding the original star then changes since the mass has changed. In particular the bar used above to denote the ``initial" metric is removed to denote the ``final" metric, $ds^2 = g_{\mu \nu} dx^\mu dx^\nu$, with a smaller mass $M -\delta M$. Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
-\begin{equation}
-	k^\mu = \left( g_{tt}^{-1}, 1, 0, 0 \right).	\label{sigma}
+	d\bar{s}^2 = \bar{g}_{\mu \nu} d\bar{x}^\mu d\bar{x}^\nu = - \left( 1 - \frac{2M}{r} \right) d\bar{t}^2 + \left( 1 - \frac{2M}{r} \right)^{-1} d {r}^2 + r^2 d {\Omega}_2^2. \label{SCH}
 \end{equation}
 
+\begin{equation}
+	ds^2 = g_{\mu \nu} dx^\mu dx^\nu = - \left( 1 - \frac{(M - \delta M)}{r} \right) dt^2 + \left( 1 - \frac{2(M - \delta M)}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2.
+\end{equation}
+We are working in units with $G = c =1$.  Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  Since we are describing the shell as a delta function travelling at roughly the speed of light it will follow a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition, however, the fact the shell has some surface area with a \emph{fixed} radius, the two vectors must have the same radial component and this enforces the given form of the time component.}
+\begin{equation}
+	k^\mu = \left( g_{tt}^{-1}, 1, 0, 0 \right)	\label{sigma}
+\end{equation}
 and similarly for $\bar{k}^\mu$. Since we expect the interferometer points (denoted by the points $A,B,C$ in figure \ref{fig:1}) to be very far for the massive object we assume they have a negligible initial velocity.
 \begin{equation}
 	\bar{u}^\mu = \left( (-1/\bar{g}_{tt})^\frac{1}{2}, 0, 0, 0 \right).	\label{zeta}
@@ -132,7 +139,7 @@ Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final 
 \begin{equation}
 	u^\mu = \left( (-1/g_{tt})^\frac{1}{2} \sqrt{1-v^2g_{tt}^{-1}}, v , 0, 0 \right).	\label{5}
 \end{equation}
-Thus the change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing}} \bar{g}_{tt}^{-\frac{1}{2}} $ . $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $r_0 + \mathcal{O}(d/r_0)$. Note that this is the proper velocity $\frac{dr}{d\tau}$. We will need the coordinate velocity for the our calculations which is given by 
+The change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing}} \bar{g}_{tt}^{-\frac{1}{2}} $ . $r_{crossing}$ is a fixed distance at which the shell crosses a point. For $A$ it is $r_0$, for $B$ it is $r_0 + d$ and for $C$ it is $r_0 + \mathcal{O}(d/r_0)$. Note that this is the proper velocity $\frac{dr}{d\tau}$. We will need the coordinate velocity for the our calculations which is given by 
 
 \begin{eqnarray}
 	\frac{dr}{dt} &=& \frac{dr}{d \tau} \frac{d \tau}{dt} = v g_{tt}^{\frac{1}{2}} =  \frac{\delta M}{r_{crossing}} \bar{g}_{tt}^{-\frac{1}{2}} g_{tt}^\frac{1}{2} \nonumber \\
@@ -175,7 +182,9 @@ Thus the change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{cro
 
 \subsection{Distance between $A$ and $B$}
 
-An interferometer can calculate the displacement between geodesics. There are two ways to calculate this displacement. The first is to directly calculate the photon geodesics from the metric and find the difference between them. The second is to integrate the geodesics deviation equation. In this paper we will use the first approach and calculate the trajectories of the interferometer points. We consider points $A$, $B$ and $C$ in figure \ref{fig:1} as the ends of the arms of the interferometer. 
+\subsubsection{Defining trajectories}
+
+An interferometer can measure the displacement between geodesics. There are two ways to calculate this displacement. The first is to directly calculate the photon geodesics from the metric and find the difference between them. The second is to integrate the geodesics deviation equation. In this paper we will use the first approach and calculate the trajectories of the interferometer points. We consider points $A$, $B$ and $C$ in figure \ref{fig:1} as the ends of the arms of the interferometer. 
 We parametrize the trajectories of the points in a piecewise form. We will use the following terms to represent the acceleration and velocity of the points:
 
 \begin{eqnarray}
@@ -198,7 +207,15 @@ The trajectory for point $A$ is
 	r_A(\bar{t}) & = & r_0 - \frac{1}{2} \bar{a}_{(2)}^{(A)} \bar{t}^2, \hspace{5mm} (\bar{t} \leq 0)	\nonumber	\\
 	r_A(t) & = & r_0 - \frac{1}{2} a^{(A)}_{(2)} t^2 - \left(v^{(A)}_{(1)} + v^{(A)}_{(2)} \right)t,  \hspace{5mm} (t>0)  \label{rA}.
 \end{eqnarray}
-$t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ we assume there is no velocity and the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. Along with that there is a term that corresponds to the velocity change (as we calculated from the IJC) coming from shell crossing. The trajectory of point $B$ is given by
+
+\begin{itemize}
+
+\item $t=0$ is defined to be the time when the shell crosses point $A$ and the distance $r_A(0) = r_0$. For $t<0$ we assume there is no velocity and the only term that contributes to the trajectory is the acceleration of point $A$ towards mass $M$. 
+
+\item For $t>0$ there is still the acceleration term but the mass is different since the shell has carried $\delta M$ away. 
+
+\item Along with that there is a term that corresponds to the velocity change (as we calculated from the IJC) coming from shell crossing. 
+\end{itemize}
 %
 %\begin{equation}
 %	r_B(t) = \begin{cases} r_0 + d  - \frac{1}{2}\frac{M}{(r_0+d)^2} t^2 &	(t \leq t_c), 	\\
@@ -207,33 +224,89 @@ $t=0$ is defined to be the time when the shell crosses point $A$ and the distanc
 %	\end{cases}	\label{rB}
 %\end{equation}
 
+The trajectory of point $B$ is given by
+
 \begin{eqnarray}
 	r_B(\bar{t}) & = &  r_0 + d  - \frac{1}{2} \bar{a}_{(2)}^{(B)} \bar{t}^2,  \hspace{5mm} (\bar{t} \leq \bar{t_c})	\nonumber	\\
 	r_B(t) & = & r_0 +d  - \frac{1}{2}  \bar{a}^{(B)}_{(2)} t_c^2 - \left( \bar{a}_{(2)}^{(B)} t_c + v^{(B)}_{(1)} + v^{(B)}_{(2)} \right)(t-t_c) - \frac{1}{2} a_{(2)}^{(B)}(t-t_c)^2,  \hspace{5mm}  (t>t_c).	\label{rB}
 \end{eqnarray}
-For $t <t_c$ there is just the acceleration of the point towards mass $M$. After $t>t_c$ the shell has crossed and now there is a change in distance in the time $t_c$ that the point is accelerating towards $M$. $t_c$ will be different in both metrics. However, since $\bar{t}_c$ will only come with acceleration terms (as the only thing that happens in the initial metric is acceleration), we can ignore the corrections for $\bar{t}_c$ and just approximate it with $d$. This is the second term in the expression. The next term corresponds to the acceleration of the point towards mass $M-\delta M$. The next two terms contain the velocity terms for this point. The first term comes from the IJC. The second term is the velocity picked up by this point in the time the shell reaches it. Using these trajectories we can calculate the proper time $\tau$ shown in figure \ref{calculation}. 
-We know $t_c = d$ to leading order. Since we are interested in terms up to $ \mathcal{O}(r_0^{-2})$, we can substitute $t_c$ with $d$ in terms that are already $\mathcal{O}(r_0^{-2})$. 
 
-In the appendix we show that this proper time, $\bar{\tau}_{AB}$ is the same as twice the proper length, $2 \bar{l}_{AB}$ measured between the two points at a \emph{fixed time} up to at least $\mathcal{O}(r_0^{-2})$, which is the order we are interested in. Thus we will simply compute the proper length between the two points $A$ and $B$, before and after shell crossing. The difference between the proper times will be the memory effect. The full calculation is in the appendix, the result is
+\begin{itemize}
+
+\item For $\bar{t} <\bar{t}_c$ there is just the acceleration, $\bar{a}^{(B)}_{(2)}$, of the point towards mass $M$. 
+
+\item After $t>t_c$ the shell has crossed and now there is a change in distance in the time $t_c$ that the point is accelerating with ${a}^{(B)}_{(2)}$ towards $M-\delta M$.\footnote{Note that $\bar{t}_c$ and $t_c$ are different since they are coordinates in two different metrics.} This is the second term in the expression. 
+
+\item The $\bar{a}^{(B)}_{(2)}$ term corresponds to the acceleration of the point towards mass $M-\delta M$. 
+
+\item The terms with $v^{(B)}_{(1)} + v^{(B)}_{(2)}$ are the velocities picked up from the IJC. The $\bar{a}^{(B)}_{(2)} t_c$ term is the velocity gained while accelerating in the metric of mass $M$. 
+
+\end{itemize}
+
+\subsubsection{Relation between proper length and proper time}
+
+
+The interferometer infers the distance between two points by measuring the proper time it takes for a photon to go from one end of the arm to the other and come back. We will show that \emph{this proper time $\tau$ is the same as twice the proper length $l$ up to $\mathcal{O}(r_0^{-2})$, as long as their is no relative velocity between the two points} (which in our case are the ends of the arms of the interferometer). The most general expression for the proper distance for a stationary observer is
 
 \begin{equation}
-	\Delta l_{AB} \equiv l_{AB} - \bar{l}_{AB} = - \frac{\delta M^2 d}{r_0^2} 
+	l_{AC} = \int \sqrt{g_{ab} dx^a dx^b}.	\label{proplen}
 \end{equation}
-There is a simple way to appreciate the lack of time dependence. We have assumed point $A$ has velocity zero at the time of shell crossing. After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}$. In the time the shell takes to go from $A$ to $B$, $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} d$. The final velocity of $A$ at time $d$ is, therefore, given by
+
+Before shell crossing, the only difference between two points is their acceleration. Which means we can choose a constant (coordinate) time slice where the relative velocity of the two points is the same up to $\mathcal{O}(r_0^{-2})$.
+In this section we calculate the proper distance before shell crossing $\bar{l}_{AB}$ between the two points $A$ and $B$ at time $\bar{t}$. Since we are only considering radial motion Eq (\ref{proplen}) simplifies to
 
 \begin{equation}
-	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.
+	\bar{l}_{AB} = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \ \bar{g}_{rr}^\frac{1}{2}  = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \left( 1 + \frac{M}{r} + \frac{3}{2} \frac{M^2}{r^2}  + \mathcal{O}((M/r)^3) \right).
+\end{equation}
+
+In all the calculations we will only need terms of $\mathcal{O}(r_0^{-2})$. Thus we can use $r_B(\bar{t}) = r_0 + d$ and $r_A(\bar{t})  = r_0$. 
+
+\begin{equation}
+	 \bar{l}_{AB} =  \int^{r_B(\bar{t})}_{r_A(\bar{t})}  dr \ \bar{g}_{rr}^\frac{1}{2}  = d + M \ln \left( \frac{r_0 + d}{r_0} \right) - \frac{3}{2} M^2 \left( \frac{1}{r_0 + d} - \frac{1}{r_0} \right)
+\end{equation}
+
+This equation for $\bar{l}_{AB}$ is a general expression up to $\mathcal{O}(r_0^{-2})$.  It simplifies to 
+
+\begin{equation}
+	 \bar{l}_{AB} =  d \left( 1 + \frac{M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{3}{2} \frac{M^2}{r_0^2} \right).
+\end{equation}
+
+We calculate the proper time $\bar{\tau}_{AB}$ in the appendix and notice that indeed $2\bar{l}_{AB} = \bar{\tau}_{AB}$. 
+
+After shell crossing the two points will have no relative velocity between them (schematic diagram of the velocities is shown in figure \ref{velocity}) up to order $\mathcal{O}(r_0^{-2})$. Thus for the after shell crossing scenario we can also calculate the proper length $l_{AB}$ and know that it will be half the proper time $\tau_{AB}$. First lets show that there is no relative velocity between $A$ and $B$ explicitly. 
+
+\subsubsection{Relative velocity between $A$ and $B$}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width =\textwidth, height = 12cm]{vel.pdf}
+\caption{Schematic of a spacetime diagram showing what happens to the velocities around shell crossing. The colour of the lines is defined in the same way as is done in figure \ref{calculation}. The new red lines represent the velocity of points $A$ and $B$. We show in Eqs (\ref{velA}, \ref{velB}) that the velocities of both points $A$ and $B$ are the same after shell crossing at time $t_c$. This comes from the fact that point $B$ is accelerating for some time in the metric of mass $M$. }
+\label{velocity}
+\end{center}
+\end{figure}
+
+We have assumed point $A$ has velocity zero at the time of shell crossing. After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}$. In the time the shell takes to go from $A$ to $B$, $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} d$. The final velocity of $A$ at time $t_c$ is, therefore, given by
+
+\begin{equation}
+	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.	\label{velA}
 \end{equation}
 Similarly, point $B$ will gain a velocity from the acceleration towards mass $M$ with magnitude $\frac{M}{r_0^2}d$. The velocity change from shell crossing is $\frac{\delta M}{r_0 + d}$. The final velocity of point $B$ at time $d$ is
 
 \begin{equation}
-	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.
+	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.	\label{velB}
 \end{equation}
-We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-3})$ and therefore we don't expect the distance to change with time at leading order. Next we show an effect which is much more interesting since it grows with time.
+We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-2})$. This also implies that there shouldn't be any change in distance that grows with time at order $\mathcal{O}(r_0^{-2})$. 
+
+The memory effect, $\Delta l_{AB}$ is the difference between $l_{AB}$ and $\bar{l}_{AB}$. In the appendix we have the full calculation of the proper length $l_{AB}$, here we quote the resulting memory effect. 
+
+\begin{equation}
+	\Delta l_{AB} \equiv l_{AB} - \bar{l}_{AB} = - \frac{\delta M^2 d}{r_0^2}.
+\end{equation}
+We find that indeed there is no time dependence in the change in proper length at $\mathcal{O}(r_0^{-2})$. Next we calculate an effect which is much more interesting since it grows with time.
 
 \subsection{Distance between $A$ and $C$}
 
-First lets write down the trajectory equation for point $C$. 
+In this subsection we calculate the proper distance change between $A$ and $C$. First lets write down the trajectory equation for point $C$
 
 %\begin{equation}
 %	r_{C}(t)_\bot = \begin{cases} d - \frac{1}{2} \frac{M}{(r_0^2 + d^2)} t^2 \sin \theta ,  & (t\leq 0 )	
@@ -245,12 +318,6 @@ First lets write down the trajectory equation for point $C$.
 	r_{C}(t) & = &  d - \frac{1}{2} a_{(2)}^{(C)} t^2 - \left(v^{(C)}_{(1)} + v^{(C)}_{(2)} \right) t,  \hspace{5mm} (t >0) . 
 \end{eqnarray}
 
-The most general expression for the proper distance is again
-
-\begin{equation}
-	l_{AC} = \int \sqrt{g_{ab} dx^a dx^b}.
-\end{equation}
-
 From the geometry in figure \ref{fig:1} we see that only $\theta$ and $r$ will change in the motion of $A$ and $C$. Thus we can drop the $\phi$ dependence from the start and write the above integral as
 \begin{equation}
 	 l_{AC} = \int^{\theta_f}_{\theta_i} d \theta \ g_{\theta \theta}^\frac{1}{2} \left(  1 + \underbrace{(g_{rr}/g_{\theta \theta}) (dr/d\theta)^2}_{T3}  \right)^\frac{1}{2}.
@@ -258,12 +325,12 @@ From the geometry in figure \ref{fig:1} we see that only $\theta$ and $r$ will c
 where $\theta_f = d/r_0$ and $\theta_i = 0$. To evaluate $T3$ we would need the geodesic equation for $r$ as function of $\theta$. Instead of evaluating it explicitly we note that $\frac{dr}{d \theta}$ will be of order $d$. Since $g_{\theta \theta} = \frac{1}{r_0^2} + \mathcal{O}(r_0^{-3})$, to leading order we can ignore the effect of $T3$. Integrating the first term gives
 
 \begin{equation}
-	l_{AC} = r_C(t) (\theta_f - \theta_i) = r_C(t) \frac{d}{r_0}
+	l_{AC} = r_C(t) (\theta_f - \theta_i) = r_C(t) \frac{d}{r_0}.
 \end{equation}
 Before shell crossing the proper length $\bar{l}_{AC} = d + \mathcal{O}(r_0^{-3})$. Whereas after shell crossing, there will be an additional velocity kick term in the proper length, $l_{AC}$, which will give a time dependent term at $\mathcal{O}(r_0^{-2})$
 
 \begin{equation}
-	l_{AC} = d - \frac{\delta M d}{r_0^2} t
+	l_{AC} = d - \frac{\delta M d}{r_0^2} t.
 \end{equation}
 
 The difference in proper lengths will be 
@@ -1141,39 +1208,39 @@ Summing $t_1$ and $t_2$
 The proper time measured is
 
 \begin{eqnarray}
-	\tau & = & - \left( 1 - \frac{2M}{r} \right)^\frac{1}{2} (t_1 + t_2) 	\nonumber	\\
-	& = & -2d \left( 1 - \frac{M}{r} - \frac{1}{2} \frac{M^2}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)		\nonumber	\\
-	&  = & -2d \left( 1  + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)
+	\tau & = &  \left( 1 - \frac{2M}{r} \right)^\frac{1}{2} (t_1 + t_2) 	\nonumber	\\
+	& = & 2d \left( 1 - \frac{M}{r} - \frac{1}{2} \frac{M^2}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)		\nonumber	\\
+	&  = & 2d \left( 1  + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)
 \end{eqnarray}
 
-\subsection{Proper distance between $A$ and $B$ before shell crossing}
-
-In this section we calculate the proper distance $\bar{l}_{AB}$ between the two points $A$ and $B$ at time $\bar{t}$. This calculation is done without any shell crossing, so everything is in the metric of $M$. 
-
-\begin{equation}
-	\bar{l}_{AB} = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \ \bar{g}_{rr}^\frac{1}{2}  = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \left( 1 + \frac{M}{r} + \frac{3}{2} \frac{M^2}{r^2}  + \mathcal{O}((M/r)^3) \right).
-\end{equation}
-
-In all the calculations we will only need terms of $\mathcal{O}(r_0^{-2})$. Thus we can use $r_B(\bar{t}) = r_0 + d$ and $r_A(\bar{t})  = r_0$. 
-
-\begin{eqnarray}
-	  \int^{r_B(\bar{t})}_{r_A(\bar{t})}  dr \ \bar{g}_{rr}^\frac{1}{2} & = & d + M \ln \left( \frac{r_0 + d}{r_0} \right) - \frac{3}{2} M^2 \left( \frac{1}{r_0 + d} - \frac{1}{r_0} \right)	\nonumber	\\
-	  & = & d + M \left( \frac{d}{r_0} - \frac{1}{2} \frac{d^2}{r_0^2} \right) + \frac{3}{2} \frac{M^2 d}{r_0^2} \nonumber	\\
-	  & = & d \left( 1 + \frac{M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{3}{2} \frac{M^2}{r_0^2} \right)
-\end{eqnarray}
-
-We note that $2 \bar{l}_{AB} = - \tau_{AB}$. 
+%
+%\subsection{Proper distance between $A$ and $B$ before shell crossing}
+%
+%In this section we calculate the proper distance $\bar{l}_{AB}$ between the two points $A$ and $B$ at time $\bar{t}$. This calculation is done without any shell crossing, so everything is in the metric of $M$. 
+%
+%\begin{equation}
+%	\bar{l}_{AB} = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \ \bar{g}_{rr}^\frac{1}{2}  = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \left( 1 + \frac{M}{r} + \frac{3}{2} \frac{M^2}{r^2}  + \mathcal{O}((M/r)^3) \right).
+%\end{equation}
+%
+%In all the calculations we will only need terms of $\mathcal{O}(r_0^{-2})$. Thus we can use $r_B(\bar{t}) = r_0 + d$ and $r_A(\bar{t})  = r_0$. 
+%
+%\begin{eqnarray}
+%	  \int^{r_B(\bar{t})}_{r_A(\bar{t})}  dr \ \bar{g}_{rr}^\frac{1}{2} & = & d + M \ln \left( \frac{r_0 + d}{r_0} \right) - \frac{3}{2} M^2 \left( \frac{1}{r_0 + d} - \frac{1}{r_0} \right)	\nonumber	\\
+%	  & = & d + M \left( \frac{d}{r_0} - \frac{1}{2} \frac{d^2}{r_0^2} \right) + \frac{3}{2} \frac{M^2 d}{r_0^2} \nonumber	\\
+%	  & = & d \left( 1 + \frac{M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{3}{2} \frac{M^2}{r_0^2} \right)
+%\end{eqnarray}
+%
+%We note that $2 \bar{l}_{AB} = - \tau_{AB}$. 
 
 \newpage
 
 \section{Proper length after shell crossing}
 
-We use the same result as above but with different trajectories for $r_B(t)$ and $r_A(t)$ now and in a metric defined by $M - \delta M$. 
+In this section we calculate the proper length between $A$ and $B$ after shell crossing. Integrating Eq (\ref{proplen}) with the trajectories for $r_B(t)$ and $r_A(t)$ gives 
 
 \begin{equation}
 	l_{AB} = r_B(t) - r_A(t) + (M - \delta M) \underbrace{\ln \left( \frac{r_B(t)}{r_A(t)} \right)}_{T1} - \underbrace{\frac{3}{2} (M - \delta M)^2 \left( \frac{1}{r_B(t)} - \frac{1}{r_A(t)} \right)}_{T2}
 \end{equation}
-
 Thus we see the only new thing to compute is $r_B(t) - r_A(t)$. Lets expand these terms individually, starting with $T1$
 
 \begin{eqnarray}
@@ -1181,25 +1248,20 @@ Thus we see the only new thing to compute is $r_B(t) - r_A(t)$. Lets expand thes
 	& = & \ln \left( \left( 1 + \frac{r_B - r_0}{r_0} \right) \left( 1 + \frac{r_A - r_0}{r_0} \right)^{-1} \right)	\nonumber	\\
 	& = & \ln \left( 1 + \frac{r_B - r_A}{r_0} - \frac{(r_B - r_0)(r_A - r_0)}{r_0^2} - \left( \frac{r_A - r_0}{r_0} \right)^2 \right).
 \end{eqnarray}
-
 Note that $r_A - r_0 = \mathcal{O}(r_0^{-1})$ and we are only interested in terms up to $\mathcal{O}(r_0^{-2})$ thus we simplify the above equation to 
-
 \begin{equation}
 	\ln \left( \frac{r_B(t)}{r_A(t)} \right) = \ln \left( 1 + \frac{r_B - r_A}{r_0} \right).
 \end{equation}
-
 Now we look ahead to $r_B(t) - r_A(t)$ in Eq (\ref{rchange}). We will need to keep terms up to $\mathcal{O}(r_0^{-1})$ in $r_B(t) - r_A(t)$. Thus we expand the log to get
 
 \begin{equation}
 	\ln \left( \frac{r_B(t)}{r_A(t)} \right) = \frac{r_B - r_A}{r_0} - \frac{1}{2} \left( \frac{r_B - r_A}{r_0} \right)^2 = \frac{d}{r_0} + \frac{\delta M d}{r_0^2} - \frac{1}{2} \frac{d^2}{r_0^2} 
 \end{equation}
-
 Evaluating $T2$ to $\mathcal{O}(r_0^{-2})$ is straightforward
 
 \begin{equation}
 	- \frac{3}{2} (M - \delta M)^2 \left( \frac{1}{r_B(t)} - \frac{1}{r_A(t)} \right) = \frac{3}{2} \frac{(M -\delta M)^2d}{r_0^2}	\label{rsecond}
 \end{equation}
-
 Putting in the expansion of $T1$ and $T2$ into $l_{AB}$
 
 \begin{equation}
@@ -1207,7 +1269,6 @@ Putting in the expansion of $T1$ and $T2$ into $l_{AB}$
 \end{equation}
 
 Now we can compute $r_B(t) - r_A(t)$. 
-
 \begin{eqnarray}
 	r_B(t) - r_A(t) & = & d - \frac{1}{2} \frac{M}{r_0^2} t_c^2 - \left( \frac{M}{r_0^2} t_c + \frac{\delta M}{r_0} + \frac{\delta M^2}{r_0^2} - \frac{\delta M d}{r_0^2} \right) (t - t_c) - \frac{1}{2} \frac{(M - \delta M)}{r_0^2} (t - t_c)^2 	\nonumber	\\
 	& + & \frac{1}{2} \frac{(M - \delta M) t^2}{r_0^2} + \left( \frac{\delta M}{r_0} + \frac{\delta M^2}{r_0^2} \right) t	\nonumber	\\
@@ -1216,25 +1277,16 @@ Now we can compute $r_B(t) - r_A(t)$.
 \end{eqnarray}
 
 Finally we get the expression for $l_{AB}$ 
-
 \begin{equation}
 	l_{AB} = d + \frac{\delta M t_c}{r_0} + \frac{\delta M^2 d}{r_0^2} - \frac{1}{2} \frac{ \delta M d^2}{r_0^2} + \frac{(M - \delta M) d}{r_0} + \frac{\delta M (M - \delta M)d}{r_0^2} - \frac{1}{2} \frac{d^2(M - \delta M)}{r_0^2} + \frac{3}{2} \frac{(M - \delta M)^2 d}{r_0^2}
 \end{equation}
 
-Substituting in for $t_c = d \left( 1+ \frac{2(M - \delta M)}{r_0} \right)$ givs
-
+Substituting in for $t_c = d \left( 1+ \frac{2(M - \delta M)}{r_0} \right)$ gives
 \begin{eqnarray}
 	l_{AB} & = & d + \frac{\delta M d}{r_0} + \frac{2\delta M(M - \delta M)d}{r_0^2} + \frac{\delta M^2}{r_0^2} d - \frac{1}{2} \frac{\delta M d^2}{r_0^2} + \frac{(M - \delta M)d}{r_0} + \frac{\delta M(M - \delta M) d}{r_0^2} - \frac{1}{2} \frac{d^2(M - \delta M)}{r_0^2} 	\nonumber	\\
 	& + & \frac{3}{2} \frac{M^2 d}{r_0^2} - \frac{3 M \delta M d}{r_0^2} + \frac{3}{2} \frac{\delta M^2 d}{r_0^2}	\nonumber	\\
 	& = & d + \frac{M d}{r_0} - \frac{1}{2} \frac{\delta M^2 d}{r_0^2} + \frac{3}{2} \frac{M^2 d}{r_0^2} -\frac{1}{2} \frac{Md^2}{r_0^2}
 \end{eqnarray}
-
-Now we can compute the difference between the proper lengths before and after shell crossing
-
-\begin{equation}
-	\Delta l_{AB} = l_{AB} - \bar{l}_{AB} = - \frac{1}{2} \frac{\delta M^2 d}{r_0^2}.
-\end{equation}
-
 
 
 %
