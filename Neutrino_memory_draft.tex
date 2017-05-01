@@ -41,35 +41,43 @@ Finally we calculate how the shell effects interferometers such as LIGO and whet
 
 \section{Introduction and Summary}
 
-In recent papers \cite{PhysRevD.93.103006, Olum:2013gza} we and Olum et al have calculated the effect a shell of matter can have on photon geodesics when it crosses them. In particular the effect is calculated for the physical scenario in which the photons are coming from a pulsar and the shell of matter is a shell of relativistic neutrinos coming from a nearby supernova. The physical change is in the path length of a single photon when there is a change in local geometry due to the shell crossing. Observationally this manifests itself as a shift in photon arrival times. 
+In recent papers \cite{PhysRevD.93.103006, Olum:2013gza}, we and Olum et al have calculated the effect a shell of matter can have on photon geodesics when it crosses them. 
+In particular the effect is calculated for photons from a pulsar, and the shell of matter is made of relativistic neutrinos from a nearby supernova.
+The change in local geometry alters the path of photons.
+Observationally, this manifests itself as a permanent shift in pulsar signal arrival times. 
 
-In this paper we extend this work to see what happens to multiple photon trajectories when a shell of matter crosses them. This situation arises naturally in pulsar scintillation where multiple photons from the pulsar arrive at an observer. The particular effect we calculate is the shift in two photon geodesics caused by the change in local geometry due to the shell crossing. 
+In this paper, we extend the above scenario to multiple photon trajectories.
+This situation arises naturally in pulsar scintillation, which is caused by the signal propagating to us in multiple paths. 
+Each path will be affected by the same effect that shifts their individual arrival times with slightly different magnitudes.
+This ``relative'' time shift between two paths is much less than the absolute time shift. 
+Nevertheless, one can measure it as an interference effect, which can be much more accurate than pulsar timing \cite{PenYan14}.
+We provide a simple estimation to show that it is likely observable by some of the pulsars that SKA is supposed to discover \cite{MSPpopulation}. 
 
-This effect is seen far away from the region of spacetime that is changing since the photons traverse a long distance before they arrive at the observer. It is natural to ask what happens if one was to make a local measurement of the change in geometry. A physical set-up that does precisely that is an interferometer. Thus we imagine having an interferometer in the place where the shell crosses the photons and calculate the effect of a shell crossing it. 
+Since the passage of a massive shell causes a permanent time shift between two nearby null trajectories, it is by-definition a memory effect.
+We precede to clarify its relation and difference to the gravitational memory effect \cite{Christodoulou_effect,GW_memory} by computing the direct response from a interferometer.
 
-We know from the recent detection of gravitational waves \cite{GW1509} that interferometers can provide great insight into the structure of local spacetime. Along with an oscillating change in length, gravitational waves also lead to a permanent displacement between two freely falling points. This is known as a memory effect\cite{Christodoulou_effect,GW_memory}. The memory effect caused by gravitational waves only has transverse traceless components. The memory effect we calculate in this paper will be different in two ways:
+%The recent detection of gravitational waves \cite{GW1509} has proved that gravitational waves leave an oscillating pattern in the amplitude of waveforms measured at interferometers such as LIGO. It is also known that this is not the only effect that is potentially detectable. 
 
-%The recent detection of gravitational waves \cite{GW1509} has proved that gravitational waves leave an oscillating pattern in the amplitude of waveforms measured at interferometers such as LIGO. It is also known that this is not the only effect that is potentially detectable. Strong gravitational waves imply a large flow of energy. Just like any other flow of energy, it leads to a gravitational memory effect \cite{Christodoulou_effect,GW_memory}. In general, a gravitational memory effect is a change in the geodesic distance between two freely falling points. The memory effect caused by gravitational waves only has transverse traceless components. It is natural to ask what happens if the energy is carried by a shell of matter that has a longitudinal component. In this paper we will calculate this effect for two physical scenarios. 
-%\begin{itemize}
-%\item A shell of matter crosses a ground based interferometer such as LIGO. 
-%\item A shell of matter crosses an astrophysical `interferometer' formed by pulsar scintillation. 
-%\end{itemize}
-%The idea of using pulsar scintillation is inspired by previous works done by the current authors and Olum et al \cite{PhysRevD.93.103006, Olum:2013gza}. These papers consider the effect a neutrino shell emitted from a supernova has on photons coming from a pulsar. This effects the arrival times of photons that come from the pulsar. Physically this effect comes from a single photon changing its path due to a change in local geometry coming from the energy carried by the shell of matter. 
-%
-%Scintillation is known to occur in many astrophysical scenarios. Physically, scintillation just corresponds to two (or more) photos from the same object arriving at a particular observer. In this paper we calculate the effect a matter shell crossing two photons from a pulsar has on the arrival times of the photons. In particular the shift in photon geodesics caused by shell crossing. This will be the analog of a memory effect in a ground based interferometer. 
-
-%In this paper we calculate the effect of a matter shell crossing two geodesics. First for the case of two photons coming from pulsars, then for two freely falling points in ground based interferometers like LIGO. The particular matter shell we consider is a neutrino shell emitted by supernova. The shell crosses the path of light rays coming from a pulsar that is scintillating due to lensing in the interstellar medium. The shift in path lengths of both the photons lead to a permanent shift in the times at which they arrive. 
-%When considering a ground based interferometer our calculation will show that the distance between two freely falling points is also shifted permanently when the interferometer arm is oriented along the line of sight of the supernova. When the interferometer arm is oriented perpendicular to the line of sight of the supernova we will find a more interesting effect that grows linearly with time. 
-%The memory effect discussed in \cite{Christodoulou_effect,GW_memory} causes permanent relative displacements between geodesics. It contains only transverse-traceless components and can leave an imprint in an interferometer. The memory effect we introduce in this paper is different in two ways:
 \begin{itemize}
-\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric (i.e gravitational waves). While coupled to matter, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric. The longitudinal component will be a permanent shift in the distance between geodesics.
-\item In addition to displacements of geodesics, the transverse component will also have a term that grows with time. This will be because there is relative velocity between the two freely falling points caused by shell crossing.
+\item It has a longitudinal component. The transverse-traceless limitation only applies to freely-propagating changes of the metric (i.e gravitational waves). 
+While coupled to matter, which often have longitudinal (density) waves, it is natural to have an accompanying longitudinal change in the metric. 
+The longitudinal component will be a permanent shift in the distance between two geodesics, therefore a permanent change in the arm-length of an interferometer.
+\item In addition to displacements of geodesics, the transverse component will also have a term that grows with time. 
+In other words, two geodesics which were at rest suddenly pick up a relative velocity toward each other.
 \end{itemize}
-In terms of the dynamics, a change in velocity is higher order than a change in distance measured in gravitational waves. This however does not mean that our effect is harder to measure. The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry to be detectable whereas our effect does not and therefore it can occur more generally. In addition, a change in velocity implies a distance change that grows in time even after the initial effect. That is an advantage for some detection methods.  
+In terms of the dynamics, a change in velocity is higher order than a change in distance measured in gravitational waves. 
+This however does not mean that our effect is harder to measure. 
+The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry.  
+In contrast, our effect does not, so it can occur more generally. 
+In addition, a change in velocity implies a distance change that grows in time even after the initial effect. 
+That is an advantage for some detection methods.  
 
-The amplitude of the memory effect in ground based interferometers will be too small to measure in the interferometers being planned in the future such as LISA and BBO. However, the SKA telescope is expected to detect thousands of pulsars, \cite{MSPpopulation}, and one of them might be close enough to a supernova explosion to provide us with an observable value of the effect in pulsar scintillometry. This will also allow for a direct measurement of the energy emitted by a supernova in neutrinos. Currently there is no other way to obtain such information. Thus in addition to direct neutrino detection experiments such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
+Unfortunately, as long as the supernova is reasonably far away, this effect is too weak for existing or future interferometers. 
+Pulsar scintillometry seems to be the most likely method to make the first detection. 
+Such a detection allow will allow us to derive the energy emitted by a supernova in neutrinos. Currently there is no other way to obtain such information. 
+Thus in addition to direct neutrino detection experiments such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
-\begin{figure}[b]
+\begin{figure}[tb!]
 \begin{center}
 \includegraphics[scale = 0.27]{intro.pdf}
 \caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
@@ -81,12 +89,15 @@ The amplitude of the memory effect in ground based interferometers will be too s
 
 %We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change in the phase of the photons in the interferometer after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
-The rest of the paper is organized as follows. In section \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a supernova. In section \ref{RelV} we derive the value of this memory effect when the interferometer arm is both perpendicular and along the direction of the shell. In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
+The rest of the paper is organized as follows. 
+In section \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a supernova. 
+In section \ref{RelV} we derive the interferometer response in both transverse and longitudinal directions.  
+In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
 
 \section{Memory effect in Pulsar Scintillation}
 \label{sec-scint}
 
-\begin{figure}[h]
+\begin{figure}[tb!]
 \begin{center}
 \includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
 \caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
@@ -121,7 +132,7 @@ We estimate $b$ by assuming that the next SN is somewhere near the galactic cent
 \section{Memory effect in interferometers}
 \label{RelV}
 
-\begin{figure}[h]
+\begin{figure}[tb!]
 \begin{center}
 \includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
 \caption{Spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell. the proper lengths before(after) shell crossing are $\bar{l}_{AB}(l_{AB})$. Proper times before(after) shell crossing are $\bar{\tau}_{AB}(\tau_{AB})$. The coordinate time at which the shell crosses point $B$ is different in both metrics. $t_c$ in metric of mass $M-\delta M$ and $\bar{t}_c$ in the metric of mass $M$. }
