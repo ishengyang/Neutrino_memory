@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{12}%
+\begin{thebibliography}{11}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,15 +50,45 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Abbott}\ \emph {et~al.}(2016)\citenamefont {Abbott}
-  \emph {et~al.}}]{GW1509}%
+\bibitem [{\citenamefont {Kodwani}\ \emph {et~al.}(2016)\citenamefont
+  {Kodwani}, \citenamefont {Pen},\ and\ \citenamefont
+  {Yang}}]{PhysRevD.93.103006}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~P.}\ \bibnamefont
-  {Abbott}} \emph {et~al.} (\bibinfo {collaboration} {LIGO Scientific
-  Collaboration and Virgo Collaboration}),\ }\href {\doibase
-  10.1103/PhysRevLett.116.061102} {\bibfield  {journal} {\bibinfo  {journal}
-  {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {116}},\ \bibinfo {pages}
-  {061102} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Kodwani}}, \bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont {Pen}}, \
+  and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\ }\href
+  {\doibase 10.1103/PhysRevD.93.103006} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
+  {pages} {103006} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Olum}\ \emph {et~al.}(2013)\citenamefont {Olum},
+  \citenamefont {Pierce},\ and\ \citenamefont {Siemens}}]{Olum:2013gza}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~D.}\ \bibnamefont
+  {Olum}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Pierce}}, \ and\
+  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Siemens}},\ }\href
+  {\doibase 10.1103/PhysRevD.88.043005} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D88}},\ \bibinfo {pages}
+  {043005} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1305.3881}
+  {arXiv:1305.3881 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1305.3881;%%
+\bibitem [{\citenamefont {Pen}\ and\ \citenamefont {Yang}(2015)}]{PenYan14}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont
+  {Pen}}\ and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\
+  }\href {\doibase 10.1103/PhysRevD.91.064044} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D91}},\ \bibinfo {pages}
+  {064044} (\bibinfo {year} {2015})},\ \Eprint {http://arxiv.org/abs/1409.3391}
+  {arXiv:1409.3391 [gr-qc]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1409.3391;%%
+\bibitem [{\citenamefont {{Lorimer}}(2013)}]{MSPpopulation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
+  {{Lorimer}}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {Neutron
+  Stars and Pulsars: Challenges and Opportunities after 80 years}},\ }\href
+  {\doibase 10.1017/S1743921312023769} {\ \bibinfo {series} {IAU Symposium},\
+  \textbf {\bibinfo {volume} {291}},\ \bibinfo {pages} {237} (\bibinfo {year}
+  {2013})},\ \Eprint {http://arxiv.org/abs/1210.2746} {arXiv:1210.2746}
+  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Christodoulou}(1991)}]{Christodoulou_effect}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
@@ -72,15 +102,6 @@
   {Thorne}},\ }\href {\doibase 10.1103/PhysRevD.45.520} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {45}},\
   \bibinfo {pages} {520} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {{Lorimer}}(2013)}]{MSPpopulation}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~R.}\ \bibnamefont
-  {{Lorimer}}},\ }\bibfield  {booktitle} {\emph {\bibinfo {booktitle} {Neutron
-  Stars and Pulsars: Challenges and Opportunities after 80 years}},\ }\href
-  {\doibase 10.1017/S1743921312023769} {\ \bibinfo {series} {IAU Symposium},\
-  \textbf {\bibinfo {volume} {291}},\ \bibinfo {pages} {237} (\bibinfo {year}
-  {2013})},\ \Eprint {http://arxiv.org/abs/1210.2746} {arXiv:1210.2746}
-  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Malek}\ \emph {et~al.}(2003)\citenamefont {Malek}
   \emph {et~al.}}]{SuperKSN}%
   \BibitemOpen
@@ -90,23 +111,32 @@
   {journal} {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo
   {volume} {90}},\ \bibinfo {pages} {061101} (\bibinfo {year}
   {2003})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Israel}(1966)}]{Isr66}%
+\bibitem [{\citenamefont {Narayan}(1992)}]{PulsarScint}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
-  {Israel}},\ }\href {\doibase 10.1007/BF02730328} {\bibfield  {journal}
-  {\bibinfo  {journal} {Nuovo Cim.}\ }\textbf {\bibinfo {volume} {B44S10}},\
-  \bibinfo {pages} {1} (\bibinfo {year} {1966})}\BibitemShut {NoStop}%
-%%CITATION = NUCIA,B44S10,1;%%
-\bibitem [{\citenamefont {Kodwani}\ \emph {et~al.}(2016)\citenamefont
-  {Kodwani}, \citenamefont {Pen},\ and\ \citenamefont
-  {Yang}}]{PhysRevD.93.103006}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Narayan}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Philosophical Transactions: Physical Sciences and Engineering}\ }\textbf
+  {\bibinfo {volume} {341}},\ \bibinfo {pages} {151} (\bibinfo {year}
+  {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bower}\ \emph {et~al.}(2014)\citenamefont {Bower},
+  \citenamefont {Deller}, \citenamefont {Demorest}, \citenamefont {Brunthaler},
+  \citenamefont {Eatough}, \citenamefont {Falcke}, \citenamefont {Kramer},
+  \citenamefont {Lee},\ and\ \citenamefont {Spitler}}]{BowBel13}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Kodwani}}, \bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont {Pen}}, \
-  and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\ }\href
-  {\doibase 10.1103/PhysRevD.93.103006} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
-  {pages} {103006} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~C.}\ \bibnamefont
+  {Bower}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Deller}},
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Demorest}}, \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Brunthaler}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Eatough}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Falcke}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Kramer}}, \bibinfo {author} {\bibfnamefont {K.~J.}\
+  \bibnamefont {Lee}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {L.}~\bibnamefont {Spitler}},\ }\href {\doibase 10.1088/2041-8205/780/1/L2}
+  {\bibfield  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf
+  {\bibinfo {volume} {780}},\ \bibinfo {pages} {L2} (\bibinfo {year} {2014})},\
+  \Eprint {http://arxiv.org/abs/1309.4672} {arXiv:1309.4672 [astro-ph.GA]}
+  \BibitemShut {NoStop}%
+%%CITATION = ARXIV:1309.4672;%%
 \bibitem [{\citenamefont {Moore}\ \emph {et~al.}(2015)\citenamefont {Moore},
   \citenamefont {Cole},\ and\ \citenamefont {Berry}}]{GWcurves}%
   \BibitemOpen
@@ -128,41 +158,4 @@
   {http://arxiv.org/abs/hep-ph/9303206} {arXiv:hep-ph/9303206 [hep-ph]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-PH/9303206;%%
-\bibitem [{\citenamefont {Narayan}(1992)}]{PulsarScint}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
-  {Narayan}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Philosophical Transactions: Physical Sciences and Engineering}\ }\textbf
-  {\bibinfo {volume} {341}},\ \bibinfo {pages} {151} (\bibinfo {year}
-  {1992})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Olum}\ \emph {et~al.}(2013)\citenamefont {Olum},
-  \citenamefont {Pierce},\ and\ \citenamefont {Siemens}}]{Olum:2013gza}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~D.}\ \bibnamefont
-  {Olum}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Pierce}}, \ and\
-  \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Siemens}},\ }\href
-  {\doibase 10.1103/PhysRevD.88.043005} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev.}\ }\textbf {\bibinfo {volume} {D88}},\ \bibinfo {pages}
-  {043005} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1305.3881}
-  {arXiv:1305.3881 [gr-qc]} \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1305.3881;%%
-\bibitem [{\citenamefont {Bower}\ \emph {et~al.}(2014)\citenamefont {Bower},
-  \citenamefont {Deller}, \citenamefont {Demorest}, \citenamefont {Brunthaler},
-  \citenamefont {Eatough}, \citenamefont {Falcke}, \citenamefont {Kramer},
-  \citenamefont {Lee},\ and\ \citenamefont {Spitler}}]{BowBel13}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~C.}\ \bibnamefont
-  {Bower}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Deller}},
-  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Demorest}}, \bibinfo
-  {author} {\bibfnamefont {A.}~\bibnamefont {Brunthaler}}, \bibinfo {author}
-  {\bibfnamefont {R.}~\bibnamefont {Eatough}}, \bibinfo {author} {\bibfnamefont
-  {H.}~\bibnamefont {Falcke}}, \bibinfo {author} {\bibfnamefont
-  {M.}~\bibnamefont {Kramer}}, \bibinfo {author} {\bibfnamefont {K.~J.}\
-  \bibnamefont {Lee}}, \ and\ \bibinfo {author} {\bibfnamefont
-  {L.}~\bibnamefont {Spitler}},\ }\href {\doibase 10.1088/2041-8205/780/1/L2}
-  {\bibfield  {journal} {\bibinfo  {journal} {Astrophys. J.}\ }\textbf
-  {\bibinfo {volume} {780}},\ \bibinfo {pages} {L2} (\bibinfo {year} {2014})},\
-  \Eprint {http://arxiv.org/abs/1309.4672} {arXiv:1309.4672 [astro-ph.GA]}
-  \BibitemShut {NoStop}%
-%%CITATION = ARXIV:1309.4672;%%
 \end{thebibliography}%
