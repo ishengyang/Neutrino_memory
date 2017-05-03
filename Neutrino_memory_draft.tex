@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Gravitational memory of matter shells}
+\title{Memory effect from supernova neutrino shells}
 
 \author{Darsh Kodwani}
 \email{dkodwani@physics.utoronto.ca}
@@ -29,12 +29,12 @@
 \affiliation{Perimeter Institute of Theoretical Physics, 31 Caroline Street North, Waterloo, ON N2L 2Y5, Canada.}
 
 \begin{abstract}
-
-We calculate the memory effect when a shell of matter crosses two freely falling points. The effect has a longitudinal component in addition to the usual transverse component carried by gravitational waves (Christodolou effect). Furthermore it is different from the Christodolou effect as the transverse component of this memory effect also has a term that grows with time. 
-The calculations are performed with a physical setup in mind. We use a shell of neutrinos emitted by a supernova as our matter shell. 
-Inspired by previous works \cite{PhysRevD.93.103006, Olum:2013gza} we first calculate the effect this shell has on pulsar scintillation. 
-Finally we calculate how the shell effects interferometers such as LIGO and whether such effects can be observed.
-
+When a supernova explodes, most of its energy are released in a neutrino shell which changes the surrounding geometry.
+We calculate the potentially observable responses to such change from both pulsar scintillation and conventional interferometers.
+In both cases, the responses are permanent changes to such transient event.
+Thus this is by-definition a memory effect.
+It has a longitudinal component in addition to the usual transverse component carried by gravitational waves (Christodolou effect). 
+Furthermore it is different from the Christodolou effect as the transverse component of this memory effect also has a term that grows with time. 
 \end{abstract}
 
 \maketitle
@@ -50,11 +50,12 @@ In this paper, we extend the above scenario to multiple photon trajectories.
 This situation arises naturally in pulsar scintillation, which is caused by the signal propagating to us in multiple paths. 
 Each path will be affected by the same effect that shifts their individual arrival times with slightly different magnitudes.
 This ``relative'' time shift between two paths is much less than the absolute time shift. 
-Nevertheless, one can measure it as an interference effect, which can be much more accurate than pulsar timing \cite{PenYan14}.
+Nevertheless, one can measure it as an interference effect.
+The accuracy is then determined by the signal frequency, which can be much better than pulse-profile timing \cite{PenYan14}.
 We provide a simple estimation to show that it is likely observable by some of the pulsars that SKA is supposed to discover \cite{MSPpopulation}. 
 
 Since the passage of a massive shell causes a permanent time shift between two nearby null trajectories, it is by-definition a memory effect.
-We precede to clarify its relation and difference to the gravitational memory effect \cite{Christodoulou_effect,GW_memory} by computing the direct response from a interferometer.
+We precede to clarify its relation and difference to the gravitational memory effect \cite{Christodoulou_effect,GW_memory} by computing the direct response from an interferometer.
 
 %The recent detection of gravitational waves \cite{GW1509} has proved that gravitational waves leave an oscillating pattern in the amplitude of waveforms measured at interferometers such as LIGO. It is also known that this is not the only effect that is potentially detectable. 
 
@@ -74,10 +75,11 @@ That is an advantage for some detection methods.
 
 Unfortunately, as long as the supernova is reasonably far away, this effect is too weak for existing or future interferometers. 
 Pulsar scintillometry seems to be the most likely method to make the first detection. 
-Such a detection allow will allow us to derive the energy emitted by a supernova in neutrinos. Currently there is no other way to obtain such information. 
+Such a detection will allow us to derive the energy emitted by a supernova in neutrinos. 
+Currently there is no other way to obtain such information. 
 Thus in addition to direct neutrino detection experiments such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide a new handle on constraining the explosion mechanism. 
 
-\begin{figure}[tb!]
+\begin{figure}[b!]
 \begin{center}
 \includegraphics[scale = 0.27]{intro.pdf}
 \caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
@@ -90,14 +92,17 @@ Thus in addition to direct neutrino detection experiments such as in Super-Kamio
 %We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change in the phase of the photons in the interferometer after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
 The rest of the paper is organized as follows. 
-In section \ref{sec-scint} we discuss how an astrophysical interferometer formed by pulsar scintillometry can measure the memory effect caused by a supernova. 
+In section \ref{sec-scint} we calculate how a pulsar scintillation pattern can be sensitive to the passage of a neutrino shell.
+We put in reasonable numbers to show that an observation is likely to happen if SKA discovers thousands of pulsar as expected.
 In section \ref{RelV} we derive the interferometer response in both transverse and longitudinal directions.  
-In the final section \ref{obs} we discuss potential observation of such an effect by experiments that are currently being planned such as LISA and BBO.
+In the final section \ref{obs}, we put in reasonable values to estimate the size the interferometer response.
+Unfortunately it is well below the sensitivity of the experiments that are currently being planned such as LISA and BBO.
+Thus pulsar scintillometry remains to be the most likely method of detection in the near future.
 
 \section{Memory effect in Pulsar Scintillation}
 \label{sec-scint}
 
-\begin{figure}[tb!]
+\begin{figure}[b!]
 \begin{center}
 \includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
 \caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
@@ -152,7 +157,7 @@ Assuming the local spacetime is dominated by the SN proginator star, the metric 
 \begin{equation}
 	ds^2 = g_{\mu \nu} dx^\mu dx^\nu = - \left( 1 - \frac{(M - \delta M)}{r} \right) dt^2 + \left( 1 - \frac{2(M - \delta M)}{r} \right)^{-1} dr^2 + r^2 d \Omega_2^2.
 \end{equation}
-We are working in units with $G = c =1$.  Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  We describe the shell as a delta function travelling at roughly the speed of light and thus following a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition. However the vectors should have the same radial component as we do not expect any jumps in the radial coordinate. }
+We are working in units with $G = c =1$.  Notice that the time component of the metric is different in both geometries whereas the radial component is the same as it corresponds to the radius of a two sphere separating the two geometries.  We describe the shell as a delta function travelling at roughly the speed of light and thus following a null geodesic. The null vector of the shell can be written in both metrics as follows\footnote{One could write this vector in different ways and still have it satisfy the null normalization condition. However the vectors should have the same radial component, since the $r$ coordinate in both metrics are identified by the physical area.}
 \begin{equation}
 	k^\mu = \left( g_{tt}^{-1}, 1, 0, 0 \right), \hspace{5mm} \bar{k}^\mu = \left( \bar{g}_{tt}^{-1}, 1, 0, 0 \right)	\label{sigma}
 \end{equation}
@@ -160,12 +165,15 @@ Since we expect the interferometer points (denoted by the points $A,B,C$ in figu
 \begin{equation}
 	\bar{u}^\mu = \left( (-1/\bar{g}_{tt})^\frac{1}{2}, 0, 0, 0 \right).	\label{zeta}
 \end{equation}
-After the shell has crossed the points will pick up a velocity $v$. We can calculate $v$ using the IJC, 
-\begin{equation}
+Assuming that the material of the interferometer does not directly interact with neutrinos, its motion does not change while crossing the junction. 
+That means the inner product between the geodesic and the shell remains the same.\begin{equation}
 	 g_{\mu \nu} u^\mu k^\nu = \bar{g}_{\mu \nu} \bar{u}^\mu \bar{k}^\nu. 	\label{0IJC}
 \end{equation}
+In order to satisfy this relation, this geodesic needs to pick up a velocity $v$.
+It is not because its velocity has changed due to any momentum transfer.
+It is reflecting the fact that the ``rest frame'' of the two metrics do not agree with each other.
+Someone at rest in the first metric has a nonzero velocity in the second metric.
 
-This expression comes from demanding the continuity of geodesics from one geometry to another.
 Throughout this calculation we assume that the interferometer is very far from the supernova and the interferometers' arm length is much smaller then the distance to the supernova. Thus we assume there are three small quantities, $\frac{M}{r_0}, \frac{\delta M}{r_0}, \frac{d}{r_0}<<1$. To simplify notation we will use the symbol $\mathcal{O}(r^{-1})$ to represent suppression by any one of the three small quantities. 
 Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer to order $\mathcal{O}(r_{crossing}^{-2})$,
 
@@ -232,32 +240,40 @@ The trajectory for point $A$ is
 	r_A(t) & = & r_0 - \underbrace{\frac{1}{2} a^{(A)}_{(2)} t^2}_{T2} - \underbrace{\left(v^{(A)}_{(1)} + v^{(A)}_{(2)} \right)t}_{T3},  \hspace{5mm} (t>0)  \label{rA}.
 \end{eqnarray}
 
-We have introduced new notation to represent the velocity and acceleration of the particles. The subscript represents the number of factors of $r_0$ the term is suppressed by, i.e $a^{(A)}_{(2)}$ is term of $\mathcal{O}(r_0^{-2})$.\footnote{We will only keep terms up to order $\mathcal{O}(r_0^{-2})$.} The superscript is a label for the particle. Here $\bar{a}^{(A)}_{(2)}$ is the acceleration of particle $A$ in the initial metric. $a^{(A)}_{(2)}$ is the acceleration of particle $A$ in the final metric. $v^{(A)}_{(1)}(v^{(A)}_{(2)})$ represent the first(second) order velocities of particle $A$ in the final metric. The equations for these accelerations and velocities are
-
+We have introduced new notation to represent the velocity and acceleration of the particles. The subscript represents the number of factors of $r_0$ the term is suppressed by, i.e $a^{(A)}_{(2)}$ is term of $\mathcal{O}(r_0^{-2})$.\footnote{We will only keep terms up to order $\mathcal{O}(r_0^{-2})$.} The superscript is a label for the particle. Here $\bar{a}^{(A)}_{(2)}$ is the acceleration of particle $A$ in the initial metric. $a^{(A)}_{(2)}$ is the acceleration of particle $A$ in the final metric. $v^{(A)}_{(1)}(v^{(A)}_{(2)})$ represent the first(second) order velocities of particle $A$ in the final metric. 
+\begin{itemize}
+\item $t=0$ is defined to be the time when the shell crosses point $A$ at $r_A(0) = r_0$. For $t<0$ we assume there is no velocity. The only term that contributes to the trajectory is the acceleration of point $A$, $\bar{a}^{(A)}_{(2)}$ towards mass $M$. This is given by $T1$.
+\item For $t>0$ there is still the acceleration term, $a^{(A)}_{(2)}$, but the mass is different since the shell has carried $\delta M$ away. This is given by $T2$.
+\item $T3$ comes from the velocity that is picked up by shell crossing. 
+\end{itemize}
+These accelerations and velocities take the following values.
 \begin{equation}
-	\bar{a}^{(A)}_{(2)} = \frac{M}{r_0^2}, a^{(A)}_{(2)} = \frac{M - \delta M}{r_0^2}, v^{(A)}_{(1)} = \frac{\delta M}{r_0}, v^{(A)}_{(2)} = \frac{\delta M^2}{r_0^2}.
+	\bar{a}^{(A)}_{(2)} = \frac{M}{r_0^2}, \ \ \ 
+	a^{(A)}_{(2)} = \frac{M - \delta M}{r_0^2}, \ \ \ 
+	v^{(A)}_{(1)} = \frac{\delta M}{r_0}, \ \ \ 
+	v^{(A)}_{(2)} = \frac{\delta M^2}{r_0^2}.
 \end{equation} 
 
 
-\begin{itemize}
-
-\item $t=0$ is defined to be the time when the shell crosses point $A$ at $r_A(0) = r_0$. For $t<0$ we assume there is no velocity. The only term that contributes to the trajectory is the acceleration of point $A$, $\bar{a}^{(A)}_{(2)}$ towards mass $M$. This is given by $T1$.
-
-\item For $t>0$ there is still the acceleration term, $a^{(A)}_{(2)}$, but the mass is different since the shell has carried $\delta M$ away. This is given by $T2$.
-
-\item $T3$ comes from the velocity that is picked up by shell crossing. 
-
-\end{itemize}
 
 The trajectory of point $B$ is given by
-
 \begin{eqnarray}
 	r_B(\bar{t}) & = &  r_0 + d  - \underbrace{\frac{1}{2} \bar{a}_{(2)}^{(B)} \bar{t}^2}_{T4},  \hspace{5mm} (\bar{t} \leq \bar{t_c})	\nonumber	\\
-	r_B(t) & = & r_0 +d  - \underbrace{\frac{1}{2} a_{(2)}^{(B)}(t-t_c)^2}_{T5} -  \underbrace{\frac{1}{2}  \bar{a}^{(B)}_{(2)} t_c^2}_{T6} - \underbrace{\left( \bar{a}_{(2)}^{(B)} t_c + v^{(B)}_{(1)} + v^{(B)}_{(2)} \right)(t-t_c)}_{T7} ,  \hspace{5mm}  (t>t_c).	\label{rB}
+	r_B(t) & = & r_0 +d  - \underbrace{\frac{1}{2} a_{(2)}^{(B)}(t-t_c)^2}_{T5} -  \underbrace{\frac{1}{2}  \bar{a}^{(B)}_{(2)} \bar{t}_c^2}_{T6} - \underbrace{\left( \bar{a}_{(2)}^{(B)} t_c + v^{(B)}_{(1)} + v^{(B)}_{(2)} \right)(t-t_c)}_{T7} ,  \hspace{5mm}  (t>t_c).	\label{rB}
 \end{eqnarray}
-
-where the accelerations and velocities are defined analogously to point $A$. In fact some of them are the same as shown below
-
+The accelerations and velocities are defined analogously to point $A$. 
+\begin{itemize}
+\item Note that the time coordinates do no agree in the two metrics. 
+We have already used the shift symmetry to demand that $t=\bar{t}=0$ is when point $A$ crosses the shell.
+The time for point $B$ to cross the shell, $t_c$ and $\bar{t}_c$, must be different.
+\item For $\bar{t} <\bar{t}_c$ there is just the acceleration, $\bar{a}^{(B)}_{(2)}$, of the point towards mass $M$. This is given by $T4$.  
+\item After $t>t_c$ the shell has crossed. The particle now accelerates in the final metric.
+Term $T5$ describes the influence of the new acceleration. 
+\item $T6$ corresponds to the distance travelled while accelerating in the initial metric for time $t_c$. 
+\item $T7$ is a term that contains the velocity of the particle right after crossing. The $\bar{a}^{(B)}_{(2)} t_c$ term is the velocity gained while accelerating in the metric of mass $M$. $v_{(1)}^{(B)}, v_{(2)}^{(B)}$ are the velocities picked up due to shell crossing.
+\end{itemize}
+The values of these 1st and 2nd order accelerations and velocities are summarized here.
+We repeat the values for point $A$ to show that some of them are actually the same.
 \begin{eqnarray}
 	\bar{a}^{(A)}_{(2)} & = & \bar{a}^{(B)}_{(2)} =  \frac{M}{r_0^2}	\nonumber	\\
 	a^{(A)}_{(2)} & = & a^{(B)}_{(2)}=  \frac{M - \delta M}{r_0^2}	\nonumber	\\
@@ -266,21 +282,11 @@ where the accelerations and velocities are defined analogously to point $A$. In 
 	v^{(B)}_{(2)} & = & \frac{\delta M^2}{r_0^2} - \frac{\delta M d}{r_0^2}.		
 \end{eqnarray}
 
-\begin{itemize}
-
-\item For $\bar{t} <\bar{t}_c$ there is just the acceleration, $\bar{a}^{(B)}_{(2)}$, of the point towards mass $M$. This is given by $T4$.  
-
-\item After $t>t_c$ the shell has crossed. The particle now accelerates in the final metric.\footnote{Note that $\bar{t}_c$ and $t_c$ are different since they are coordinates in two different metrics.} Term $T5$ takes into account the distance moved due to this. 
-
-\item $T6$ corresponds to the distance travelled while accelerating in the initial metric for time $t_c$. 
-
-\item $T7$ is a term that contains the velocity of the particle. The $\bar{a}^{(B)}_{(2)} t_c$ term is the velocity gained while accelerating in the metric of mass $M$. $v_{(1)}^{(B)}, v_{(2)}^{(B)}$ are the velocities picked up due to shell crossing.
-
-\end{itemize}
 
 \subsubsection{Relation between proper length and proper time}
 
-The interferometer infers the distance between two points by measuring the proper time it takes for a photon to go from one end of the arm to the other and come back. In this section we will relate the proper time seen by one end of the arm to the proper length of the arm (in figure \ref{calculation}). In particular we show that \emph{the proper time is twice the proper length at a fixed coordinate time up to $\mathcal{O}(r_0^{-2})$}. This will be very useful as we can compute the proper length (which is comparatively easier) and still infer the effect seen in the interferometer.
+The interferometer infers the distance between two points by measuring the proper time it takes for a photon to go from one end of the arm to the other and come back. In this section we will relate the proper time seen by one end of the arm to the proper length of that arm (in figure \ref{calculation}). 
+In particular we show that \emph{the proper time is twice the proper length at a fixed coordinate time up to $\mathcal{O}(r_0^{-2})$}. This will be very useful as we can compute the proper length (which is comparatively easier) and still infer the effect seen in the interferometer.
 
  The most general expression for the proper distance is 
 
@@ -339,17 +345,17 @@ The memory effect in the longitudinal direction, $\Delta l_{AB}$ is the differen
 	\Delta l_{AB} \equiv l_{AB} - \bar{l}_{AB} = - \frac{\delta M^2 d}{r_0^2}.
 \end{equation}
 
-We note that there is no time dependent term in this expression. This follows from the fact that the velocity of both points is the same up to $\mathcal{O}(r_0^{-2})$.\footnote{After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}\left( 1 + \frac{\delta M}{r_0} \right)$. In the time the shell takes to go from $A$ to $B$, $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} t_c$. The final velocity of $A$ at time $t_c$ is, therefore, given by
-
-\begin{equation}
-	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.	\label{velA}
-\end{equation}
-Similarly, point $B$ will gain a velocity from the acceleration towards mass $M$ with magnitude $\frac{M}{r_0^2}t_c$. The velocity change from shell crossing is $\frac{\delta M}{r_0 + d} \left( 1 + \frac{\delta M}{r_0} \right)$. The final velocity of point $B$ at time $t_c$ is
-
-\begin{equation}
-	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.	\label{velB}
-\end{equation}
-We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-2})$. } It will turn out that when we calculate the distance between $A$ and $C$ there will be a relative velocity and therefore a time dependent turn. 
+We note that there is no time dependent term in this expression. This follows from the fact that the velocity of both points is the same up to $\mathcal{O}(r_0^{-2})$.
+%\footnote{After the shell crosses point $A$, it will pick up a velocity $\frac{\delta M}{r_0}\left( 1 + \frac{\delta M}{r_0} \right)$. In the time the shell takes to go from $A$ to $B$, $A$ will also gain a velocity from its acceleration towards the mass $M -\delta M$. The magnitude of the velocity gain from acceleration is $\frac{M-\delta M}{r_0^2} t_c$. The final velocity of $A$ at time $t_c$ is, therefore, given by
+%\begin{equation}
+%	v_A(t = t_c) = \frac{\delta M}{r_0} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M-\delta M}{r_0^2} t_c.	\label{velA}
+%\end{equation}
+%Similarly, point $B$ will gain a velocity from the acceleration towards mass $M$ with magnitude $\frac{M}{r_0^2}t_c$. The velocity change from shell crossing is $\frac{\delta M}{r_0 + d} \left( 1 + \frac{\delta M}{r_0} \right)$. The final velocity of point $B$ at time $t_c$ is
+%\begin{equation}
+%	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.	\label{velB}
+%\end{equation}
+%We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-2})$. } 
+Next, we will calculate the distance between $A$ and $C$ there will be a relative velocity and therefore a time dependent turn. 
 
 \subsection{Distance between $A$ and $C$}
 
