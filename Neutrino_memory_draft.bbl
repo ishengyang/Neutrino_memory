@@ -50,16 +50,6 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Kodwani}\ \emph {et~al.}(2016)\citenamefont
-  {Kodwani}, \citenamefont {Pen},\ and\ \citenamefont
-  {Yang}}]{PhysRevD.93.103006}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
-  {Kodwani}}, \bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont {Pen}}, \
-  and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\ }\href
-  {\doibase 10.1103/PhysRevD.93.103006} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
-  {pages} {103006} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Olum}\ \emph {et~al.}(2013)\citenamefont {Olum},
   \citenamefont {Pierce},\ and\ \citenamefont {Siemens}}]{Olum:2013gza}%
   \BibitemOpen
@@ -71,6 +61,16 @@
   {043005} (\bibinfo {year} {2013})},\ \Eprint {http://arxiv.org/abs/1305.3881}
   {arXiv:1305.3881 [gr-qc]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1305.3881;%%
+\bibitem [{\citenamefont {Kodwani}\ \emph {et~al.}(2016)\citenamefont
+  {Kodwani}, \citenamefont {Pen},\ and\ \citenamefont
+  {Yang}}]{PhysRevD.93.103006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Kodwani}}, \bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont {Pen}}, \
+  and\ \bibinfo {author} {\bibfnamefont {I.-S.}\ \bibnamefont {Yang}},\ }\href
+  {\doibase 10.1103/PhysRevD.93.103006} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {93}},\ \bibinfo
+  {pages} {103006} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Pen}\ and\ \citenamefont {Yang}(2015)}]{PenYan14}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {U.-L.}\ \bibnamefont
