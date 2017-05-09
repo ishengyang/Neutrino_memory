@@ -66,7 +66,7 @@ The longitudinal component will be a permanent shift in the distance between two
 \item In addition to displacements of geodesics, the transverse component will also have a term that grows with time. 
 In other words, two geodesics which were at rest suddenly pick up a relative velocity toward each other.
 \end{itemize}
-In terms of the dynamics, a change in velocity is higher order than a change in distance measured in gravitational waves. 
+In terms of the dynamics, a change in velocity is higher order than a change in distance.
 This however does not mean that our effect is harder to measure. 
 The conventional gravitational memory effect needs a physical event that significantly breaks spherical symmetry.  
 In contrast, our effect does not, so it can occur more generally. 
@@ -78,16 +78,6 @@ Pulsar scintillometry seems to be the most likely method to make the first detec
 Such a detection will allow us to derive the energy emitted by a supernova in neutrinos. 
 Currently there is no other way to obtain such information. 
 Thus in addition to direct neutrino detection experiments such as in Super-Kamiokande \cite{SuperKSN}, this memory effect can provide an independent constraint on the explosion mechanism.
-
-\begin{figure}[b!]
-\begin{center}
-\includegraphics[scale = 0.27]{intro.pdf}
-\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
-\label{fig:1}
-\end{center}
-\end{figure}
-
-
 
 %We will present a simple and natural occurrence of this effect. During a supernova explosion (SNe), most of the energy is released in a highly relativistic shell of neutrinos. As illustrated in Fig.\ref{fig:1}, when a neutrino shell passes through, the three free-falling points $A$, $B$ and $C$, will pick up different velocities due to the change of geometry. If $AB$ and $BC$ are two arms of an interferometer, we will see a time-dependent change in the phase of the photons in the interferometer after the shell passes through. Note that this is purely a geometric change which happens even without the three actual objects. We will demonstrate this by showing that it is possibility to detect the same effect using pulsar interferometry, in which two parallel light rays get different time-delays after being hit by a neutrino shell. 
 
@@ -102,7 +92,7 @@ Thus pulsar scintillometry remains to be the most likely method of detection in 
 \section{Memory effect in Pulsar Scintillation}
 \label{sec-scint}
 
-\begin{figure}[b!]
+\begin{figure}[t!]
 \begin{center}
 \includegraphics[width=\textwidth,height=10cm]{Lens.pdf}
 \caption{Geometry of the astrophysical interferometer formed by pulsar scintillometry. Due to scattering or lensing, the image we see is an interference pattern of two light rays represented by the blue lines. If the separation of the two light rays has a component along the longitudinal (radial) direction from the SN, the spacetime distortion of the neutrino shell will change the interference pattern we see. We draw the lens to be behind the SN, but it could have been in front of it and the effect is the same.}
@@ -137,14 +127,16 @@ We estimate $b$ by assuming that the next SN is somewhere near the galactic cent
 \section{Memory effect in interferometers}
 \label{RelV}
 
-\begin{figure}[tb!]
+The pulsar scintillation pattern is usually observed far from where the shell is effecting the local spacetime. One way to measure the local spacetime is to use an interferometer. In this section we calculate what effect the shell of matter would have on an interferometer that is placed at the position where the photon geodesics are crossed by the shell.
+The orientation of the interferometer is shown in Fig.\ref{fig:1}.
+
+\begin{figure}[b!]
 \begin{center}
-\includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
-\caption{Spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell. The proper lengths before(after) shell crossing are $\bar{l}_{AB}(l_{AB})$. Proper times before(after) shell crossing are $\bar{\tau}_{AB}(\tau_{AB})$. The coordinate time at which the shell crosses point $B$ is different in both metrics. $t_c$ in metric of mass $M-\delta M$ and $\bar{t}_c$ in the metric of mass $M$. }
-\label{calculation}
+\includegraphics[scale = 0.27]{intro.pdf}
+\caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
+\label{fig:1}
 \end{center}
 \end{figure}
-The pulsar scintillation pattern is usually observed far from where the shell is effecting the local spacetime. One way to measure the local spacetime is to use an interferometer. In this section we calculate what effect the shell of matter would have on an interferometer that is placed at the position where the photon geodesics are crossed by the shell.
 
 \subsection{Velocity change from junction conditions}
 
@@ -222,9 +214,21 @@ The change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing
 
 \subsection{Distance between $A$ and $B$}
 
-Points $A$ and $B$ are the end points of an interferometer arm that is radially oriented towards the SN (as shown in figure \ref{fig:1}). Here we calculate the distance between the points before and after shell crossing.
+Points $A$ and $B$ are the end points of an interferometer arm that is radially oriented towards the SN (as shown in figure \ref{fig:1}). 
+Here we calculate the interferometer response in this arm.
+As shown in Fig.\ref{fig:3}, such response is actually about the proper time in one end when a signal bounces back.
+However, we will show that to the order we care about, such proper time is just the proper length of the arm in the global rest frame.
+Therefore we will simply calculate such proper length.
 
 \subsubsection{Defining trajectories}
+
+\begin{figure}[tb!]
+\begin{center}
+\includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
+\caption{Spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell. The proper lengths before(after) shell crossing are $\bar{l}_{AB}(l_{AB})$. Proper times before(after) shell crossing are $\bar{\tau}_{AB}(\tau_{AB})$. The coordinate time at which the shell crosses point $B$ is different in both metrics. $t_c$ in metric of mass $M-\delta M$ and $\bar{t}_c$ in the metric of mass $M$. }
+\label{calculation}
+\end{center}
+\end{figure}
 
 We parametrize the trajectories of the points in a piecewise form. 
 The trajectory for point $A$ is

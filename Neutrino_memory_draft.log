@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2017 15:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 MAY 2017 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,61 +357,68 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
 
-<intro.pdf, id=15, 963.6pt x 542.025pt>
-File: intro.pdf Graphic file (type pdf)
- <use intro.pdf>
-Package pdftex.def Info: intro.pdf used on input line 84.
-(pdftex.def)             Requested size: 260.17548pt x 146.3487pt.
- [2 <./intro.pdf>]
-<Lens.pdf, id=39, 794.97pt x 614.295pt>
+<Lens.pdf, id=15, 794.97pt x 614.295pt>
 File: Lens.pdf Graphic file (type pdf)
  <use Lens.pdf>
-Package pdftex.def Info: Lens.pdf used on input line 107.
+Package pdftex.def Info: Lens.pdf used on input line 97.
 (pdftex.def)             Requested size: 510.01636pt x 284.52878pt.
- [3 <./Lens.pdf>]
-<calculation.pdf, id=69, 963.6pt x 542.025pt>
+ [2] [3 <./Lens.pdf>]
+<intro.pdf, id=51, 963.6pt x 542.025pt>
+File: intro.pdf Graphic file (type pdf)
+ <use intro.pdf>
+Package pdftex.def Info: intro.pdf used on input line 135.
+(pdftex.def)             Requested size: 260.17548pt x 146.3487pt.
+ [4 <./intro.pdf>]
+
+LaTeX Warning: Reference `fig:3' on page 5 undefined on input line 219.
+
+<calculation.pdf, id=75, 963.6pt x 542.025pt>
 File: calculation.pdf Graphic file (type pdf)
  <use calculation.pdf>
-Package pdftex.def Info: calculation.pdf used on input line 142.
+Package pdftex.def Info: calculation.pdf used on input line 227.
 (pdftex.def)             Requested size: 509.99982pt x 341.44447pt.
- [4]
-[5 <./calculation.pdf>] [6] [7] [8] [9] [10] [11] [12] [13]
-(./Neutrino_memory_draft.bbl) [14] (./Neutrino_memory_draft.aux) ) 
+ [5]
+[6 <./calculation.pdf>] [7] [8] [9] [10] [11] [12] [13]
+(./Neutrino_memory_draft.bbl) [14] (./Neutrino_memory_draft.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4785 strings out of 493089
- 63566 string characters out of 6134842
+ 4789 strings out of 493089
+ 63605 string characters out of 6134842
  152827 words of memory out of 5000000
- 8191 multiletter control sequences out of 15000+600000
- 11588 words of font info for 45 fonts, out of 8000000 for 9000
+ 8194 multiletter control sequences out of 15000+600000
+ 11896 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,15n,26p,1087b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti9.pfb>
-Output written on Neutrino_memory_draft.pdf (14 pages, 353284 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Neutrino_memory_draft.pdf (14 pages, 362493 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
