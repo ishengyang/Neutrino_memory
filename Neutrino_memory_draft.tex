@@ -49,7 +49,7 @@ Observationally, this manifests itself as a permanent shift in pulsar signal arr
 In this paper, we extend the above scenario to multiple photon trajectories.
 This situation arises naturally in pulsar scintillation, which is caused by the photons propagating to us along multiple paths. 
 Each path will be affected by the same effect that shifts their individual arrival times with slightly different magnitudes.
-This ``relative'' time shift between two paths is much less than the absolute time shift. 
+This ``relative'' time shift between two paths is much less than the absolute time shift calculated in \cite{Olum:2013gza, PhysRevD.93.103006}. 
 Nevertheless, one can measure it as an interference effect.
 The accuracy is then determined by the signal frequency, which can be much better than pulse-profile timing \cite{PenYan14}.
 We provide a simple estimation to show that it is potentianlly observable by some of the pulsars that SKA is supposed to discover \cite{MSPpopulation}. 
@@ -86,7 +86,7 @@ In section \ref{sec-scint} we calculate how a pulsar scintillation pattern can b
 We put in reasonable numbers to show that an observation is likely to happen if SKA discovers thousands of pulsar as expected.
 In section \ref{RelV} we derive the interferometer response in both transverse and longitudinal directions.  
 In the final section \ref{obs}, we put in reasonable values to estimate the size of the interferometer response.
-Unfortunately it is well below the sensitivity of the experiments that are currently being planned such as LISA and BBO.
+Unfortunately the amplitude of the effect is well below the sensitivity of the experiments that are currently being planned such as LISA and BBO.
 Thus pulsar scintillometry remains to be the most likely method of detection in the near future.
 
 \section{Memory effect in Pulsar Scintillation}
@@ -130,7 +130,7 @@ We estimate $b$ by assuming that the next SN is somewhere near the galactic cent
 The pulsar scintillation pattern is usually observed far from where the shell is effecting the local spacetime. One way to measure the local spacetime is to use an interferometer. In this section we calculate what effect the shell of matter would have on an interferometer that is placed at the position where the photon geodesics are crossed by the shell.
 The orientation of the interferometer is shown in Fig.\ref{fig:1}.
 
-\begin{figure}[b!]
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[scale = 0.27]{intro.pdf}
 \caption{Schematic of the effect being considered by a neutrino shell passing through the interferometer. The points $A,B,C$ represent ends of the interferometer of arm length $d$. The three points $A,B$ and $C$ will pick up velocities $v_A, v_B$ and $v_C$ respectively after the shell crosses them. They are all different since they cross the shell at different locations.}
@@ -166,7 +166,7 @@ It is not because its velocity has changed due to any momentum transfer.
 It is reflecting the fact that the ``rest frame'' of the two metrics do not agree with each other.
 Someone at rest in the first metric has a nonzero velocity in the second metric.
 
-Throughout this calculation we assume that the interferometer is very far from the supernova and the interferometers' arm length is much smaller then the distance to the supernova. Thus we assume there are three small quantities, $\frac{M}{r_0}, \frac{\delta M}{r_0}, \frac{d}{r_0}<<1$. To simplify notation we will use the symbol $\mathcal{O}(r^{-1})$ to represent suppression by any one of the three small quantities. 
+Throughout this calculation we assume that the interferometer is very far from the supernova and the interferometers' arm length is much smaller then the distance to the supernova. Thus we assume there are three small quantities, $\frac{M}{r_0}, \frac{\delta M}{r_0}, \frac{d}{r_0}<<1$. To simplify notation we will use the symbol $\mathcal{O}(r^{-1}_{0})$ to represent suppression by any one of the three small quantities. 
 Substituting Eqs (\ref{sigma}, \ref{zeta}) into Eq (\ref{0IJC}) gives the final vector for the interferometer to order $\mathcal{O}(r_{crossing}^{-2})$,
 
 \begin{equation}
@@ -216,9 +216,9 @@ The change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing
 
 Points $A$ and $B$ are the end points of an interferometer arm that is radially oriented towards the SN (as shown in figure \ref{fig:1}). 
 Here we calculate the interferometer response in this arm.
-As shown in Fig.\ref{fig:3}, such response is actually about the proper time in one end when a signal bounces back.
+As shown in figure \ref{calculation}, such response is actually about the proper time in one end when a signal bounces back.
 However, we will show that to the order we care about, such proper time is just the proper length of the arm in the global rest frame.
-Therefore we will simply calculate such proper length.
+Therefore we will simply calculate such a proper length.
 
 \subsubsection{Defining trajectories}
 
@@ -268,7 +268,7 @@ The accelerations and velocities are defined analogously to point $A$.
 \item Note that the time coordinates do no agree in the two metrics. 
 We have already used the shift symmetry to demand that $t=\bar{t}=0$ is when point $A$ crosses the shell.
 The time for point $B$ to cross the shell, $t_c$ and $\bar{t}_c$, must be different.
-\footnote{Since the only thing the point does in the initial metric is accelerating, $\bar{t}_c$ will always multiply an acceleration term. 
+\footnote{Since the only thing the point does in the initial metric is accelerate, $\bar{t}_c$ will always multiply an acceleration term. 
 We will only be interested in terms of $\mathcal{O}(r_0^{-2})$ and the acceleration term will already be $\mathcal{O}(r_0^{-2})$. 
 This means throughout our calculation we will never need to distinguish between $\bar{t}_c$ and $t_c$ as they are both $d$ to leading order.}
 \item For $\bar{t} <\bar{t}_c$ there is just the acceleration, $\bar{a}^{(B)}_{(2)}$, of the point towards mass $M$. This is given by $T4$.  
@@ -296,7 +296,7 @@ In particular we show that \emph{the proper time is twice the proper length at a
  The most general expression for the proper distance is 
 
 \begin{equation}
-	l = \int \sqrt{g_{ab} dx^a dx^b}.	\label{proplen}
+	l = \int \sqrt{g_{ab} dx^a dx^b} \hspace{5mm} a,b \in \{r,\theta,\phi\}.	\label{proplen}
 \end{equation}
 
 Using this we calculate the proper distance before shell crossing $\bar{l}_{AB}$ between the two points $A$ and $B$ at time $\bar{t}$. Since we are only considering radial motion Eq (\ref{proplen}) simplifies to
@@ -360,7 +360,7 @@ We note that there is no time dependent term in this expression. This follows fr
 %	v_B(t=t_c) = \frac{\delta M}{r_0+d} \left( 1 + \frac{\delta M}{r_0} \right)+ \frac{M}{(r_0+d)^2} t_c.	\label{velB}
 %\end{equation}
 %We see that $v_A$ is the same as $v_B$ to $\mathcal{O}(r_0^{-2})$. } 
-Next, we will calculate the distance between $A$ and $C$. We will show that there will be a relative velocity between them and therefore a time dependent term. 
+Next, we will calculate the distance between $A$ and $C$. We will show that there will be a relative velocity between them and therefore a time dependent term at $\mathcal{O}(r_0^{-2})$. 
 
 \subsection{Distance between $A$ and $C$}
 
