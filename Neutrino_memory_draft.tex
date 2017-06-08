@@ -52,7 +52,8 @@ Each path will be affected by the same effect that shifts their individual arriv
 This ``relative'' time shift between two paths is much less than the absolute time shift calculated in \cite{Olum:2013gza, PhysRevD.93.103006}. 
 Nevertheless, one can measure it as an interference effect.
 The accuracy is then determined by the signal frequency, which can be much better than pulse-profile timing \cite{PenYan14}.
-We provide a simple estimation to show that it is potentially observable by some of the pulsars that SKA is supposed to discover \cite{MSPpopulation}. 
+We provide a simple estimation to show that among the thousands of pulsars that SKA is supposed to discover \cite{MSPpopulation}, some of their lines-of-sight can be sufficiently close ($\sim 10$ light-years) to the next supernova.
+If these pulsars do scintillate, the supernova causes an order one change in their scintillation patterns over the course of $\sim$ 10 years. 
 
 Since the passage of a massive shell causes a permanent time shift between two nearby null trajectories, it is by-definition a memory effect.
 We proceed to clarify its relation and difference to the gravitational memory effect \cite{Christodoulou_effect,GW_memory} by computing the direct response from an interferometer.
@@ -122,7 +123,27 @@ We can see that this effect grows from zero and approaches an asymptotic value,
 \end{equation}
 at a characteristic time scale given by $b$.
 
-We estimate $b$ by assuming that the next SN is somewhere near the galactic centre. A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. $\Delta b$ is related to the scattering-broadening of images. We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic centre. Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. This is comparable to the wavelength at $1 \ GHz$, thus making the change in interference pattern easy to detect. Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}). 
+We estimate $b$ by assuming that the next SN is somewhere near the galactic centre. 
+A sample of $\sim 9000$ pulsars from the SKA catalog in \cite{MSPpopulation} shows that among those pulsars, the shortest $b$ is about $10\ ly \sim 10^{14} \ km$. 
+$\Delta b$ is related to the scattering-broadening of images. 
+We use the data from \cite{BowBel13} that was observed on a scattering screen near the galactic centre. 
+Scaling the frequency to $1\ GHz$ which is usually a good window to observe pulsar signals. 
+We found that such a scattering screen can produce images separated by $\Delta b\sim 1000A.U. \sim 10^{10} \ km$. 
+We again use $\delta M \sim 1 \ km$, and combining all these numbers we get $(\delta M \Delta b / b) \sim 1 \ m$. 
+This is comparable to the wavelength at $1 \ GHz$, which means that an interference bright spot becomes a dark spot within the time scale set by $b\sim$ 10 years. 
+As long as the original scintillation pattern is observable, such an order-one change is guaranteed to be observable without a detailed analysis of $S/N$.
+
+The actual observational concern is that the scintillation pattern can change during those 10 years without the influence from a near-by supernova.
+Such change can be caused by both the relative motion between the pulsar and the screen, and the internal dynamics of the screen.
+For 10 years or even a longer time scale, the relative motion is usually well-approximated as a constant velocity.
+Thus, if we monitor the scintillation pattern for 10 more years both before and after the supernova event, we will be able to fit this background change and remove it to isolate the supernova contribution.
+As for the internal dynamics of the screen, if it also changes at a natural time scale $\gtrsim$ 10 years, then it will be removed together by the above procedure.
+If the dynamical time scale is comparable or shorter than 10 years, then we need to understand it better to determine how much of the observable change can be attributed to the supernova.
+The intrinsic dynamics of the scattering screen is an active research topic, so we do not know which one is the case yet.
+
+{\bf XXX cite some papers on this?}
+
+%Therefore, if we can monitor the pulsar scintillation pattern over ten years after a SN explosion we should see an order one change in the scintillation pattern predicted by Eq.~(\ref{eq-change}). 
 
 \section{Memory effect in interferometers}
 \label{RelV}
@@ -140,7 +161,12 @@ The orientation of the interferometer is shown in Fig.\ref{fig:1}.
 
 \subsection{Velocity change from junction conditions}
 
-Assuming the local spacetime is dominated by the SN proginator star, the metric governing the spacetime is the Schwarzschild metric. In the calculations we will need two Schwarzschild metrics. One with mass $M$ and the other with mass $M - \delta M$, where $\delta M$ will be the energy carried by the neutrinos after the SN explosion. The metric with mass $M$ will have a bar over its coordinates and the one with $M- \delta M$ will not. 
+We will use Schwarzschild metric to describe the geometry around the SN progenitor of mass $M$.
+When it releases a spherically symmetric shell of neutrinos, the metric outside remains the same.
+The metric inside becomes a different Schwarzschild metric with mass $(M-\delta M)$, where $\delta M$ will be the energy carried by the neutrinos after the SN explosion. 
+The physical effect we will calculate is due to crossing this shell.
+Contribution to the metric from other sources can be linearly superimposed and will not change our final result, so we can ignore them.
+The outside metric will have a bar over its coordinates and inside one will not. 
  
 \begin{equation}
 	d\bar{s}^2 = \bar{g}_{\mu \nu} d\bar{x}^\mu d\bar{x}^\nu = - \left( 1 - \frac{2M}{r} \right) d\bar{t}^2 + \left( 1 - \frac{2M}{r} \right)^{-1} d {r}^2 + r^2 d {\Omega}_2^2. \label{SCH}
