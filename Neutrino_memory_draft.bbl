@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{11}%
+\begin{thebibliography}{14}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -102,6 +102,13 @@
   {Thorne}},\ }\href {\doibase 10.1103/PhysRevD.45.520} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {45}},\
   \bibinfo {pages} {520} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Epstein}(1978)}]{Epstein:1978dv}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Epstein}},\ }\href {\doibase 10.1086/156337} {\bibfield  {journal} {\bibinfo
+   {journal} {Astrophys. J.}\ }\textbf {\bibinfo {volume} {223}},\ \bibinfo
+  {pages} {1037} (\bibinfo {year} {1978})}\BibitemShut {NoStop}%
+%%CITATION = ASJOA,223,1037;%%
 \bibitem [{\citenamefont {Malek}\ \emph {et~al.}(2003)\citenamefont {Malek}
   \emph {et~al.}}]{SuperKSN}%
   \BibitemOpen
@@ -137,6 +144,18 @@
   \Eprint {http://arxiv.org/abs/1309.4672} {arXiv:1309.4672 [astro-ph.GA]}
   \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1309.4672;%%
+\bibitem [{\citenamefont {et~al.}(2015)}]{Liu:2015}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~L.}\ \bibnamefont
+  {et~al.}},\ }\href {\doibase 10.1093/mnras/stw314} {\bibfield  {journal}
+  {\bibinfo  {journal} {MNRAS.}\ }\textbf {\bibinfo {volume} {458}},\ \bibinfo
+  {pages} {1289 } (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ue-Li~Pen}(2013)}]{Pen:2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.~L.}\ \bibnamefont
+  {Ue-Li~Pen}},\ }\href {\doibase 10.1093/mnras/stu1020} {\bibfield  {journal}
+  {\bibinfo  {journal} {MNRAS.}\ }\textbf {\bibinfo {volume} {442}},\ \bibinfo
+  {pages} {3338 } (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Moore}\ \emph {et~al.}(2015)\citenamefont {Moore},
   \citenamefont {Cole},\ and\ \citenamefont {Berry}}]{GWcurves}%
   \BibitemOpen
