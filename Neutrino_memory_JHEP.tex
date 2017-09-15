@@ -184,168 +184,11 @@ Up to leading order, there is only a constant change to $l_{AB}$, coming from th
 \end{equation}
 
 On the other hand, points $A$ and $C$ gets the same velocity, but at a slightly different angle.
-It is a simple trigonometry to show that they acquire a velocity toward each other right after shell crossing.
+It is a simple trigonometry calculation to show that they acquire a velocity toward each other right after shell crossing.
 \begin{equation}
 	\Delta l_{AC} \equiv l_{AC} - \bar{l}_{AC} = - \frac{\delta M d}{r_0^2} t.
 \end{equation}
 At the time-scale longer than $10^{-5}$ seconds (the Schwarschild radius for $\delta M\sim$ solar-mass), the change in $l_{AC}$ is the dominant response from this gedanken interferometer.
-
-{\bf XXX Move everything below to the appendix, merge with the existing relevant section there.}
-
-\subsection{Distance between $A$ and $B$}
-\label{sec-LAB}
-
-Points $A$ and $B$ are the end points of an interferometer arm that is radially oriented towards the SN (as shown in figure \ref{fig:1}). 
-Here we calculate the interferometer response in this arm.
-As shown in figure \ref{calculation}, such response is actually about the proper time in one end when a signal bounces back.
-However, we will show that to the order we care about, such proper time is just the proper length of the arm in the global rest frame.
-Therefore we will simply calculate such a proper length.
-
-\subsubsection{Defining trajectories}
-
-\begin{figure}[tb!]
-\begin{center}
-\includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
-\caption{Spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell. The proper lengths before(after) shell crossing are $\bar{l}_{AB}(l_{AB})$. Proper times before(after) shell crossing are $\bar{\tau}_{AB}(\tau_{AB})$. The coordinate time at which the shell crosses point $B$ is different in both metrics. $t_c$ in metric of mass $M-\delta M$ and $\bar{t}_c$ in the metric of mass $M$. }
-\label{calculation}
-\end{center}
-\end{figure}
-
-We parametrize the trajectories of the points in a piecewise form. 
-The trajectory for point $A$ is
-\begin{eqnarray}
-	r_A(\bar{t}) & = & r_0 - \underbrace{\frac{1}{2} \bar{a}_{(2)}^{(A)} \bar{t}^2}_{T1}, \hspace{5mm} (\bar{t} \leq 0)	\nonumber	\\
-	r_A(t) & = & r_0 - \underbrace{\frac{1}{2} a^{(A)}_{(2)} t^2}_{T2} - \underbrace{\left(v^{(A)}_{(1)} + v^{(A)}_{(2)} \right)t}_{T3},  \hspace{5mm} (t>0)  \label{rA}.
-\end{eqnarray}
-
-We have introduced new notation to represent the velocity and acceleration of the particles. The subscript represents the number of factors of $r_0$ the term is suppressed by, i.e $a^{(A)}_{(2)}$ is term of $\mathcal{O}(r_0^{-2})$.\footnote{We will only keep terms up to order $\mathcal{O}(r_0^{-2})$.} The superscript is a label for the particle. Here $\bar{a}^{(A)}_{(2)}$ is the acceleration of particle $A$ in the initial metric. $a^{(A)}_{(2)}$ is the acceleration of particle $A$ in the final metric. $v^{(A)}_{(1)}(v^{(A)}_{(2)})$ represent the first(second) order velocities of particle $A$ in the final metric. 
-\begin{itemize}
-\item $t=0$ is defined to be the time when the shell crosses point $A$ at $r_A(0) = r_0$. For $t<0$ we assume there is no velocity. The only term that contributes to the trajectory is the acceleration of point $A$, $\bar{a}^{(A)}_{(2)}$ towards mass $M$. This is given by $T1$.
-\item For $t>0$ there is still the acceleration term, $a^{(A)}_{(2)}$, but the mass is different since the shell has carried $\delta M$ away. This is given by $T2$.
-\item $T3$ comes from the velocity that is picked up by shell crossing. 
-\end{itemize}
-These accelerations and velocities take the following values.
-\begin{equation}
-	\bar{a}^{(A)}_{(2)} = \frac{M}{r_0^2}, \ \ \ 
-	a^{(A)}_{(2)} = \frac{M - \delta M}{r_0^2}, \ \ \ 
-	v^{(A)}_{(1)} = \frac{\delta M}{r_0}, \ \ \ 
-	v^{(A)}_{(2)} = \frac{\delta M^2}{r_0^2}.
-\end{equation} 
-
-The trajectory of point $B$ is given by
-\begin{eqnarray}
-	r_B(\bar{t}) & = &  r_0 + d  - \underbrace{\frac{1}{2} \bar{a}_{(2)}^{(B)} \bar{t}^2}_{T4},  \hspace{5mm} (\bar{t} \leq \bar{t_c})	\nonumber	\\
-	r_B(t) & = & r_0 +d  - \underbrace{\frac{1}{2} a_{(2)}^{(B)}(t-t_c)^2}_{T5} -  \underbrace{\frac{1}{2}  \bar{a}^{(B)}_{(2)} \bar{t}_c^2}_{T6} - \underbrace{\left( \bar{a}_{(2)}^{(B)} \bar{t}_c + v^{(B)}_{(1)} + v^{(B)}_{(2)} \right)(t-t_c)}_{T7} ,  \hspace{5mm}  (t>t_c).	\label{rB}
-\end{eqnarray}
-The accelerations and velocities are defined analogously to point $A$. 
-\begin{itemize}
-\item Note that the time coordinates do no agree in the two metrics. 
-We have already used the shift symmetry to demand that $t=\bar{t}=0$ is when point $A$ crosses the shell.
-The time for point $B$ to cross the shell, $t_c$ and $\bar{t}_c$, must be different.
-\footnote{Since the only thing the point does in the initial metric is accelerate, $\bar{t}_c$ will always multiply an acceleration term. 
-We will only be interested in terms of $\mathcal{O}(r_0^{-2})$ and the acceleration term will already be $\mathcal{O}(r_0^{-2})$. 
-This means throughout our calculation we will never need to distinguish between $\bar{t}_c$ and $t_c$ as they are both $d$ to leading order.}
-\item For $\bar{t} <\bar{t}_c$ there is just the acceleration, $\bar{a}^{(B)}_{(2)}$, of the point towards mass $M$. This is given by $T4$.  
-\item After $t>t_c$ the shell has crossed. The particle now accelerates in the final metric.
-Term $T5$ describes the influence of the new acceleration. 
-\item $T6$ corresponds to the distance travelled while accelerating in the initial metric for time $t_c$. 
-\item $T7$ is a term that contains the velocity of the particle right after crossing. The $\bar{a}^{(B)}_{(2)} t_c$ term is the velocity gained while accelerating in the metric of mass $M$. $v_{(1)}^{(B)}, v_{(2)}^{(B)}$ are the velocities picked up due to shell crossing.
-\end{itemize}
-The values of these 1st and 2nd order accelerations and velocities are summarized here.
-We repeat the values for point $A$ to show that some of them are actually the same.
-\begin{eqnarray}
-	\bar{a}^{(A)}_{(2)} & = & \bar{a}^{(B)}_{(2)} =  \frac{M}{r_0^2}	\nonumber	\\
-	a^{(A)}_{(2)} & = & a^{(B)}_{(2)}=  \frac{M - \delta M}{r_0^2}	\nonumber	\\
-	v^{(A)}_{(1)} & = & v^{(B)}_{(1)} =  \frac{\delta M}{r_0} 	\nonumber	\\
-	v^{(A)}_{(2)} & = &  \frac{\delta M^2}{r_0^2}		\nonumber	\\
-	v^{(B)}_{(2)} & = & \frac{\delta M^2}{r_0^2} - \frac{\delta M d}{r_0^2}.		
-\end{eqnarray}
-
-
-\subsubsection{Relation between proper length and proper time}
-
-The interferometer infers the distance between two points by measuring the proper time it takes for a photon to go from one end of the arm to the other and come back. In this section we will relate the proper time seen by one end of the arm to the proper length of that arm (in figure \ref{calculation}). 
-In particular we show that \emph{the proper time is twice the proper length at a fixed coordinate time up to $\mathcal{O}(r_0^{-2})$}. This will be very useful as we can compute the proper length (which is comparatively easier) and still infer the effect seen in the interferometer.
-
- The most general expression for the proper distance is 
-
-\begin{equation}
-	l = \int \sqrt{g_{ab} dx^a dx^b} \hspace{5mm} a,b \in \{r,\theta,\phi\}.	\label{proplen}
-\end{equation}
-
-Using this we calculate the proper distance before shell crossing $\bar{l}_{AB}$ between the two points $A$ and $B$ at time $\bar{t}$. Since we are only considering radial motion Eq (\ref{proplen}) simplifies to
-
-\begin{equation}
-	\bar{l}_{AB} = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \ \bar{g}_{rr}^\frac{1}{2}  = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \left( 1 + \frac{M}{r} + \frac{3}{2} \frac{M^2}{r^2}  + \mathcal{O}((M/r)^3) \right).
-\end{equation}
-
-In all the calculations we will only need terms of $\mathcal{O}(r_0^{-2})$. Thus we can use $r_B(\bar{t}) = r_0 + d$ and $r_A(\bar{t})  = r_0$. 
-
-\begin{equation}
-	 \bar{l}_{AB} =  \int^{r_B(\bar{t})}_{r_A(\bar{t})}  dr \ \bar{g}_{rr}^\frac{1}{2}  = d + M \ln \left( \frac{r_0 + d}{r_0} \right) - \frac{3}{2} M^2 \left( \frac{1}{r_0 + d} - \frac{1}{r_0} \right)
-\end{equation}
-
-This can be fully simplified to $\mathcal{O}(r_0^{-2})$,
-
-\begin{equation}
-	 \bar{l}_{AB} =  d \left( 1 + \frac{M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{3}{2} \frac{M^2}{r_0^2} \right).
-\end{equation}
-
-The calculation for $\bar{\tau}_{AB}$ is much longer and so we do that in the appendix. We refer the reader to Eq (\ref{tauini}) which shows that $\bar{\tau}_{AB} = 2 \bar{l}_{AB}$, thus proving our claim.  
-
-
-\subsubsection{Longitudinal memory effect}
-
-The memory effect in the longitudinal direction, $\Delta l_{AB}$ is the difference between $l_{AB}$ and $\bar{l}_{AB}$. In the appendix we have the full calculation of the proper length $l_{AB}$ (see Eq (\ref{lenfin})), here we simply use the result
-
-\begin{equation}
-	\Delta l_{AB} \equiv l_{AB} - \bar{l}_{AB} = - \frac{\delta M^2 d}{r_0^2}.
-\end{equation}
-We note that there is no time dependent term in this expression. This follows from the fact that the velocity of both points is the same up to $\mathcal{O}(r_0^{-2})$.
-
-Next, we will calculate the distance between $A$ and $C$. We will show that there will be a relative velocity between them and therefore a time dependent term at $\mathcal{O}(r_0^{-2})$. 
-
-\subsection{Distance between $A$ and $C$}
-
-In this subsection we calculate the proper distance change between $A$ and $C$. First lets write down the trajectory equation for point $C$
-
-\begin{eqnarray}
-	r_{C}(\bar{t})  & = & d - \frac{1}{2} \bar{a}_{(2)}^{(C)}  \bar{t}^2 ,  \hspace{5mm} (\bar{t} \leq 0 )		\nonumber	\\
-	r_{C}(t) & = &  d - \frac{1}{2} a_{(2)}^{(C)} t^2 - \left(v^{(C)}_{(1)} + v^{(C)}_{(2)} \right) t,  \hspace{5mm} (t >0) . 
-\end{eqnarray}
-
-The acceleration and velocities are defined below
-
-\begin{eqnarray}
-	\bar{a}^{(A)}_{(2)} & = & \bar{a}^{(B)}_{(2)} = \bar{a}^{(C)}_{(2)} = \frac{M}{r_0^2}	\nonumber	\\
-	a^{(A)}_{(2)} & = & a^{(B)}_{(2)} = a^{(C)}_{(2)} = \frac{M - \delta M}{r_0^2}	\nonumber	\\
-	v^{(A)}_{(1)} & = & v^{(B)}_{(1)} = v^{(C)}_{(1)}  =  \frac{\delta M}{r_0} 	\nonumber	\\
-	v^{(A)}_{(2)} & = & v^{(C)}_{(2)} =  \frac{\delta M^2}{r_0^2}		
-\end{eqnarray}
-
-From the geometry in figure \ref{fig:1} we see that only $\theta$ and $r$ will change in the motion of $A$ and $C$. Thus we can drop the $\phi$ dependence from the start and write the integral for proper length in Eq (\ref{proplen}) as
-\begin{equation}
-	 l_{AC} = \int^{\theta_f}_{\theta_i} d \theta \ g_{\theta \theta}^\frac{1}{2} \left(  1 + \underbrace{(g_{rr}/g_{\theta \theta}) (dr/d\theta)^2}_{T8}  \right)^\frac{1}{2}.
-\end{equation}
-where $\theta_f = d/r_0$ and $\theta_i = 0$. To evaluate $T8$ we would need the geodesic equation for $r$ as function of $\theta$. Instead of evaluating it explicitly we note that $\frac{dr}{d \theta}$ will be of order $d$. Since $g_{\theta \theta}^{-1} = \frac{1}{r_0^2} + \mathcal{O}(r_0^{-3})$, to leading order we can ignore the effect of $T8$. Integrating the first term gives
-
-\begin{equation}
-	l_{AC} = r_C(t) (\theta_f - \theta_i) = r_C(t) \frac{d}{r_0}.
-\end{equation}
-Before shell crossing the proper length $\bar{l}_{AC} = d + \mathcal{O}(r_0^{-3})$. Whereas after shell crossing, there will be an additional velocity term in the proper length, $l_{AC}$, which will give a time dependent term at $\mathcal{O}(r_0^{-2})$
-
-\begin{equation}
-	l_{AC} = d - \frac{\delta M d}{r_0^2} t.
-\end{equation}
-
-The difference in proper lengths will be 
-
-\begin{equation}
-	\Delta l_{AC} \equiv l_{AC} - \bar{l}_{AC} = - \frac{\delta M d}{r_0^2} t.
-\end{equation}
-
-
-{\bf XXX after you move everything above to the appendix, I will probably merge this to the previous section.}
 
 \section{Observation with Space-based Interferometers}
 \label{obs}
@@ -381,7 +224,8 @@ This requires a measurement of the strain that is six orders of magnitude better
 This work is supported by the Canadian Government through the Canadian Institute for Advance Research and Industry Canada, and by Province of Ontario through the Ministry of Research and Innovation.
 
 \appendix
-
+%%%%%%%%%%%%%%%%
+\newpage
 \section{Apparent velocity change from junction conditions}
 \label{sec-junc}
 
@@ -428,83 +272,110 @@ The change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing
 	\frac{dr}{dt} &=& \frac{dr}{d \tau} \frac{d \tau}{dt} = v g_{tt}^{\frac{1}{2}} = - \frac{\delta M}{r_{crossing}} \bar{g}_{tt}^{-\frac{1}{2}} g_{tt}^\frac{1}{2} \nonumber \\
 	&=& -\frac{\delta M}{r_{crossing}} \left( 1 + \frac{\delta M}{r_{crossing}} \right).
 \end{eqnarray}
+We will use this coordinate velocity to define the trajectory in the following appendices. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Proper length calculations}
+\subsection{Proper length change between $A$ and $B$}
+\label{sec-LAB}
 
+Points $A$ and $B$ are the end points of an interferometer arm that is radially oriented towards the SN (as shown in figure \ref{fig:1}). 
+Here we calculate the interferometer response in this arm.
+As shown in figure \ref{calculation}, such response is actually about the proper time in one end when a signal bounces back.
+However, we will show that to the order we care about, such proper time is just the proper length of the arm in the global rest frame.
+Therefore we will simply calculate such a proper length.
 
-\section{Proper time for photon to go between $A$ and $B$ before shell crossing}
+\subsubsection{Defining trajectories}
 
-From the metric, we can set $ds = 0$ for the photon to get 
-
-\begin{equation}
-	\int^{t + t_1}_{t} dt = \int^{r_B(t + t_1)}_{r_A(t)} \frac{dr}{\left( 1 - \frac{2M}{r} \right)}	\label{time}
-\end{equation}
-
-Integrating this gives the trajectory equation
-
-\begin{equation}
-	t_1 = r_B(t + t_1) - r_A(t) + 2M \ln \left( \frac{r_B(t + t_1) -2M}{r_A(t) - 2M} \right)	\label{B22}
-\end{equation}
-
-Now we can expand the log explicitly to see where terms of different orders are. 
-
-\begin{equation}
-	2M \ln \left( \frac{r_B(t + t_1) - 2M}{r_A(t) - 2M} \right) =  2M \left( \frac{r_B(t +t_1) - r_A(t)}{r_A(t)} \left( 1 + \frac{2M}{r_A(t)} \right) - \frac{1}{2} \left( \frac{r_B(t + t_1) - r_A(t)}{r_A(t)} \right)^2 \left( 1 -\frac{2M}{r_A(t)} \right)^{-2} \right)
-\end{equation}
-
-Since we only want to keep terms that are $\mathcal{O}(r_0^{-2})$ we can replace $\frac{M}{r_A(t)}$ with $\frac{M}{r_0}$. Eq (\ref{B22}) can now be written as
-
-
-\begin{equation}
-	t_1 = (r_B(t + t_1) - r_A(t)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M (r_B(t + t_1) - r_A(t))}{r_0^2} \right).
-\end{equation}
-
-Computing $r_B(t + t_1) + r_A(t)$ to $\mathcal{O}(r_0^{-2})$ gives.
-
-\begin{equation}
-	r_B(t + t_1) - r_A(t) = d - \frac{1}{2} \frac{M}{r_0^2}(t + d)^2 + \frac{1}{2} \frac{Mt^2}{r_0^2} = d \left( 1 - \frac{1}{2} \frac{Md}{r_0^2} - \frac{Mt}{r_0^2} \right)
-\end{equation}
-
-Therefore $t_1$ becomes
-
-\begin{equation}
-	t_1 = d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{3}{2} \frac{Md}{r_0^2} - \frac{Mt}{r_0^2} \right)
-\end{equation}
-
-Similarly we can compute $t_2$.
-
-\begin{equation}
-	t_2 = (r_B(t + t_1) - r_A(t+t_1 +t_2)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M (r_B(t + t_1) - r_A(t+t_1+t_2))}{r_0^2} \right)	\label{A8}
-\end{equation}
-
+We parametrize the trajectories of the points in a piecewise form. 
+The trajectory for point $A$ is
 \begin{eqnarray}
-	r_B(t + t_1) - r_A(t + t_1 + t_2) & = & d - \frac{1}{2} \frac{M}{r_0^2} (t + d)^2 + \frac{1}{2} \frac{M}{r_0^2} (t + 2d)^2	\nonumber	\\
-	& = & d \left( 1 + \frac{Mt}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right) 	\label{A9}
+	r_A(\bar{t}) & = & r_0 - \underbrace{\frac{1}{2} \bar{a}_{(2)}^{(A)} \bar{t}^2}_{T1}, \hspace{5mm} (\bar{t} \leq 0)	\nonumber	\\
+	r_A(t) & = & r_0 - \underbrace{\frac{1}{2} a^{(A)}_{(2)} t^2}_{T2} - \underbrace{\left(v^{(A)}_{(1)} + v^{(A)}_{(2)} \right)t}_{T3},  \hspace{5mm} (t>0)  \label{rA}.
 \end{eqnarray}
 
-Substituting Eq (\ref{A9}) into Eq (\ref{A8}) gives 
+We have introduced new notation to represent the velocity and acceleration of the particles. The subscript represents the number of factors of $r_0$ the term is suppressed by, i.e $a^{(A)}_{(2)}$ is term of $\mathcal{O}(r_0^{-2})$.\footnote{We will only keep terms up to order $\mathcal{O}(r_0^{-2})$.} The superscript is a label for the particle. Here $\bar{a}^{(A)}_{(2)}$ is the acceleration of particle $A$ in the initial metric. $a^{(A)}_{(2)}$ is the acceleration of particle $A$ in the final metric. $v^{(A)}_{(1)}(v^{(A)}_{(2)})$ represent the first(second) order velocities of particle $A$ in the final metric. 
+\begin{figure}[tb!]
+\begin{center}
+\includegraphics[width =\textwidth, height = 12cm]{calculation.pdf}
+\caption{Spacetime diagram showing the paths of photons that are used in the interferometer to measure the change in the length of the interferometer arms. The orange lines represent the photon trajectories. The solid blue lines represent the trajectories of the two points $A$ and $B$ in figure \ref{fig:1}. The dark black line is the null trajectory of the neutrino shell. The proper lengths before(after) shell crossing are $\bar{l}_{AB}(l_{AB})$. Proper times before(after) shell crossing are $\bar{\tau}_{AB}(\tau_{AB})$. The coordinate time at which the shell crosses point $B$ is different in both metrics. $t_c$ in metric of mass $M-\delta M$ and $\bar{t}_c$ in the metric of mass $M$. }
+\label{calculation}
+\end{center}
+\end{figure}
+\begin{itemize}
+\item $t=0$ is defined to be the time when the shell crosses point $A$ at $r_A(0) = r_0$. For $t<0$ we assume there is no velocity. The only term that contributes to the trajectory is the acceleration of point $A$, $\bar{a}^{(A)}_{(2)}$ towards mass $M$. This is given by $T1$.
+\item For $t>0$ there is still the acceleration term, $a^{(A)}_{(2)}$, but the mass is different since the shell has carried $\delta M$ away. This is given by $T2$.
+\item $T3$ comes from the velocity that is picked up by shell crossing. 
+\end{itemize}
 
+These accelerations and velocities take the following values.
+\begin{equation}
+	\bar{a}^{(A)}_{(2)} = \frac{M}{r_0^2}, \ \ \ 
+	a^{(A)}_{(2)} = \frac{M - \delta M}{r_0^2}, \ \ \ 
+	v^{(A)}_{(1)} = \frac{\delta M}{r_0}, \ \ \ 
+	v^{(A)}_{(2)} = \frac{\delta M^2}{r_0^2}.
+\end{equation} 
+
+The trajectory of point $B$ is given by
 \begin{eqnarray}
-	t_2 & = & d \left( 1 + \frac{Mt}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - Md}{r_0^2} \right)\nonumber	\\
-	& = & d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} + \frac{1}{2} \frac{Md}{r_0^2} + \frac{Mt}{r_0^2} \right)
+	r_B(\bar{t}) & = &  r_0 + d  - \underbrace{\frac{1}{2} \bar{a}_{(2)}^{(B)} \bar{t}^2}_{T4},  \hspace{5mm} (\bar{t} \leq \bar{t_c})	\nonumber	\\
+	r_B(t) & = & r_0 +d  - \underbrace{\frac{1}{2} a_{(2)}^{(B)}(t-t_c)^2}_{T5} -  \underbrace{\frac{1}{2}  \bar{a}^{(B)}_{(2)} \bar{t}_c^2}_{T6} - \underbrace{\left( \bar{a}_{(2)}^{(B)} \bar{t}_c + v^{(B)}_{(1)} + v^{(B)}_{(2)} \right)(t-t_c)}_{T7} ,  \hspace{5mm}  (t>t_c).	\label{rB}
+\end{eqnarray}
+The accelerations and velocities are defined analogously to point $A$. 
+\begin{itemize}
+\item Note that the time coordinates do no agree in the two metrics. 
+We have already used the shift symmetry to demand that $t=\bar{t}=0$ is when point $A$ crosses the shell.
+The time for point $B$ to cross the shell, $t_c$ and $\bar{t}_c$, must be different.
+\footnote{Since the only thing the point does in the initial metric is accelerate, $\bar{t}_c$ will always multiply an acceleration term. 
+We will only be interested in terms of $\mathcal{O}(r_0^{-2})$ and the acceleration term will already be $\mathcal{O}(r_0^{-2})$. 
+This means throughout our calculation we will never need to distinguish between $\bar{t}_c$ and $t_c$ as they are both $d$ to leading order.}
+\item For $\bar{t} <\bar{t}_c$ there is just the acceleration, $\bar{a}^{(B)}_{(2)}$, of the point towards mass $M$. This is given by $T4$.  
+\item After $t>t_c$ the shell has crossed. The particle now accelerates in the final metric.
+Term $T5$ describes the influence of the new acceleration. 
+\item $T6$ corresponds to the distance travelled while accelerating in the initial metric for time $t_c$. 
+\item $T7$ is a term that contains the velocity of the particle right after crossing. The $\bar{a}^{(B)}_{(2)} t_c$ term is the velocity gained while accelerating in the metric of mass $M$. $v_{(1)}^{(B)}, v_{(2)}^{(B)}$ are the velocities picked up due to shell crossing.
+\end{itemize}
+The values of these 1st and 2nd order accelerations and velocities are summarized here.
+We repeat the values for point $A$ to show that some of them are actually the same.
+\begin{eqnarray}
+	\bar{a}^{(A)}_{(2)} & = & \bar{a}^{(B)}_{(2)} =  \frac{M}{r_0^2}	\nonumber	\\
+	a^{(A)}_{(2)} & = & a^{(B)}_{(2)}=  \frac{M - \delta M}{r_0^2}	\nonumber	\\
+	v^{(A)}_{(1)} & = & v^{(B)}_{(1)} =  \frac{\delta M}{r_0} 	\nonumber	\\
+	v^{(A)}_{(2)} & = &  \frac{\delta M^2}{r_0^2}		\nonumber	\\
+	v^{(B)}_{(2)} & = & \frac{\delta M^2}{r_0^2} - \frac{\delta M d}{r_0^2}.		
 \end{eqnarray}
 
-The total coordinate time is $t_1 + t_2$,
+\subsubsection{Relation between proper length and proper time}
+
+The interferometer infers the distance between two points by measuring the proper time it takes for a photon to go from one end of the arm to the other and come back. As promised we will now relate the proper time seen by one end of the arm to the proper length of that arm (see figure \ref{calculation}). 
+In particular we show that \emph{the proper time is twice the proper length at a fixed coordinate time up to $\mathcal{O}(r_0^{-2})$}. This will be very useful as we can compute the proper length (which is comparatively easier) and still infer the effect seen in the interferometer.
+
+ The most general expression for the proper distance is 
 
 \begin{equation}
-	t_1 +t_2 = 2d \left(1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2}\right).
+	l = \int \sqrt{g_{ab} dx^a dx^b} \hspace{5mm} a,b \in \{r,\theta,\phi\}.	\label{proplen}
+\end{equation}
+Using this we calculate the proper distance before shell crossing $\bar{l}_{AB}$ between the two points $A$ and $B$ at time $\bar{t}$. Since we are only considering radial motion Eq (\ref{proplen}) simplifies to
+
+\begin{equation}
+	\bar{l}_{AB} = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \ \bar{g}_{rr}^\frac{1}{2}  = \int^{r_B(\bar{t})}_{r_A(\bar{t})} dr \left( 1 + \frac{M}{r} + \frac{3}{2} \frac{M^2}{r^2}  + \mathcal{O}((M/r)^3) \right).
+\end{equation}
+In all the calculations we will only need terms of $\mathcal{O}(r_0^{-2})$. Thus we can use $r_B(\bar{t}) = r_0 + d$ and $r_A(\bar{t})  = r_0$. 
+
+\begin{equation}
+	 \bar{l}_{AB} =  \int^{r_B(\bar{t})}_{r_A(\bar{t})}  dr \ \bar{g}_{rr}^\frac{1}{2}  = d + M \ln \left( \frac{r_0 + d}{r_0} \right) - \frac{3}{2} M^2 \left( \frac{1}{r_0 + d} - \frac{1}{r_0} \right)
+\end{equation}
+This can be fully simplified to $\mathcal{O}(r_0^{-2})$,
+
+\begin{equation}
+	 \bar{l}_{AB} =  d \left( 1 + \frac{M}{r_0} - \frac{1}{2} \frac{Md}{r_0^2} + \frac{3}{2} \frac{M^2}{r_0^2} \right).
 \end{equation}
 
-Using this we can calculate the proper time
+This is the proper length between $A$ and $B$ before shell crossing. 
+The calculation for $\bar{\tau}_{AB}$ is much longer and so we do that separately in appendix \ref{prop-time}.   We refer the reader to Eq (\ref{tauini}) which shows that $\bar{\tau}_{AB} = 2 \bar{l}_{AB}$, thus proving our claim.  
 
-\begin{eqnarray}
-	\tau & = &  \left( 1 - \frac{2M}{r} \right)^\frac{1}{2} (t_1 + t_2) 	\nonumber	\\
-	& = & 2d \left( 1 - \frac{M}{r} - \frac{1}{2} \frac{M^2}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)		\nonumber	\\
-	&  = & 2d \left( 1  + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right).	\label{tauini}
-\end{eqnarray}
-
-
-
-\section{Proper length after shell crossing}
+\subsubsection{Proper length after shell crossing}
 
 In this section we calculate the proper length between $A$ and $B$ after shell crossing. Integrating Eq (\ref{proplen}) with the trajectories for $r_B(t)$ and $r_A(t)$ gives 
 
@@ -577,6 +448,130 @@ Finally substituting Eqs (\ref{tc}, \ref{rchange}) into Eq (\ref{L1}) gives
 	& + & \frac{3}{2} \frac{M^2 d}{r_0^2} - \frac{3 M \delta M d}{r_0^2} + \frac{3}{2} \frac{\delta M^2 d}{r_0^2}	\nonumber	\\
 	& = & d + \frac{M d}{r_0} - \frac{1}{2} \frac{\delta M^2 d}{r_0^2} + \frac{3}{2} \frac{M^2 d}{r_0^2} -\frac{1}{2} \frac{Md^2}{r_0^2}	\label{lenfin}
 \end{eqnarray}
+
+\subsubsection{Longitudinal memory effect}
+
+The memory effect in the longitudinal direction, $\Delta l_{AB}$ is the difference between $l_{AB}$ and $\bar{l}_{AB}$.
+
+\begin{equation}
+	\Delta l_{AB} \equiv l_{AB} - \bar{l}_{AB} = - \frac{\delta M^2 d}{r_0^2}.
+\end{equation}
+We note that there is no time dependent term in this expression. This follows from the fact that the velocity of both points is the same up to $\mathcal{O}(r_0^{-2})$.
+
+Next, we will calculate the distance between $A$ and $C$. We will show that there will be a relative velocity between them and therefore a time dependent term at $\mathcal{O}(r_0^{-2})$. 
+
+\subsection{Proper length change between $A$ and $C$}
+
+In this subsection we calculate the proper distance change between $A$ and $C$. First lets write down the trajectory equation for point $C$
+
+\begin{eqnarray}
+	r_{C}(\bar{t})  & = & d - \frac{1}{2} \bar{a}_{(2)}^{(C)}  \bar{t}^2 ,  \hspace{5mm} (\bar{t} \leq 0 )		\nonumber	\\
+	r_{C}(t) & = &  d - \frac{1}{2} a_{(2)}^{(C)} t^2 - \left(v^{(C)}_{(1)} + v^{(C)}_{(2)} \right) t,  \hspace{5mm} (t >0) . 
+\end{eqnarray}
+
+The acceleration and velocities are defined below
+
+\begin{eqnarray}
+	\bar{a}^{(A)}_{(2)} & = & \bar{a}^{(B)}_{(2)} = \bar{a}^{(C)}_{(2)} = \frac{M}{r_0^2}	\nonumber	\\
+	a^{(A)}_{(2)} & = & a^{(B)}_{(2)} = a^{(C)}_{(2)} = \frac{M - \delta M}{r_0^2}	\nonumber	\\
+	v^{(A)}_{(1)} & = & v^{(B)}_{(1)} = v^{(C)}_{(1)}  =  \frac{\delta M}{r_0} 	\nonumber	\\
+	v^{(A)}_{(2)} & = & v^{(C)}_{(2)} =  \frac{\delta M^2}{r_0^2}		
+\end{eqnarray}
+From the geometry in figure \ref{fig:1} we see that only $\theta$ and $r$ will change in the motion of $A$ and $C$. Thus we can drop the $\phi$ dependence from the start and write the integral for proper length in Eq (\ref{proplen}) as
+\begin{equation}
+	 l_{AC} = \int^{\theta_f}_{\theta_i} d \theta \ g_{\theta \theta}^\frac{1}{2} \left(  1 + \underbrace{(g_{rr}/g_{\theta \theta}) (dr/d\theta)^2}_{T8}  \right)^\frac{1}{2}.
+\end{equation}
+where $\theta_f = d/r_0$ and $\theta_i = 0$. To evaluate $T8$ we would need the geodesic equation for $r$ as function of $\theta$. Instead of evaluating it explicitly we note that $\frac{dr}{d \theta}$ will be of order $d$. Since $g_{\theta \theta}^{-1} = \frac{1}{r_0^2} + \mathcal{O}(r_0^{-3})$, to leading order we can ignore the effect of $T8$. Integrating the first term gives
+
+\begin{equation}
+	l_{AC} = r_C(t) (\theta_f - \theta_i) = r_C(t) \frac{d}{r_0}.
+\end{equation}
+Before shell crossing the proper length $\bar{l}_{AC} = d + \mathcal{O}(r_0^{-3})$. Whereas after shell crossing, there will be an additional velocity term in the proper length, $l_{AC}$, which will give a time dependent term at $\mathcal{O}(r_0^{-2})$
+
+\begin{equation}
+	l_{AC} = d - \frac{\delta M d}{r_0^2} t.
+\end{equation}
+
+The difference in proper lengths will be 
+
+\begin{equation}
+	\Delta l_{AC} \equiv l_{AC} - \bar{l}_{AC} = - \frac{\delta M d}{r_0^2} t.
+\end{equation}
+
+\newpage
+\section{Proper time for photon to go between $A$ and $B$ before shell crossing}
+\label{prop-time}
+
+From the metric, we can set $ds = 0$ for the photon to get 
+
+\begin{equation}
+	\int^{t + t_1}_{t} dt = \int^{r_B(t + t_1)}_{r_A(t)} \frac{dr}{\left( 1 - \frac{2M}{r} \right)}	\label{time}
+\end{equation}
+
+Integrating this gives the trajectory equation
+
+\begin{equation}
+	t_1 = r_B(t + t_1) - r_A(t) + 2M \ln \left( \frac{r_B(t + t_1) -2M}{r_A(t) - 2M} \right)	\label{B22}
+\end{equation}
+
+Now we can expand the log explicitly to see where terms of different orders are. 
+
+\begin{equation}
+	2M \ln \left( \frac{r_B(t + t_1) - 2M}{r_A(t) - 2M} \right) =  2M \left( \frac{r_B(t +t_1) - r_A(t)}{r_A(t)} \left( 1 + \frac{2M}{r_A(t)} \right) - \frac{1}{2} \left( \frac{r_B(t + t_1) - r_A(t)}{r_A(t)} \right)^2 \left( 1 -\frac{2M}{r_A(t)} \right)^{-2} \right)
+\end{equation}
+
+Since we only want to keep terms that are $\mathcal{O}(r_0^{-2})$ we can replace $\frac{M}{r_A(t)}$ with $\frac{M}{r_0}$. Eq (\ref{B22}) can now be written as
+
+
+\begin{equation}
+	t_1 = (r_B(t + t_1) - r_A(t)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M (r_B(t + t_1) - r_A(t))}{r_0^2} \right).
+\end{equation}
+
+Computing $r_B(t + t_1) + r_A(t)$ to $\mathcal{O}(r_0^{-2})$ gives.
+
+\begin{equation}
+	r_B(t + t_1) - r_A(t) = d - \frac{1}{2} \frac{M}{r_0^2}(t + d)^2 + \frac{1}{2} \frac{Mt^2}{r_0^2} = d \left( 1 - \frac{1}{2} \frac{Md}{r_0^2} - \frac{Mt}{r_0^2} \right)
+\end{equation}
+
+Therefore $t_1$ becomes
+
+\begin{equation}
+	t_1 = d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{3}{2} \frac{Md}{r_0^2} - \frac{Mt}{r_0^2} \right)
+\end{equation}
+
+Similarly we can compute $t_2$.
+
+\begin{equation}
+	t_2 = (r_B(t + t_1) - r_A(t+t_1 +t_2)) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - M (r_B(t + t_1) - r_A(t+t_1+t_2))}{r_0^2} \right)	\label{A8}
+\end{equation}
+
+\begin{eqnarray}
+	r_B(t + t_1) - r_A(t + t_1 + t_2) & = & d - \frac{1}{2} \frac{M}{r_0^2} (t + d)^2 + \frac{1}{2} \frac{M}{r_0^2} (t + 2d)^2	\nonumber	\\
+	& = & d \left( 1 + \frac{Mt}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right) 	\label{A9}
+\end{eqnarray}
+
+Substituting Eq (\ref{A9}) into Eq (\ref{A8}) gives 
+
+\begin{eqnarray}
+	t_2 & = & d \left( 1 + \frac{Mt}{r_0^2} + \frac{3}{2} \frac{Md}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2 - Md}{r_0^2} \right)\nonumber	\\
+	& = & d \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} + \frac{1}{2} \frac{Md}{r_0^2} + \frac{Mt}{r_0^2} \right)
+\end{eqnarray}
+
+The total coordinate time is $t_1 + t_2$,
+
+\begin{equation}
+	t_1 +t_2 = 2d \left(1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2}\right).
+\end{equation}
+
+Using this we can calculate the proper time
+
+\begin{eqnarray}
+	\tau & = &  \left( 1 - \frac{2M}{r} \right)^\frac{1}{2} (t_1 + t_2) 	\nonumber	\\
+	& = & 2d \left( 1 - \frac{M}{r} - \frac{1}{2} \frac{M^2}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)		\nonumber	\\
+	&  = & 2d \left( 1  + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right).	\label{tauini}
+\end{eqnarray}
+
+
 
 	
 	
