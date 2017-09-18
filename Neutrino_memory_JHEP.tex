@@ -83,7 +83,7 @@ The rest of the paper is organized as follows.
 In section \ref{sec-scint} we calculate how a pulsar scintillation pattern can be sensitive to the passage of a neutrino shell.
 We put in reasonable numbers to show that an observation is likely to happen if SKA discovers thousands of pulsars as expected.
 In section \ref{RelV} we derive the interferometer response in both transverse and longitudinal directions.  
-In the final section \ref{obs}, we put in reasonable values to estimate the size of the interferometer response.
+We put in reasonable values to estimate the size of the interferometer response.
 Unfortunately the amplitude of the effect is well below the sensitivity of the experiments that are currently being planned such as LISA and BBO.
 Thus pulsar scintillometry remains to be the most likely method of detection in the near future.
 
@@ -143,8 +143,9 @@ The intrinsic dynamics of the scattering screen is an active research topic \cit
 \section{Memory effect in interferometers}
 \label{RelV}
 
-The change in scintillation pattern is an integrated effect of how the shell alters spacetime.
-Here, we wish to understand more details on how exactly is the spacetime being affected by the shell.
+The change in scintillation pattern is an integrated along the line-of-sight. 
+Obviously, most of such effect comes from the region closest to the supernova.
+Here, we wish to understand more details on the geometric change in that region.
 We will imagine that there is actually an interferometer somewhere near the supernova, as shown in Fig.\ref{fig:1}.
 We assume the 3 end-points of the 2 arms of this interferometer follow geodesics.
 From the response of this gedankin interferometer, we can better understand how the local geometry is affected by the passage of the shell.
@@ -168,37 +169,40 @@ Using the asymptotic proper time $t$ at rest with the remnant, the velocity is g
 where $r_{crossing}$ is the radial coordinate at which the shell crosses the geodesic.
 
 We have kept 1 subleading order in this result.
-Even the leading order effect is beyond Newtonian gravity, since this has nothing to do with any direct interaction between the shell and the geodesic.
-There is no momentum transfer from the shell.
+Even the leading order effect is beyond Newtonian gravity, since there is actually no momentum transfer between he shell and the geodesic.
 In fact, the geodesic picks up an infalling velocity, which is opposite to any intuition about momentum transfer.
-This is purely a relativistic effect.
+This is purely a relativistic effect that the rest-frame of the supernova progenitor and the rest-frame of the remnant are different.
+The explicit relativistic calculation will be given in Appendix \ref{sec-junc}.
 
-The explicit relativistic calculation will be given in the Appendices.
-The results actually follow from simple physical intuitions, which we will summarize here.
+If we take the initial velocity as an input, its effect on the gedankin interferometer actually follows simple Newtonian intuitions.
 Let us first consider the interferometer arm between $A$ and $B$, whose length we denote as $l_{AB}$.
 From Eq.~(\ref{eq-dv}), one might expect an asymptotic velocity difference between $A$ and $B$, which allows $l_{AB}$ to change with time even after the shell crosses.
 However, if we recall that the remnant provides a weaker acceleration, and point $A$ starts to suffer from that before point $B$, such difference exactly cancels the velocity difference from the shell.
 Up to leading order, there is only a constant change to $l_{AB}$, coming from the fact that an instant velocity change and a gradual change due to acceleration cannot cover the same distance traveled.
 \begin{equation}
 	\Delta l_{AB} \equiv l_{AB} - \bar{l}_{AB} = - \frac{\delta M^2 d}{r_0^2}.
+	\label{eq-LAB}
 \end{equation}
+An explicit relativistic calculation is given in Appendix \ref{sec-LAB}.
+Strictly speaking, an interferometer measures the proper time for signal to propagate back and forth between $A$ and $B$.
+It turns out that at the leading order, $l_{AB}$ in the rest-frame of SN (or remnant) is always have of that proper time, as confirmed in Appendix \ref{prop-time}.
 
-On the other hand, points $A$ and $C$ gets the same velocity, but at a slightly different angle.
+On the other hand, points $A$ and $C$ gets the same speed, but their velocities are at a slightly different angle.
 It is a simple trigonometry calculation to show that they acquire a velocity toward each other right after shell crossing.
 \begin{equation}
 	\Delta l_{AC} \equiv l_{AC} - \bar{l}_{AC} = - \frac{\delta M d}{r_0^2} t.
+	\label{eq-LAC}
 \end{equation}
 At the time-scale longer than $10^{-5}$ seconds (the Schwarschild radius for $\delta M\sim$ solar-mass), the change in $l_{AC}$ is the dominant response from this gedanken interferometer.
 
-\section{Observation with Space-based Interferometers}
-\label{obs}
-Taking the generic form of the change in distance as $\Delta L \sim \frac{\delta M d}{r_0^2} t$ we can estimate the distance a SN would have to be from the interferometer to have an observable change in strain, which is a unitless number quantifying the amount of space-time distortion.
+From Eq.~(\ref{eq-LAB}) and (\ref{eq-LAC}), we can see that the gedankin interferometer gets an anisotropic stretching, which is similar to a time-dependent strain.
 \begin{equation}
 h \sim \frac{\Delta L}{d} \sim \frac{\delta M t}{r_0^2}~.
 \label{eq-strain}
 \end{equation} 
-Since our strain grows linearly with time, we do not expect detections from ground based experiments as for those setups the three points $A,B,C$ cannot remain in free fall for a long enough amount of time such that the signal builds up to an observable value. 
+We can use this similarly to estimate how likely an interferometer may detect such signal.
 
+Since our strain grows linearly with time, we do not expect detections from ground based experiments as for those setups the three points $A,B,C$ cannot remain in free fall for a long enough amount of time such that the signal builds up to an observable value. 
 If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point at which the sensitivity curve of a device crosses with a 45-degree line will give the best chance for our effect being detected. In all these estimations, we take $\delta M$ to be a faction of a solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
 
 For LISA, the best observing frequency is $\sim 0.5 \times10^{-2} Hz$ with a sensitivity in strain $\sim 10^{-21}$. Using Eq.~(\ref{eq-strain}), we can solve for the distance to the SN, $r_0$, for our effect to be detectable.
@@ -225,7 +229,7 @@ This work is supported by the Canadian Government through the Canadian Institute
 
 \appendix
 %%%%%%%%%%%%%%%%
-\newpage
+
 \section{Apparent velocity change from junction conditions}
 \label{sec-junc}
 
@@ -275,7 +279,7 @@ The change in velocity due a shell crossing is $v = -\frac{\delta M}{r_{crossing
 We will use this coordinate velocity to define the trajectory in the following appendices. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+
 \section{Proper length calculations}
 \subsection{Proper length change between $A$ and $B$}
 \label{sec-LAB}
@@ -498,7 +502,7 @@ The difference in proper lengths will be
 	\Delta l_{AC} \equiv l_{AC} - \bar{l}_{AC} = - \frac{\delta M d}{r_0^2} t.
 \end{equation}
 
-\newpage
+
 \section{Proper time for photon to go between $A$ and $B$ before shell crossing}
 \label{prop-time}
 
@@ -570,16 +574,6 @@ Using this we can calculate the proper time
 	& = & 2d \left( 1 - \frac{M}{r} - \frac{1}{2} \frac{M^2}{r_0^2} \right) \left( 1 + \frac{2M}{r_0} + \frac{4M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right)		\nonumber	\\
 	&  = & 2d \left( 1  + \frac{M}{r_0} + \frac{3}{2} \frac{M^2}{r_0^2} - \frac{1}{2} \frac{Md}{r_0^2} \right).	\label{tauini}
 \end{eqnarray}
-
-
-
-	
-	
-	
-	
-	
-	
-	
 
 
 
