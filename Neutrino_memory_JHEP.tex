@@ -143,9 +143,9 @@ The intrinsic dynamics of the scattering screen is an active research topic \cit
 \section{Memory effect in interferometers}
 \label{RelV}
 
-The change in scintillation pattern is an integrated along the line-of-sight. 
-Obviously, most of such effect comes from the region closest to the supernova.
-Here, we wish to understand more details on the geometric change in that region.
+The change in the scintillation pattern is an integrated effect along the line-of-sight. 
+Obviously, most of this effect comes from the region closest to the supernova.
+Here we wish to understand the details of the geometric change in that region.
 We will imagine that there is actually an interferometer somewhere near the supernova, as shown in Fig.\ref{fig:1}.
 We assume the 3 end-points of the 2 arms of this interferometer follow geodesics.
 From the response of this gedankin interferometer, we can better understand how the local geometry is affected by the passage of the shell.
@@ -160,7 +160,7 @@ From the response of this gedankin interferometer, we can better understand how 
 
 The immediate effect of a geodesic crossing the shell is an apparent velocity change.
 For a geodesic at rest with respect to the supernova immediately before shell-crossing, it picks up a radial velocity with respect to the remnant immediately after shell crossing.
-We calculate this velocity using Israel junction condition in Appendix \ref{sec-junc}.
+We calculate this velocity using the Israel junction conditions in Appendix \ref{sec-junc}.
 Using the asymptotic proper time $t$ at rest with the remnant, the velocity is given by.
 \begin{eqnarray}
 	\frac{dr}{dt} = -\frac{\delta M}{r_{crossing}} \left( 1 + \frac{\delta M}{r_{crossing}} \right),
@@ -184,11 +184,11 @@ Up to leading order, there is only a constant change to $l_{AB}$, coming from th
 	\label{eq-LAB}
 \end{equation}
 An explicit relativistic calculation is given in Appendix \ref{sec-LAB}.
-Strictly speaking, an interferometer measures the proper time for signal to propagate back and forth between $A$ and $B$.
-It turns out that at the leading order, $l_{AB}$ in the rest-frame of SN (or remnant) is always have of that proper time, as confirmed in Appendix \ref{prop-time}.
+Strictly speaking, an interferometer measures the proper time for a photon to propagate back and forth between $A$ and $B$.
+It turns out that at the leading order, $l_{AB}$ is half the proper time in the rest frame of the SN progenitor (or remnant). This is confirmed in Appendix \ref{sec-ptpl}.
 
-On the other hand, points $A$ and $C$ gets the same speed, but their velocities are at a slightly different angle.
-It is a simple trigonometry calculation to show that they acquire a velocity toward each other right after shell crossing.
+On the other hand, points $A$ and $C$ get the same speed, but their velocities are at a slightly different angle.
+It is a simple trigonometry calculation (given in Appendix \ref{sec-lAC}) to show that they acquire a velocity towards each other right after shell crossing.
 \begin{equation}
 	\Delta l_{AC} \equiv l_{AC} - \bar{l}_{AC} = - \frac{\delta M d}{r_0^2} t.
 	\label{eq-LAC}
@@ -200,7 +200,7 @@ From Eq.~(\ref{eq-LAB}) and (\ref{eq-LAC}), we can see that the gedankin interfe
 h \sim \frac{\Delta L}{d} \sim \frac{\delta M t}{r_0^2}~.
 \label{eq-strain}
 \end{equation} 
-We can use this similarly to estimate how likely an interferometer may detect such signal.
+We can use this to estimate whether an interferometer may detect such a signal.
 
 Since our strain grows linearly with time, we do not expect detections from ground based experiments as for those setups the three points $A,B,C$ cannot remain in free fall for a long enough amount of time such that the signal builds up to an observable value. 
 If we plot our effect on the strain-frequency diagram \cite{GWcurves} that is usually used to compare different interferometers, it will be a 45-degree line. Thus the first point at which the sensitivity curve of a device crosses with a 45-degree line will give the best chance for our effect being detected. In all these estimations, we take $\delta M$ to be a faction of a solar mass, and take the corresponding Schwarzschild radius to be $1~km$ for simplicity.
@@ -216,7 +216,7 @@ If we look at the Big Bang Observer (BBO) instead, the best observing frequency 
 
 In this type of simple estimation, we cannot go lower in the frequency. The exact duration of the neutrino-shell passage is not known, but we do no expect it to be much less than a second. Thus for higher frequencies, the co-dimension-one delta function approximation breaks down, and the effect will be weaker than Eq.~(\ref{eq-strain}).
 
-Finally, we expect 2 to 3 SN per century in our galaxy and we can assume that the next SN would be at a distance comparable to the galactic diameter of $\sim 10^5 \ ly$. If we are going to measure such effect at $1 \ Hz$, Again using Eq.~(\ref{eq-strain}), we find
+Finally, we expect 2 to 3 SN per century in our galaxy and we can assume that the next SN would be at a distance comparable to the galactic diameter of $\sim 10^5 \ ly$. If we are going to measure such an effect at $1 \ Hz$, again using Eq.~(\ref{eq-strain}), we find
 \begin{equation}
 	h = \frac{ 1~km \times ~ (3\times10^8~m)}{(10^5~ly)^2}\sim 10^{-30}~.
 \end{equation}
@@ -351,7 +351,7 @@ We repeat the values for point $A$ to show that some of them are actually the sa
 \end{eqnarray}
 
 \subsubsection{Relation between proper length and proper time}
-
+\label{sec-ptpl}
 The interferometer infers the distance between two points by measuring the proper time it takes for a photon to go from one end of the arm to the other and come back. As promised we will now relate the proper time seen by one end of the arm to the proper length of that arm (see figure \ref{calculation}). 
 In particular we show that \emph{the proper time is twice the proper length at a fixed coordinate time up to $\mathcal{O}(r_0^{-2})$}. This will be very useful as we can compute the proper length (which is comparatively easier) and still infer the effect seen in the interferometer.
 
@@ -418,7 +418,6 @@ Now we can compute $r_B(t) - r_A(t)$.
 	r_B(t) - r_A(t) & = & d - \frac{1}{2} \frac{M}{r_0^2} \bar{t}_c^2 - \left( \frac{M}{r_0^2} \bar{t}_c + \frac{\delta M}{r_0} + \frac{\delta M^2}{r_0^2} - \frac{\delta M d}{r_0^2} \right) (t - t_c) - \frac{1}{2} \frac{(M - \delta M)}{r_0^2} (t - t_c)^2 \label{rchange}
 \end{eqnarray}
 
-
 This expression contains both $t_c$ and $\bar{t}_c$. $t_c$ can be calculated using Eq (\ref{time}).
 
 \begin{equation}
@@ -465,7 +464,7 @@ We note that there is no time dependent term in this expression. This follows fr
 Next, we will calculate the distance between $A$ and $C$. We will show that there will be a relative velocity between them and therefore a time dependent term at $\mathcal{O}(r_0^{-2})$. 
 
 \subsection{Proper length change between $A$ and $C$}
-
+\label{sec-lAC}
 In this subsection we calculate the proper distance change between $A$ and $C$. First lets write down the trajectory equation for point $C$
 
 \begin{eqnarray}
